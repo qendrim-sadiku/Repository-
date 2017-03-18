@@ -1,0 +1,202 @@
+.tab {
+	h2 {
+		font-family:$alt-font-family;
+		font-size: 24px;
+		color: #0a184a;
+		font-weight: regular;
+		margin-bottom: 30px;
+		margin-top: 68px;
+		text-align: center;
+	}
+	padding-top: 20px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	width: 100%;
+	margin: auto;
+	@include grid-row(); 	
+	
+	line-height: 1.5;
+	font-weight: 300;
+	color: #888;
+	-webkit-font-smoothing: antialiased;
+	.tabs {		
+		position: relative;
+		padding-left: 60px;
+		padding-right:60px;	
+		margin: 0;
+		width: 100%;
+		border:transparent;
+		margin-left: 0px;
+		li {
+			a {
+				padding:12px 34px;
+				font-family: $alt-font-family;
+				color: #4a4a4a;
+				font-weight: normal;
+				font-size: 18px;
+				float: left;
+			
+				box-shadow: 0 0 3px 0 rgba(128, 128, 128, 0.5);
+				border-radius:50px;
+				margin-left: 7px;
+
+			}			
+			.active {
+				color: $white;
+				background-color: #474c54;
+  				box-shadow: 0 0 3px 0 rgba(128, 128, 128, 0.5);
+			}		
+		}
+		@include breakpoint(xs-small only) {
+			a {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+		}
+		@include breakpoint(small only) {
+			a {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+		}
+		@include breakpoint(medium only) {
+			a {
+				width: 30%;
+				float: left;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+		}
+		@include breakpoint(large only) {
+			a {
+				width: 19%;
+				float: left;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.tabs_item {
+		display: none;
+		padding: 30px 0;
+
+		.item-div {
+			margin-bottom: 30px;
+		}
+		.free {
+			margin-bottom: 222px;					
+			h4 {
+				text-align: left;
+				font-weight: bold;
+				color: #4a4a4a;
+		    	font-size: 20px;
+		    	margin-bottom: 30px;
+			}
+			a {
+				font-family: $alt-font-family;
+				font-size: 16px;
+				float: left;
+				padding-left: 55px;
+				padding-right:55px;
+				padding-top: 17px;
+				padding-bottom: 17px;
+				background-color: #7f98f6;
+				box-shadow: 0 0 4px 0 rgba(128, 128, 128, 0.5);
+		  		margin-right: 40px;
+			}
+			@include breakpoint(xs-small only) {
+				margin-bottom: 100px;
+				width: 100%;
+				padding-right: 10px;
+				padding-left: 10px;
+				a {
+					width: 100%;
+				}
+			}
+			@include breakpoint(small only) {
+				margin-bottom: 100px;
+				width: 100%;
+				padding-right: 10px;
+				padding-left: 10px;
+				a {
+					width: 100%;
+				}
+			}
+			@include breakpoint(medium only) {
+				width: 100%;
+				margin:auto;
+				@include grid-column(12);
+				a {
+					width: 40%;
+				}
+			}
+			@include breakpoint(large only) {
+				width: 100%;
+				margin:auto;
+				@include grid-column(12);
+			}
+		}
+		.busy {
+			h4 {
+				text-align: left;
+				font-weight: bold;
+				color: #4a4a4a;
+		    	font-size: 20px;
+		    	margin-bottom: 30px;
+			}
+			a {
+				font-family: $alt-font-family;
+				font-size: 16px;
+				color: #4a4a4a;
+				float: left;
+				padding-left: 55px;
+				padding-right:55px;
+				padding-top: 17px;
+				color: #4a4a4a;
+				font-weight: 400;
+				padding-bottom: 17px;
+				background-color: #f2f4fa;
+	  			box-shadow: 0 0 4px 0 rgba(128, 128, 128, 0.5);
+		  		margin-right: 40px;
+			}
+			@include breakpoint(xs-small only) {
+				margin-bottom: 100px;
+				width: 100%;
+				padding-right: 10px;
+				padding-left: 10px;
+				a {
+					width: 100%;
+				}
+			}
+			@include breakpoint(small only) {
+				margin-bottom: 100px;
+				width: 100%;
+				padding-right: 10px;
+				padding-left: 10px;
+				a {
+					width: 100%;
+				}
+			}
+			@include breakpoint(medium only) {
+				width: 100%;
+				margin:auto;
+				@include grid-column(12);
+				a {
+					width: 40%;
+				}
+			}
+			@include breakpoint(large only) {
+				width: 100%;
+				margin:auto;
+				@include grid-column(12);				
+			}
+		}
+		&:first-child {display: block;}
+	}
+}
+

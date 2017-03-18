@@ -1,0 +1,313 @@
+.info {
+	background: $white;
+	.container {
+		padding-top: 26px;
+		padding-bottom: 26px;
+		@include grid-row();
+		border-bottom: 2px solid #eaeaea; 
+		display: flex;		
+		.text-info {				
+			h3 {
+				color: $black;
+				margin-bottom: 20px;
+				font-size: 30px;
+			}
+			.user-info {
+																
+				.admin-info {
+					margin-left:10px;
+					line-height: 20px;
+					color: #0a184a;
+
+					img {
+						display: flex;
+					}
+				}
+			}
+			@include breakpoint(xs-small only) {
+				float: none;
+				margin-bottom: 40px;
+				h3 {
+					margin-left: 20px;
+				}
+				.user-info {
+					margin-left: 20px;
+				}
+			
+			}	
+			@include breakpoint(small only) {
+				float: none;
+				margin-bottom: 40px;
+			}
+			@include breakpoint(medium only) {
+				h3 {
+					margin-left: 10px;
+					
+				}
+				.user-info {
+					margin-left: 10px;
+				}
+				margin-bottom: 40px;
+				display: flex;
+				flex-direction: column;
+			}
+		}
+		.info-stuf {
+			display: flex;
+			justify-content: flex-end;
+			padding-left: 94px;
+			margin-top: 12px;
+			.each-stuf {
+				padding-left: 90px;							
+				.const-icon {
+					img {
+						float: left;											
+					}
+					span {
+						color: #0a184a;
+						font-size: 13px;
+						font-weight: 400;
+						padding-left: 19px;
+						margin-top: 100px;
+						line-height: 25px;
+					}
+					@include breakpoint(xs-small only) {
+						display: flex;
+						flex-direction: column;
+						margin-right: 0px;
+						margin-left: -80px;
+						margin-right: 40px;
+					
+						span {
+							line-height: 14px;
+							margin-top: 0px;
+							padding: 0;
+						}
+						img {
+							float: left;
+							margin-bottom: 10px;
+						}
+					}
+
+					@include breakpoint(small only) {
+						display: flex;
+						flex-direction: column;
+						margin-right: 0px;
+						margin-left: -80px;
+						margin-right: 40px;
+						span {
+							line-height: 14px;
+							margin-top: 0px;
+							padding: 0;
+						}
+						img {
+							float: left;
+							margin-bottom: 10px;
+						}
+					}
+					@include breakpoint(medium only) {
+						display: flex;
+						flex-direction: column;
+						justify-content: flex-end;
+						margin-right: 0px;
+						margin-left: -30px;
+						margin-right:0px;										
+						span {
+							line-height: 14px;
+							margin-top: 0px;
+							padding: 0;
+						}
+						img {
+							float: left;
+							margin-bottom: 10px;
+						}
+					}
+				}
+				@include breakpoint(xs-small only) {
+					display: flex;
+					padding-left: 0px;
+					margin-left: 0px;
+					margin-right: 0px;
+				}
+				@include breakpoint(small only) {
+					margin-left: 0px;
+					margin-right: 0px;
+					padding-left:0px;
+				}
+				@include breakpoint(small only) {
+					display: flex;
+					justify-content: flex-end;
+				}
+			}
+			.transport-icon {
+				img {
+					float: left;
+				}
+				span {
+					color: #0a184a;
+					font-size: 13px;
+					font-weight: 400;
+					padding-left: 19px;
+					margin-top: 100px;
+					line-height: 35px;
+				}
+				@include breakpoint(xs-small only) {
+					display: flex;
+					flex-direction: column;
+					margin-right: 0px;
+					margin-left:10px;
+					margin-right: 40px;
+					
+					span {
+						line-height: 14px;
+						margin-top: 0px;
+						padding: 0;
+					}
+					img {
+						margin-top: 10px;
+						float: left;
+						margin-bottom: 10px;
+					}
+				}
+				@include breakpoint(small only) {
+					display: flex;
+					flex-direction: column;
+					margin-right: 0px;
+					margin-left: 40px;
+					margin-right: 40px;
+					span {
+						line-height: 14px;
+						margin-top: 0px;
+						padding: 0;
+					}
+					img {
+						float: left;
+						margin-top: 10px;
+						margin-bottom: 10px;
+					}
+				}
+				@include breakpoint(medium only) {
+						display: flex;
+						flex-direction: column;
+						margin-right: 0px;
+					
+						
+						span {
+							line-height: 14px;
+							margin-top: 0px;
+							padding: 0;
+						}
+						img {
+							float: left;
+							margin-bottom: 10px;
+						}
+					}				
+			}
+			.gloves-icon {
+				img {
+					float: left;
+				}
+				span {
+					color: #0a184a;
+					font-size: 13px;
+					font-weight: 400;
+					padding-left: 19px;
+					margin-top: 100px;
+					line-height: 	35px;
+				}
+				@include breakpoint(xs-small only) {
+					display: flex;
+					flex-direction: column;
+					margin-right: 0px;
+					
+					span {
+						line-height: 14px;
+						margin-top: 0px;
+						padding: 0;
+					}
+					img {
+						float: left;
+						margin-bottom: 10px;
+					}
+				}
+				@include breakpoint(small only) {
+					display: flex;
+					flex-direction: column;
+					margin-right: 0px;
+					margin-left: 40px;
+					margin-right: 40px;
+					span {
+						line-height: 14px;
+						margin-top: 0px;
+						padding: 0;
+					}
+					img {
+						float: left;
+						margin-bottom: 10px;
+					}
+				}
+				@include breakpoint(medium only) {
+						display: flex;
+						flex-direction: column;
+						margin-right: 0px;					
+						margin-left: 0px;						
+						span {
+							line-height: 14px;
+							margin-top: 0px;
+							padding: 0;
+						}
+						img {
+							float: left;
+							margin-bottom: 10px;
+						}
+					}
+			}
+			@include breakpoint(xs-small only) {
+				display: flex;
+				justify-content: flex-start;
+				margin: 0px;
+			}
+			@include breakpoint(small only) {
+				display: flex;
+				justify-content: flex-start;
+				margin: 0px;
+			}
+			@include breakpoint(medium only) {
+				display: flex;
+				margin-left: auto;
+				margin-right: 30px;
+				padding-left: 0px;;
+			}
+			@include breakpoint(large only) {
+				display: flex;
+				margin-left: auto;
+				margin-right: 30px;
+				padding-left: 0px;;
+			}
+		}
+		@include breakpoint(xs-small only) {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			margin-left: 0px;
+		}
+		@include breakpoint(small only) {
+			display: flex;
+			justify-content: flex-start;
+			flex-direction: column;
+			margin-left: 0px;
+		}
+		@include breakpoint(medium only) {
+			display: flex;
+			
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+		@include breakpoint(large only) {
+			display: flex;
+			padding-left: 10px;
+			margin-left: 0px;
+			margin-right: 0px;
+		}				
+	}	  
+}

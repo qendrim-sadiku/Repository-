@@ -1,0 +1,64 @@
+.transparent-header {
+	@include grid-row();	
+	margin-bottom: 188px;
+	z-index: 10 !important;
+	.header-padding {
+		z-index: 1;
+		margin-top: 45px;
+		.logo-section {
+			z-index: 1;
+			display: flex;
+			float: left;
+			img {
+				z-index: 1;
+			}
+			a {
+				z-index: 1;
+				display: flex;	
+				color: $white !important;		
+				h2 {
+					margin-top: 0px;
+					margin-left: 10px;
+					font-size: 29px;
+					font-weight: 500;
+					font-family: $font-family;
+				}
+			}
+			@include breakpoint (xs-small only) {
+				display: flex;
+				flex-direction: column;
+				float: none;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 50px;
+			}
+		}	
+		@include breakpoint(small only) {
+		    width: 100%;
+		    text-align: center;
+		    margin-bottom: 100px;
+		}
+		@include breakpoint(xs-small only) {
+		    width: 100%;
+		    text-align: center;
+		    
+		}    			
+	}
+	@include breakpoint (xs-small only ) {
+		margin-bottom: 100px;
+		align-items: center;
+		justify-content: center;
+	}	
+	@include breakpoint (small only) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	@include breakpoint (medium only) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	@include breakpoint (large only) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}		
+}	

@@ -1,0 +1,107 @@
+.managment-section-tabs {
+	width:70%;
+	height: auto;
+	
+	.managment-tab {
+
+		padding-top: 40px;
+		padding-left: 50px;
+		padding-bottom: 50px;
+		position: relative;
+		overflow: hidden;
+		background: #f2f8fa;
+		
+		
+		
+		line-height: 1.5;
+		font-weight: 300;
+		color: #888;
+		-webkit-font-smoothing: antialiased;
+		.tabs {			
+			position: relative;
+			padding-left: 0px;
+			padding-right:0px;	
+			padding-bottom: 50px;
+			margin: 0;
+			width: 100%;
+			background:transparent;
+			border:transparent;
+			margin-left: 0px;
+			li {
+				a {
+					text-transform: uppercase;
+					background:#fefefe;					
+					font-weight: normal;
+					font-size: 12px;
+					float: left;
+					padding-left: 37px;
+					padding-right: 37px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					border:1px solid #e0e0e0;
+					background:$white !important;
+					border-radius:0px;
+					margin-left: 0px;
+					color: #6b7897;
+					@include breakpoint(xs-small only) {
+						padding-left: 37px;
+						padding-right: 37px;
+						padding-top: 10px;
+						padding-bottom: 10px;
+						width: 100%;
+						text-align: center;
+						margin-bottom: 15px;
+						margin-top: 15px;
+					}	
+				}
+				a:active {						
+		  			color:#7f98f6;
+				}
+				a:focus {
+				   	color:#7f98f6;
+				}
+				a:target {
+				   color:#7f98f6;
+				}	
+				
+			}
+			
+		}
+
+		.tabs_item {
+			display: none;
+			padding: 30px 0;						
+			&:first-child {display: block;}
+		}
+		@include breakpoint(xs-small only) {
+			max-width: 100%;
+			padding-left: 0px;
+		}
+		@include breakpoint(small only) {
+			max-width: 100%;
+			padding-left: 0px;
+		}
+		@include breakpoint(medium only) {
+			max-width: 100%;
+			padding-left: 0px;
+		}		
+	}
+	@include breakpoint(xs-small only) {
+	  max-width: 100%;
+      margin:0;
+      border:none;
+	  float: none;
+	}
+	@include breakpoint(small only) {
+	  max-width: 100%;
+      margin:0;
+      border:none;
+	  float: none;
+	}
+	@include breakpoint(medium only) {
+	  max-width: 100%;
+      margin:0;
+      border:none;
+	  float: none;
+	}		
+}

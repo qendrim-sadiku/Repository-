@@ -1,0 +1,89 @@
+.location {
+	background: $white;
+	padding-top: 68px;
+	.container {
+		@include grid-row();
+		border-bottom:2px solid #eaeaea;
+		padding-bottom: 69px;
+		.location-info {
+			@include grid-column(5);
+			h4 {
+				font-family: $alt-font-family;
+				font-size: 16px;
+				color: #0a184a;
+				margin-bottom: 37px;
+				text-align: left;
+			}
+			p {
+				font-family: $alt-font-family;
+				text-align:left; 
+				color: #0a184a;
+				line-height: 1.63;
+				opacity: 0.5;
+				font-size: 16px;
+				font-weight: 300;
+			}
+			@include breakpoint(xs-small only) {
+				@include grid-column(12);
+				margin-bottom: 50px;		    		    	
+		    }
+			@include breakpoint(small only) {
+				@include grid-column(12);
+				margin-bottom: 50px;		    		    	
+		    }        	
+
+		    @include breakpoint(medium only) {
+				@include grid-column(12);
+				margin-bottom: 50px;		    		    	
+		    }    
+			@include breakpoint(large only) {
+				@include grid-column(5);
+			}
+		}
+	}
+	.map-info {
+		float: left;
+		margin-left: 100px;
+		margin-bottom: 30px;
+		img {
+			float: left;
+			margin-top: 0px;
+			margin-right: 9px;
+		}
+		h4 {
+			font-family: $alt-font-family;
+			float: right;
+			color: #0a184a;
+			font-size: 15px;
+			
+		}	
+		@include breakpoint(xs-small only) {
+			margin-left: 0px;
+		}		
+		@include breakpoint(small only) {
+			margin-left: 0px;
+		}
+		@include breakpoint(medium only) {
+			margin-left: 0px;
+		}		
+	}
+	.map {
+		@include grid-column(7);
+		width: 600px;
+		height: 350px;
+		
+		position: relative;
+
+		.google-map {
+			@include scut-coords(0 0 0 0);
+			position: absolute !important;
+		}
+		@include breakpoint(medium only) {
+			@include grid-column(12);
+		}	
+		@include breakpoint(large only) {
+			@include grid-column(6);
+		}
+	}
+}
+

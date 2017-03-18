@@ -1,0 +1,24 @@
+.base-button {
+	z-index:100 !important;
+	background:transparent;
+	border:1px solid $white;
+	border-radius:100px;	
+	color:$white;
+	font-weight:500;
+	font-size:18px;
+	text-align:center;
+	@include scut-padding(12px 33px);	
+	float: right;
+	transition:0.5s;
+	position: relative;
+	&:hover {
+		background:$primary-color;
+		border:1px solid $primary-color;
+		color: $white;
+	}
+	@include breakpoint(xs-small only) {		
+		float: none !important;
+		align-items: center;
+		justify-content: center;
+   	}		
+}

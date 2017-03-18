@@ -1,0 +1,63 @@
+.header-div {
+	background:#7f98f6;
+	position: relative;
+	.header {
+		@include grid-row();
+ 		padding-bottom: 30px;
+		z-index: 1;	
+		.header-padding {
+			padding-top:30px;		
+			.logo-section {
+				display: flex;
+				float: left;
+				a {
+					color: $white;
+					display: flex;			
+					h2 {
+						margin-top: 0px;
+						margin-left: 10px;
+						font-size: 29px;
+						font-weight: 400;
+						font-family: $font-family;
+					}
+				}
+				@include breakpoint (xs-small only) {
+					display: flex;
+					flex-direction: column;
+					float: none;
+					align-items: center;
+					justify-content: center;
+					margin-bottom: 50px;
+				}
+			}
+			@include breakpoint(xs-small only) {
+				display: flex;
+				flex-direction: column;
+				float: none;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 20px;
+			}	
+			@include breakpoint(small only) {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			@include breakpoint(medium only) {
+				padding-left: 10px;
+				padding-right: 10px;
+			}					
+		}	
+		@include breakpoint(xs-small only) {
+			margin-bottom: -1px;
+		}		
+		@include breakpoint(small only) {
+			margin-bottom: -3px;
+		}		
+		@include breakpoint(medium only) {
+			margin-bottom: 0px;
+		}		
+		@include breakpoint(large only) {
+			margin-bottom: -1px;
+		}			
+	}	
+}

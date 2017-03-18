@@ -1,0 +1,156 @@
+.dashboard-header {
+	background:$primary;
+	position: relative;
+	.dashboard-info {	
+		padding-top: 28px;		
+		@include grid-row();
+		.header {			
+			padding-bottom: 70px;
+			z-index: 1;
+			border-bottom: 1px solid #f2f8fa;						
+			.header-padding {				
+				padding-top:0px;					
+				.logo-section {
+					display: flex;
+					float: left;
+					a {
+						color: $white;
+						display: flex;			
+						h2 {
+							margin-top: 10px;
+							margin-left: 10px;
+							font-size: 22px;
+							font-weight: 500;
+							font-family: $font-family;
+						}
+					}
+					@include breakpoint (xs-small only) {
+						display: flex;
+						flex-direction: column;
+						float: none;
+						align-items: center;
+  						justify-content: center;
+						margin-bottom: 50px;
+					}
+				}	
+				.log-out {
+					float: right;
+					color: $white;
+					vertical-align: middle;
+					margin-top: 10px;
+					font-weight: 500;
+					font-size: 16px;	
+					@include breakpoint (xs-small only) {
+						float: none;						
+						font-size: 20px;
+					}				
+				}	
+				@include breakpoint (xs-small only) {
+					text-align: center;
+				}
+			}
+			@include breakpoint(small only) {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			@include breakpoint(medium only) {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			@include breakpoint(large only) {
+				padding-left: 20px;
+				padding-right: 20px;
+			}										
+		}
+		.area-and-user {
+			margin-top: 27px;
+			margin-bottom: 26px;
+			display: flex;
+			
+			.user-area-info {
+				position: relative;
+				display: flex;
+				i {
+					color: $white;
+					font-size: 40px;
+					margin-right: 15px;
+				}
+				h4 {
+					font-family: $font-family;
+					font-weight: 500;
+					color: $white;
+					font-size: 16px;
+					margin-top: 12px;
+				}
+				&:after {
+					position: absolute;
+					left: 250px;
+					content: '';
+					height: 48px;
+					width: 2px;
+					background:$white;	
+					@include breakpoint(xs-small only) {
+						display: none;
+					}
+					@include breakpoint(small only) {
+						display: none;
+					}				
+				}
+				@include breakpoint(xs-small only) {
+					display: flex;
+					margin-bottom: 30px;
+					
+				}
+				@include breakpoint(small only) {
+					margin-left: 0px;
+					margin-bottom: 20px;
+				}
+			}
+			.area-links {
+				margin-left: 100px;
+				margin-top: 12px;
+				a {
+					text-transform: uppercase;					
+					color: $white;
+					font-size: 15px;
+					font-weight: 500;
+					padding-right: 30px;
+				}
+				@include breakpoint(xs-small only) {
+					margin: 0px;
+				}
+				@include breakpoint(small only) {
+					float: none;						
+					margin-left:0px;
+					font-size: 18px;
+				} 	
+			}		
+			@include breakpoint(xs-small only) {
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-direction: column;
+				flex-direction: column; 
+				align-items: center;
+  				justify-content: center;
+			}	
+			@include breakpoint(small only) {
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-direction: column;
+				flex-direction: column; 
+				align-items: center;
+  				justify-content: center;
+				 margin-left: 0px;
+				 margin-right: 0px;
+			}
+			@include breakpoint(medium only) {
+				padding-left: 20px;
+				padding-right: 20px;
+			}	
+			@include breakpoint(large only) {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}		
+	}	
+}
