@@ -16,6 +16,8 @@ table {
 		background: $white;
 		height: 70px;
 		width: 300px;
+		cursor: pointer;
+		outline: none;
 		a {			
 			display: block;
 			width: 100%;
@@ -33,6 +35,7 @@ table {
 		width: 181px;
     	padding-left: 10px;
     	padding-right: 10px;
+    	cursor: default;
 	}
 	 @include breakpoint(xs-small only) {
 	  max-width: 100%;

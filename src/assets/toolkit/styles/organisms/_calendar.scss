@@ -1,23 +1,26 @@
 .calendar-bg {
     width: 30%;
     background:#23213e;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 50px;
     border:none;    
     padding-left:0px;
     padding-right:0px;
   .ui-datepicker {
-    width: 100%;
-    background:#23213e;
-    margin:auto;
+    position: relative;
+    background:transparent;
+    width: auto;
     vertical-align: center;
     justify-content: center;
     display: none;
     padding-top: 50px;
-  
+    padding-left: 50px;
+    padding-right:0px;
     .ui-datepicker-header {
       background:#23213e;
       border:none;
-      position: relative;
+      position: absolute;
+      top: 10px;
     }
     .ui-datepicker-prev,
     .ui-datepicker-next {
@@ -80,8 +83,9 @@
       display: none;
     }
     .ui-datepicker-title {
-      margin:  1em;
-      line-height: 1.8em;
+      position: absolute;
+      text-align: right; 
+      line-height: 35px;
       text-align: right;
       color: #6b7897;
       font-weight: bold;
@@ -226,14 +230,14 @@
     color: $primary;
     position: absolute;
     top: 720px;
-    padding-left: 20px;
+    padding-left: 50px;
     @include breakpoint(xs-small only) {
      position: absolute;
      top: 870px;
     }
   }
   input {
-    padding-left:20px;
+    padding-left:50px;
     color: $white;
     position: absolute;
     top:750px;
@@ -249,17 +253,17 @@
     }
   }
   @include breakpoint(xs-small only) {
-			max-width: 100%;
+			width: 100%;
       margin:0;
       border:none;
 	}	
   @include breakpoint(small only) {
-			max-width: 100%;
+			width: 100%;
       margin:0;
       border:none;
 	}
   @include breakpoint(medium only) {
-			max-width: 100%;
+			width: 100%;
       margin:0;
       border:none;
 	}						

@@ -165,85 +165,77 @@
 					</thead>
 					<tbody>
 					<tr>
-				
 						<td><span>05:00</span></td>		
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>				
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>				
 					</tr>
 					<tr>
 						<td><span>06:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					<tr>
 						<td><span>07:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
 					</tr>
 					<tr>
 						<td><span>08:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
 					</tr>
 					<tr>
 						<td><span>09:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					<tr>
 						<td><span>10:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					<tr>
 						<td><span>11:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					<tr>
 						<td><span>12:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					</tbody>
 				</table>
 				
-				<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-				  <div class="modal-heading">   
-				    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-				    <div>
-				     <h4 class="modal-h4">Shto Terminin</h4>
-				    </div>
+				<!-- This is the first modal -->
+				<div class="other-modal reveal" id="exampleModal2" data-reveal>
+				  <h2 class="head-title">Shto Terminin</h2>
+				  <div class="about-reservation">
+				    <h4>Pershkrimi</h4>
+				    <p>Motivation The Defining Moment Of Self Improvement</p>
 				  </div>
-				     <div class="definition">
-				     	<h4>Pershkrimi</h4>
-				     	<p>Motivation The defining Moment Of Self Imporiement </p>
-				     </div>
-				     <div class="phone-number">
-				     	<h4>Numri i Telefonit</h4>
-				     </div>
-				     <div class="reservation-hour">
-				      <h4 >Ora E Terminit:</h4>
-				      
-				      <div class="time-pick">
-				        <span>19:00</span>-
-				        <span>20:00</span>
-				      </div>
-				     </div>
-				    <br>
-				    <div class="button-section">
-				      
-				      <button data-remodal-action="cancel" class="remodal-cancel">Anulo</button>
-				      <button data-remodal-action="confirm" class="remodal-confirm">Shto</button>
-				    </div>
+				  <div class="phone-number-res">
+				    <h4>Numri I telefonit</h4>
+				  </div>
+				  <div class="res-hour">
+				    <h4>Ora e Terminit:</h4>
+				    <span>19:00-20:00</span>
+				  </div>
+				  <div class="res-buttons">
+				    <a class="cancel-button" data-close aria-label="Close reveal" type="button">Anulo</a>
+				    <a class="add-button" data-close aria-label="Close reveal" type="button">Shto</a>  
+				  </div>
+				  <button class="close-button" data-close aria-label="Close reveal" type="button">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
 				</div>			</div> 
 
 			<div class="tabs_item">
@@ -258,85 +250,77 @@
 					</thead>
 					<tbody>
 					<tr>
-				
 						<td><span>05:00</span></td>		
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>				
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>				
 					</tr>
 					<tr>
 						<td><span>06:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					<tr>
 						<td><span>07:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
 					</tr>
 					<tr>
 						<td><span>08:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
 					</tr>
 					<tr>
 						<td><span>09:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					<tr>
 						<td><span>10:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					<tr>
 						<td><span>11:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					<tr>
 						<td><span>12:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					</tbody>
 				</table>
 				
-				<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-				  <div class="modal-heading">   
-				    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-				    <div>
-				     <h4 class="modal-h4">Shto Terminin</h4>
-				    </div>
+				<!-- This is the first modal -->
+				<div class="other-modal reveal" id="exampleModal2" data-reveal>
+				  <h2 class="head-title">Shto Terminin</h2>
+				  <div class="about-reservation">
+				    <h4>Pershkrimi</h4>
+				    <p>Motivation The Defining Moment Of Self Improvement</p>
 				  </div>
-				     <div class="definition">
-				     	<h4>Pershkrimi</h4>
-				     	<p>Motivation The defining Moment Of Self Imporiement </p>
-				     </div>
-				     <div class="phone-number">
-				     	<h4>Numri i Telefonit</h4>
-				     </div>
-				     <div class="reservation-hour">
-				      <h4 >Ora E Terminit:</h4>
-				      
-				      <div class="time-pick">
-				        <span>19:00</span>-
-				        <span>20:00</span>
-				      </div>
-				     </div>
-				    <br>
-				    <div class="button-section">
-				      
-				      <button data-remodal-action="cancel" class="remodal-cancel">Anulo</button>
-				      <button data-remodal-action="confirm" class="remodal-confirm">Shto</button>
-				    </div>
+				  <div class="phone-number-res">
+				    <h4>Numri I telefonit</h4>
+				  </div>
+				  <div class="res-hour">
+				    <h4>Ora e Terminit:</h4>
+				    <span>19:00-20:00</span>
+				  </div>
+				  <div class="res-buttons">
+				    <a class="cancel-button" data-close aria-label="Close reveal" type="button">Anulo</a>
+				    <a class="add-button" data-close aria-label="Close reveal" type="button">Shto</a>  
+				  </div>
+				  <button class="close-button" data-close aria-label="Close reveal" type="button">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
 				</div>			</div> 
 
 			<div class="tabs_item">
@@ -351,85 +335,77 @@
 					</thead>
 					<tbody>
 					<tr>
-				
 						<td><span>05:00</span></td>		
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>				
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>				
 					</tr>
 					<tr>
 						<td><span>06:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					<tr>
 						<td><span>07:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
 					</tr>
 					<tr>
 						<td><span>08:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
 					</tr>
 					<tr>
 						<td><span>09:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					<tr>
 						<td><span>10:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					<tr>
 						<td><span>11:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					<tr>
 						<td><span>12:00</span></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>
-						<td><a href="#modal">&nbsp;</a></td>	
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>
+						<td data-open="exampleModal2" id="adding-button"></td>	
 					</tr>
 					</tbody>
 				</table>
 				
-				<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-				  <div class="modal-heading">   
-				    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-				    <div>
-				     <h4 class="modal-h4">Shto Terminin</h4>
-				    </div>
+				<!-- This is the first modal -->
+				<div class="other-modal reveal" id="exampleModal2" data-reveal>
+				  <h2 class="head-title">Shto Terminin</h2>
+				  <div class="about-reservation">
+				    <h4>Pershkrimi</h4>
+				    <p>Motivation The Defining Moment Of Self Improvement</p>
 				  </div>
-				     <div class="definition">
-				     	<h4>Pershkrimi</h4>
-				     	<p>Motivation The defining Moment Of Self Imporiement </p>
-				     </div>
-				     <div class="phone-number">
-				     	<h4>Numri i Telefonit</h4>
-				     </div>
-				     <div class="reservation-hour">
-				      <h4 >Ora E Terminit:</h4>
-				      
-				      <div class="time-pick">
-				        <span>19:00</span>-
-				        <span>20:00</span>
-				      </div>
-				     </div>
-				    <br>
-				    <div class="button-section">
-				      
-				      <button data-remodal-action="cancel" class="remodal-cancel">Anulo</button>
-				      <button data-remodal-action="confirm" class="remodal-confirm">Shto</button>
-				    </div>
+				  <div class="phone-number-res">
+				    <h4>Numri I telefonit</h4>
+				  </div>
+				  <div class="res-hour">
+				    <h4>Ora e Terminit:</h4>
+				    <span>19:00-20:00</span>
+				  </div>
+				  <div class="res-buttons">
+				    <a class="cancel-button" data-close aria-label="Close reveal" type="button">Anulo</a>
+				    <a class="add-button" data-close aria-label="Close reveal" type="button">Shto</a>  
+				  </div>
+				  <button class="close-button" data-close aria-label="Close reveal" type="button">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
 				</div>			</div>								
 		</div> 
 	</div>

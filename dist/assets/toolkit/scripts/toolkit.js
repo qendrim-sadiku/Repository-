@@ -96,6 +96,7 @@
 	__webpack_require__(324);
 	__webpack_require__(325);
 	__webpack_require__(326);
+	// require('./modules/remodal');
 	__webpack_require__(327);
 	__webpack_require__(328);
 	__webpack_require__(329);
@@ -19624,9 +19625,9 @@
 	'use strict';
 
 	$('.tabs li a').click(function (e) {
-	   e.preventDefault();
-	   $('a').removeClass('active');
-	   $(this).addClass('active');
+	    e.preventDefault();
+	    $('a').removeClass('active');
+	    $(this).addClass('active');
 	});
 
 /***/ },

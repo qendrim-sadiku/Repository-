@@ -87,19 +87,19 @@
 		}		
 	}
 	@include breakpoint(xs-small only) {
-	  max-width: 100%;
+	  width: 100%;
       margin:0;
       border:none;
 	  float: none;
 	}
 	@include breakpoint(small only) {
-	  max-width: 100%;
+	  width: 100%;
       margin:0;
       border:none;
 	  float: none;
 	}
 	@include breakpoint(medium only) {
-	  max-width: 100%;
+	  width: 100%;
       margin:0;
       border:none;
 	  float: none;

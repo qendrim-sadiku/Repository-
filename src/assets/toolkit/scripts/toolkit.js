@@ -32,14 +32,17 @@ var foundationDropdownMenu = require('../../vendor/foundation-sites/js/foundatio
 var foundationToggler = require('../../vendor/foundation-sites/js/foundation.toggler.js');
 var foundationTabs = require('../../vendor/foundation-sites/js/foundation.tabs.js');
 
+
 //require('smoothstate/jquery.smoothState.min.js');
 // var smoothState = require('./jquery.smoothState.min.js');
-var flexslider = require('../../vendor/flexslider/jquery.flexslider-min');
+var flexslider = require('../../vendor/flexslider/jquery.flexslider-min.js');
 
 // console.log($);
 // $('h1').fadeOut(2000);
 var jqueryui = require('../../vendor/jquery-ui/jquery-ui.min.js'); 
 var calendar = require('../../vendor/jquery-ui/ui/widgets/datepicker.js');
+
+
 
 
 // Use for custom Pattern Libary Modules
@@ -50,6 +53,7 @@ require('./modules/map');
 require('./modules/acordion');
 require('./modules/dropdown');
 require('./modules/tabs');
+// require('./modules/remodal');
 require('./modules/file-input');
 require('./modules/jquery.nice-select.min');
 require('./modules/select');

@@ -1210,6 +1210,7 @@
 				</div> <button class="close-button" data-close aria-label="Close modal" type="button">
 			    <span aria-hidden="true">&times;</span>
 			  </button>
+
 			</div>
 		</div>
 	</header>
@@ -1253,6 +1254,7 @@
 				&lt;/div&gt; &lt;button class&#x3D;&quot;close-button&quot; data-close aria-label&#x3D;&quot;Close modal&quot; type&#x3D;&quot;button&quot;&gt;
 			    &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
 			  &lt;/button&gt;
+
 			&lt;/div&gt;
 		&lt;/div&gt;
 	&lt;/header&gt;
@@ -1447,85 +1449,77 @@
 					</thead>
 					<tbody>
 						<tr>
-
 							<td><span>05:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>06:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>07:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>08:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>09:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>10:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>11:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>12:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 					</tbody>
 				</table>
 
-				<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-					<div class="modal-heading">
-						<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-						<div>
-							<h4 class="modal-h4">Shto Terminin</h4>
-						</div>
-					</div>
-					<div class="definition">
+				<!-- This is the first modal -->
+				<div class="other-modal reveal" id="exampleModal2" data-reveal>
+					<h2 class="head-title">Shto Terminin</h2>
+					<div class="about-reservation">
 						<h4>Pershkrimi</h4>
-						<p>Motivation The defining Moment Of Self Imporiement </p>
+						<p>Motivation The Defining Moment Of Self Improvement</p>
 					</div>
-					<div class="phone-number">
-						<h4>Numri i Telefonit</h4>
+					<div class="phone-number-res">
+						<h4>Numri I telefonit</h4>
 					</div>
-					<div class="reservation-hour">
-						<h4>Ora E Terminit:</h4>
-
-						<div class="time-pick">
-							<span>19:00</span>-
-							<span>20:00</span>
-						</div>
+					<div class="res-hour">
+						<h4>Ora e Terminit:</h4>
+						<span>19:00-20:00</span>
 					</div>
-					<br>
-					<div class="button-section">
-
-						<button data-remodal-action="cancel" class="remodal-cancel">Anulo</button>
-						<button data-remodal-action="confirm" class="remodal-confirm">Shto</button>
+					<div class="res-buttons">
+						<a class="cancel-button" data-close aria-label="Close reveal" type="button">Anulo</a>
+						<a class="add-button" data-close aria-label="Close reveal" type="button">Shto</a>
 					</div>
+					<button class="close-button" data-close aria-label="Close reveal" type="button">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
 				</div>
 			</div>
 
@@ -1541,85 +1535,77 @@
 					</thead>
 					<tbody>
 						<tr>
-
 							<td><span>05:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>06:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>07:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>08:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>09:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>10:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>11:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>12:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 					</tbody>
 				</table>
 
-				<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-					<div class="modal-heading">
-						<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-						<div>
-							<h4 class="modal-h4">Shto Terminin</h4>
-						</div>
-					</div>
-					<div class="definition">
+				<!-- This is the first modal -->
+				<div class="other-modal reveal" id="exampleModal2" data-reveal>
+					<h2 class="head-title">Shto Terminin</h2>
+					<div class="about-reservation">
 						<h4>Pershkrimi</h4>
-						<p>Motivation The defining Moment Of Self Imporiement </p>
+						<p>Motivation The Defining Moment Of Self Improvement</p>
 					</div>
-					<div class="phone-number">
-						<h4>Numri i Telefonit</h4>
+					<div class="phone-number-res">
+						<h4>Numri I telefonit</h4>
 					</div>
-					<div class="reservation-hour">
-						<h4>Ora E Terminit:</h4>
-
-						<div class="time-pick">
-							<span>19:00</span>-
-							<span>20:00</span>
-						</div>
+					<div class="res-hour">
+						<h4>Ora e Terminit:</h4>
+						<span>19:00-20:00</span>
 					</div>
-					<br>
-					<div class="button-section">
-
-						<button data-remodal-action="cancel" class="remodal-cancel">Anulo</button>
-						<button data-remodal-action="confirm" class="remodal-confirm">Shto</button>
+					<div class="res-buttons">
+						<a class="cancel-button" data-close aria-label="Close reveal" type="button">Anulo</a>
+						<a class="add-button" data-close aria-label="Close reveal" type="button">Shto</a>
 					</div>
+					<button class="close-button" data-close aria-label="Close reveal" type="button">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
 				</div>
 			</div>
 
@@ -1635,85 +1621,77 @@
 					</thead>
 					<tbody>
 						<tr>
-
 							<td><span>05:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>06:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>07:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>08:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>09:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>10:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>11:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 						<tr>
 							<td><span>12:00</span></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
-							<td><a href="#modal">&nbsp;</a></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
+							<td data-open="exampleModal2" id="adding-button"></td>
 						</tr>
 					</tbody>
 				</table>
 
-				<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-					<div class="modal-heading">
-						<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-						<div>
-							<h4 class="modal-h4">Shto Terminin</h4>
-						</div>
-					</div>
-					<div class="definition">
+				<!-- This is the first modal -->
+				<div class="other-modal reveal" id="exampleModal2" data-reveal>
+					<h2 class="head-title">Shto Terminin</h2>
+					<div class="about-reservation">
 						<h4>Pershkrimi</h4>
-						<p>Motivation The defining Moment Of Self Imporiement </p>
+						<p>Motivation The Defining Moment Of Self Improvement</p>
 					</div>
-					<div class="phone-number">
-						<h4>Numri i Telefonit</h4>
+					<div class="phone-number-res">
+						<h4>Numri I telefonit</h4>
 					</div>
-					<div class="reservation-hour">
-						<h4>Ora E Terminit:</h4>
-
-						<div class="time-pick">
-							<span>19:00</span>-
-							<span>20:00</span>
-						</div>
+					<div class="res-hour">
+						<h4>Ora e Terminit:</h4>
+						<span>19:00-20:00</span>
 					</div>
-					<br>
-					<div class="button-section">
-
-						<button data-remodal-action="cancel" class="remodal-cancel">Anulo</button>
-						<button data-remodal-action="confirm" class="remodal-confirm">Shto</button>
+					<div class="res-buttons">
+						<a class="cancel-button" data-close aria-label="Close reveal" type="button">Anulo</a>
+						<a class="add-button" data-close aria-label="Close reveal" type="button">Shto</a>
 					</div>
+					<button class="close-button" data-close aria-label="Close reveal" type="button">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
 				</div>
 			</div>
 		</div>
@@ -1745,85 +1723,77 @@
 					&lt;/thead&gt;
 					&lt;tbody&gt;
 						&lt;tr&gt;
-
 							&lt;td&gt;&lt;span&gt;05:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;06:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;07:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;08:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;09:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;10:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;11:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;12:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 					&lt;/tbody&gt;
 				&lt;/table&gt;
 
-				&lt;div class&#x3D;&quot;remodal&quot; data-remodal-id&#x3D;&quot;modal&quot; role&#x3D;&quot;dialog&quot; aria-labelledby&#x3D;&quot;modal1Title&quot; aria-describedby&#x3D;&quot;modal1Desc&quot;&gt;
-					&lt;div class&#x3D;&quot;modal-heading&quot;&gt;
-						&lt;button data-remodal-action&#x3D;&quot;close&quot; class&#x3D;&quot;remodal-close&quot; aria-label&#x3D;&quot;Close&quot;&gt;&lt;/button&gt;
-						&lt;div&gt;
-							&lt;h4 class&#x3D;&quot;modal-h4&quot;&gt;Shto Terminin&lt;/h4&gt;
-						&lt;/div&gt;
-					&lt;/div&gt;
-					&lt;div class&#x3D;&quot;definition&quot;&gt;
+				&lt;!-- This is the first modal --&gt;
+				&lt;div class&#x3D;&quot;other-modal reveal&quot; id&#x3D;&quot;exampleModal2&quot; data-reveal&gt;
+					&lt;h2 class&#x3D;&quot;head-title&quot;&gt;Shto Terminin&lt;/h2&gt;
+					&lt;div class&#x3D;&quot;about-reservation&quot;&gt;
 						&lt;h4&gt;Pershkrimi&lt;/h4&gt;
-						&lt;p&gt;Motivation The defining Moment Of Self Imporiement &lt;/p&gt;
+						&lt;p&gt;Motivation The Defining Moment Of Self Improvement&lt;/p&gt;
 					&lt;/div&gt;
-					&lt;div class&#x3D;&quot;phone-number&quot;&gt;
-						&lt;h4&gt;Numri i Telefonit&lt;/h4&gt;
+					&lt;div class&#x3D;&quot;phone-number-res&quot;&gt;
+						&lt;h4&gt;Numri I telefonit&lt;/h4&gt;
 					&lt;/div&gt;
-					&lt;div class&#x3D;&quot;reservation-hour&quot;&gt;
-						&lt;h4&gt;Ora E Terminit:&lt;/h4&gt;
-
-						&lt;div class&#x3D;&quot;time-pick&quot;&gt;
-							&lt;span&gt;19:00&lt;/span&gt;-
-							&lt;span&gt;20:00&lt;/span&gt;
-						&lt;/div&gt;
+					&lt;div class&#x3D;&quot;res-hour&quot;&gt;
+						&lt;h4&gt;Ora e Terminit:&lt;/h4&gt;
+						&lt;span&gt;19:00-20:00&lt;/span&gt;
 					&lt;/div&gt;
-					&lt;br&gt;
-					&lt;div class&#x3D;&quot;button-section&quot;&gt;
-
-						&lt;button data-remodal-action&#x3D;&quot;cancel&quot; class&#x3D;&quot;remodal-cancel&quot;&gt;Anulo&lt;/button&gt;
-						&lt;button data-remodal-action&#x3D;&quot;confirm&quot; class&#x3D;&quot;remodal-confirm&quot;&gt;Shto&lt;/button&gt;
+					&lt;div class&#x3D;&quot;res-buttons&quot;&gt;
+						&lt;a class&#x3D;&quot;cancel-button&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;Anulo&lt;/a&gt;
+						&lt;a class&#x3D;&quot;add-button&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;Shto&lt;/a&gt;
 					&lt;/div&gt;
+					&lt;button class&#x3D;&quot;close-button&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;
+				    &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+				  &lt;/button&gt;
 				&lt;/div&gt;
 			&lt;/div&gt;
 
@@ -1839,85 +1809,77 @@
 					&lt;/thead&gt;
 					&lt;tbody&gt;
 						&lt;tr&gt;
-
 							&lt;td&gt;&lt;span&gt;05:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;06:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;07:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;08:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;09:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;10:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;11:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;12:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 					&lt;/tbody&gt;
 				&lt;/table&gt;
 
-				&lt;div class&#x3D;&quot;remodal&quot; data-remodal-id&#x3D;&quot;modal&quot; role&#x3D;&quot;dialog&quot; aria-labelledby&#x3D;&quot;modal1Title&quot; aria-describedby&#x3D;&quot;modal1Desc&quot;&gt;
-					&lt;div class&#x3D;&quot;modal-heading&quot;&gt;
-						&lt;button data-remodal-action&#x3D;&quot;close&quot; class&#x3D;&quot;remodal-close&quot; aria-label&#x3D;&quot;Close&quot;&gt;&lt;/button&gt;
-						&lt;div&gt;
-							&lt;h4 class&#x3D;&quot;modal-h4&quot;&gt;Shto Terminin&lt;/h4&gt;
-						&lt;/div&gt;
-					&lt;/div&gt;
-					&lt;div class&#x3D;&quot;definition&quot;&gt;
+				&lt;!-- This is the first modal --&gt;
+				&lt;div class&#x3D;&quot;other-modal reveal&quot; id&#x3D;&quot;exampleModal2&quot; data-reveal&gt;
+					&lt;h2 class&#x3D;&quot;head-title&quot;&gt;Shto Terminin&lt;/h2&gt;
+					&lt;div class&#x3D;&quot;about-reservation&quot;&gt;
 						&lt;h4&gt;Pershkrimi&lt;/h4&gt;
-						&lt;p&gt;Motivation The defining Moment Of Self Imporiement &lt;/p&gt;
+						&lt;p&gt;Motivation The Defining Moment Of Self Improvement&lt;/p&gt;
 					&lt;/div&gt;
-					&lt;div class&#x3D;&quot;phone-number&quot;&gt;
-						&lt;h4&gt;Numri i Telefonit&lt;/h4&gt;
+					&lt;div class&#x3D;&quot;phone-number-res&quot;&gt;
+						&lt;h4&gt;Numri I telefonit&lt;/h4&gt;
 					&lt;/div&gt;
-					&lt;div class&#x3D;&quot;reservation-hour&quot;&gt;
-						&lt;h4&gt;Ora E Terminit:&lt;/h4&gt;
-
-						&lt;div class&#x3D;&quot;time-pick&quot;&gt;
-							&lt;span&gt;19:00&lt;/span&gt;-
-							&lt;span&gt;20:00&lt;/span&gt;
-						&lt;/div&gt;
+					&lt;div class&#x3D;&quot;res-hour&quot;&gt;
+						&lt;h4&gt;Ora e Terminit:&lt;/h4&gt;
+						&lt;span&gt;19:00-20:00&lt;/span&gt;
 					&lt;/div&gt;
-					&lt;br&gt;
-					&lt;div class&#x3D;&quot;button-section&quot;&gt;
-
-						&lt;button data-remodal-action&#x3D;&quot;cancel&quot; class&#x3D;&quot;remodal-cancel&quot;&gt;Anulo&lt;/button&gt;
-						&lt;button data-remodal-action&#x3D;&quot;confirm&quot; class&#x3D;&quot;remodal-confirm&quot;&gt;Shto&lt;/button&gt;
+					&lt;div class&#x3D;&quot;res-buttons&quot;&gt;
+						&lt;a class&#x3D;&quot;cancel-button&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;Anulo&lt;/a&gt;
+						&lt;a class&#x3D;&quot;add-button&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;Shto&lt;/a&gt;
 					&lt;/div&gt;
+					&lt;button class&#x3D;&quot;close-button&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;
+				    &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+				  &lt;/button&gt;
 				&lt;/div&gt;
 			&lt;/div&gt;
 
@@ -1933,85 +1895,77 @@
 					&lt;/thead&gt;
 					&lt;tbody&gt;
 						&lt;tr&gt;
-
 							&lt;td&gt;&lt;span&gt;05:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;06:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;07:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;08:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;09:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;10:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;11:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 						&lt;tr&gt;
 							&lt;td&gt;&lt;span&gt;12:00&lt;/span&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
-							&lt;td&gt;&lt;a href&#x3D;&quot;#modal&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
+							&lt;td data-open&#x3D;&quot;exampleModal2&quot; id&#x3D;&quot;adding-button&quot;&gt;&lt;/td&gt;
 						&lt;/tr&gt;
 					&lt;/tbody&gt;
 				&lt;/table&gt;
 
-				&lt;div class&#x3D;&quot;remodal&quot; data-remodal-id&#x3D;&quot;modal&quot; role&#x3D;&quot;dialog&quot; aria-labelledby&#x3D;&quot;modal1Title&quot; aria-describedby&#x3D;&quot;modal1Desc&quot;&gt;
-					&lt;div class&#x3D;&quot;modal-heading&quot;&gt;
-						&lt;button data-remodal-action&#x3D;&quot;close&quot; class&#x3D;&quot;remodal-close&quot; aria-label&#x3D;&quot;Close&quot;&gt;&lt;/button&gt;
-						&lt;div&gt;
-							&lt;h4 class&#x3D;&quot;modal-h4&quot;&gt;Shto Terminin&lt;/h4&gt;
-						&lt;/div&gt;
-					&lt;/div&gt;
-					&lt;div class&#x3D;&quot;definition&quot;&gt;
+				&lt;!-- This is the first modal --&gt;
+				&lt;div class&#x3D;&quot;other-modal reveal&quot; id&#x3D;&quot;exampleModal2&quot; data-reveal&gt;
+					&lt;h2 class&#x3D;&quot;head-title&quot;&gt;Shto Terminin&lt;/h2&gt;
+					&lt;div class&#x3D;&quot;about-reservation&quot;&gt;
 						&lt;h4&gt;Pershkrimi&lt;/h4&gt;
-						&lt;p&gt;Motivation The defining Moment Of Self Imporiement &lt;/p&gt;
+						&lt;p&gt;Motivation The Defining Moment Of Self Improvement&lt;/p&gt;
 					&lt;/div&gt;
-					&lt;div class&#x3D;&quot;phone-number&quot;&gt;
-						&lt;h4&gt;Numri i Telefonit&lt;/h4&gt;
+					&lt;div class&#x3D;&quot;phone-number-res&quot;&gt;
+						&lt;h4&gt;Numri I telefonit&lt;/h4&gt;
 					&lt;/div&gt;
-					&lt;div class&#x3D;&quot;reservation-hour&quot;&gt;
-						&lt;h4&gt;Ora E Terminit:&lt;/h4&gt;
-
-						&lt;div class&#x3D;&quot;time-pick&quot;&gt;
-							&lt;span&gt;19:00&lt;/span&gt;-
-							&lt;span&gt;20:00&lt;/span&gt;
-						&lt;/div&gt;
+					&lt;div class&#x3D;&quot;res-hour&quot;&gt;
+						&lt;h4&gt;Ora e Terminit:&lt;/h4&gt;
+						&lt;span&gt;19:00-20:00&lt;/span&gt;
 					&lt;/div&gt;
-					&lt;br&gt;
-					&lt;div class&#x3D;&quot;button-section&quot;&gt;
-
-						&lt;button data-remodal-action&#x3D;&quot;cancel&quot; class&#x3D;&quot;remodal-cancel&quot;&gt;Anulo&lt;/button&gt;
-						&lt;button data-remodal-action&#x3D;&quot;confirm&quot; class&#x3D;&quot;remodal-confirm&quot;&gt;Shto&lt;/button&gt;
+					&lt;div class&#x3D;&quot;res-buttons&quot;&gt;
+						&lt;a class&#x3D;&quot;cancel-button&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;Anulo&lt;/a&gt;
+						&lt;a class&#x3D;&quot;add-button&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;Shto&lt;/a&gt;
 					&lt;/div&gt;
+					&lt;button class&#x3D;&quot;close-button&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;
+				    &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+				  &lt;/button&gt;
 				&lt;/div&gt;
 			&lt;/div&gt;
 		&lt;/div&gt;
@@ -2063,6 +2017,7 @@
 	</div> <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
+
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -2094,6 +2049,7 @@
 	&lt;/div&gt; &lt;button class&#x3D;&quot;close-button&quot; data-close aria-label&#x3D;&quot;Close modal&quot; type&#x3D;&quot;button&quot;&gt;
     &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
   &lt;/button&gt;
+
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -2848,6 +2804,7 @@
 			</div> <button class="close-button" data-close aria-label="Close modal" type="button">
 		    <span aria-hidden="true">&times;</span>
 		  </button>
+
 		</div>
 	</div>
 </header>
@@ -2890,6 +2847,7 @@
 			&lt;/div&gt; &lt;button class&#x3D;&quot;close-button&quot; data-close aria-label&#x3D;&quot;Close modal&quot; type&#x3D;&quot;button&quot;&gt;
 		    &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
 		  &lt;/button&gt;
+
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/header&gt;</code></pre>
