@@ -30,11 +30,8 @@ $arrow_color: $gray !default;
   cursor: pointer;
   display: block;
   float: left; 
-  height: $input_height;
-  line-height: 48px;
+  height: $input_height;  
   outline: none;
-  padding-left: $dropdown_padding;
-  padding-right: $dropdown_padding + 12;
   position: relative;
   text-align: left !important;
   transition: all 0.2s ease-in-out; 
@@ -88,7 +85,10 @@ $arrow_color: $gray !default;
   &.wide {
     width: 380px;
     margin-right: 2px;
+    padding-top: 12px;
+    padding-left: 13px;
     z-index: 10;
+    
     .list {
       left: 0 !important;
       right: 0 !important;
@@ -112,6 +112,8 @@ $arrow_color: $gray !default;
   &.day {
     width: 335px;
     margin-right: 2px;
+    padding-top: 12px;
+    padding-left: 13px;
     z-index: 5;
     .list {
       left: 0 !important;
@@ -134,6 +136,8 @@ $arrow_color: $gray !default;
   &.hours {
     width: 335px;
     margin-right:0px;
+    padding-top: 12px;
+    padding-left: 13px;
     z-index: 4;
     .list {
       left: 0 !important;
@@ -153,6 +157,35 @@ $arrow_color: $gray !default;
      width: 100%;
     }
   }
+  &.info-select {
+    width: 212px;
+    float: right;
+    margin-right:0px;
+    padding-top: 11px;
+
+    padding-left: 13px;
+    border:1px solid #e0e0e0 !important;
+    z-index: 4;
+    .list {
+      left: 0 !important;
+      right: 0 !important;    
+    }   
+    @include breakpoint(xs-small only) {
+      margin-bottom: 20px;
+      width: 100%;
+      float: left;
+    }
+    @include breakpoint(small only) {
+     margin-bottom: 20px;
+     width: 200px;
+    }
+    @include breakpoint(medium only) {
+     margin-bottom: 20px;
+     display: flex;
+     width: 300px;
+    }  
+  }
+
   &.right {
     float: right;
     .list {

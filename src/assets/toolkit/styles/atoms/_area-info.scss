@@ -18,9 +18,23 @@
   }
   @include breakpoint(xs-small only) {
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   @include breakpoint(small only) {
     width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  @include breakpoint(medium only) {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  @include breakpoint(large only) {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -60,8 +74,7 @@
     }
     @include breakpoint(medium only) {
       img {
-        width: 100%;
-        height: 300px;
+        margin-right: 10px;
       }
     }
   } 
@@ -71,7 +84,12 @@
     .location-info-txt {
       img {
         float: left;
+        display: flex;
         margin-right: 9px;
+        @include breakpoint(medium only) {
+          display: flex;
+          float: left;
+        }
       }
       h4 {
         font-family: $alt-font-family;
@@ -80,57 +98,83 @@
         margin-bottom: 86px;
         font-size: 20px;
         color: #0b184a;
-        font-weight:300;
-        text-align: left;
-         @include breakpoint(xs-small only)  {
-          margin-bottom: 40px;
-         }
-         @include breakpoint(small only)  {
-          margin-bottom: 40px;
-         }
-         a {
-          color: #0b184a;
-         }
-      }
-      p {
-        float: left;
-        margin-right: 44px;
-        font-family: $alt-font-family;
-
-        font-weight: regular;
+        font-weight:300;       
         @include breakpoint(xs-small only)  {
-          float: none;
-         }
+         margin-bottom: 40px;
+        }
         @include breakpoint(small only)  {
-          float: none;
-         }
-         a {
+         margin-bottom: 40px;
+        }
+        @include breakpoint(medium only) {
+          margin-top: 0px;
+          margin-bottom: 70px;
+        }
+        a {
+         color: #0b184a;
+        }
+      }
+      .road-info-div {
+        float: left;
+        p {
+          float: left;
+          margin-right: 44px;
+          font-family: $alt-font-family;
+          font-weight: regular;
+          @include breakpoint(xs-small only)  {
+           float: none;
+          }
+          @include breakpoint(small only)  {
+            float: none;
+          }
+          a {
+           color: #0a184a;
+          }
+          @include breakpoint(medium only) {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }     
+      .user-info-div {
+        float: right;
+        span {
+          font-family: $alt-font-family;
+          position: relative;
           color: #0a184a;
-         }
-      }
-      span {
-        font-family: $alt-font-family;
-        position: relative;
-        color: #0a184a;
-        opacity: 0.5;
-        font-weight: 300;
-      }
-      span:before {
-        position: absolute;
-        content:'';
-        top:-10px;
-        left: -45px;
-        height: 34px;
-        width: 1px;
-        background:#dcdcdc;
-      }
+          opacity: 0.5;
+          font-weight: 300;
+
+        }
+        span:before {
+          position: absolute;
+          content:'';
+          top:-10px;
+          left: -45px;
+          height: 34px;
+          width: 1px;
+          background:#dcdcdc;
+          @include breakpoint(medium only) {
+            display: none;
+          }
+        }
+        @include breakpoint(xs-small only) {
+          float: left;
+        }
+        @include breakpoint(small only) {
+          float: left;
+        }
+        @include breakpoint(medium only) {
+          float: left;
+
+        }
+      }            
     }
     .call-info-txt {     
       .info-p {
         border:1px solid #7f98f6;
         text-align:center;
-        height: 48px;
-        width: 160px;
+        padding-left: 40px;
+        padding-right:40px;
         line-height: 48px;
         color: #0a184a;
         font-family: $alt-font-family;
@@ -145,9 +189,17 @@
         }
         @include breakpoint(xs-small only) {
           margin-bottom: 30px;
+          padding-left: 20px;
+          padding-right:20px;
         }
         @include breakpoint(small only) {
           margin-bottom: 30px;
+          padding-left: 5px;
+          padding-right:5px;
+        }
+        @include breakpoint(medium only) {
+          padding-left: 0px;
+          padding-right:0px;
         }
       }
       .phone-number {
@@ -158,11 +210,12 @@
         i {
             font-size: 20px;
             margin-right: 12px;
+            @include breakpoint(medium only) {
+              text-align: center;
+              margin-right: 0px;
+            }
         }
-      }
-       @include breakpoint(medium only) {
-         text-align: left;
-       }
+      }      
     }
     @include breakpoint(xs-small only) {
       width: 100%;
@@ -172,16 +225,9 @@
       flex-direction: column; 
     }
     @include breakpoint(small only) {
-      width: 100%;
-      display: -webkit-flex;
       display: flex;
-      -webkit-flex-direction: column;
-      flex-direction: column; 
-    }
-     @include breakpoint(medium only) {
-      width: 100%;
-    
-    }
+      width: 100%;     
+    }      
   }
 }
 

@@ -78,12 +78,21 @@
 			@include scut-coords(0 0 0 0);
 			position: absolute !important;
 		}
+		@include breakpoint(xs-small only) {
+			
+		}
 		@include breakpoint(medium only) {
 			@include grid-column(12);
 		}	
 		@include breakpoint(large only) {
 			@include grid-column(6);
+			padding-left: 10px;
+			padding-right: 10px;
 		}
+	}
+	@include breakpoint(xs-small only) {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 

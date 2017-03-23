@@ -1,36 +1,42 @@
 .calendar-bg {
-    width: 30%;
-    background:#23213e;
-    padding-top: 70px;
-    padding-bottom: 50px;
-    border:none;    
-    padding-left:0px;
-    padding-right:0px;
-  .ui-datepicker {
-    position: relative;
-    background:transparent;
-    width: auto;
-    vertical-align: center;
-    justify-content: center;
-    display: none;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right:0px;
-    .ui-datepicker-header {
-      background:#23213e;
-      border:none;
-      position: absolute;
-      top: 10px;
+  width: 30%;
+  background:#23213e;
+  padding-left: 20px;
+  padding-right: 37px;
+  padding-top: 72px;
+  .ui-datepicker {     
+  .ui-datepicker-header {
+    position: relative;   
+    color: #6b7897;     
+    width: 96%;   
+    @include breakpoint(xs-small only) {
+      width: 97%;
+    }   
+    @include breakpoint(small only) {
+      width: 90%;
     }
-    .ui-datepicker-prev,
-    .ui-datepicker-next {
-      position: absolute;
-      color: $white;
-                     
-      top: 3px;
-      width: 1.8em;
-      height: 1.8em;
-      
+    @include breakpoint(medium only) {
+      width: 90%;
+    }
+    @include breakpoint(desktop only) {
+      width: 94.5%;
+    }
+    @include breakpoint(macbook only) {
+      width: 94%;
+    }
+    @include breakpoint(Imac only) {
+      width: 91%;
+    }
+  }
+  .ui-datepicker-prev, .ui-datepicker-next {
+    position: absolute;
+    top: -40px;
+    float: right;      
+    width: 1.8em;
+    height: 1.8em;
+    color: $white;                           
+    width: 1.8em;
+    height: 1.8em;      
       &:before{
         background:$primary;
         display: inline-block;
@@ -42,8 +48,13 @@
         cursor: pointer;
       }
       &.ui-state-disabled {
-        cursor: default;
-        
+        cursor: default;          
+      }
+      @include breakpoint(xs-small only) {
+        padding-right: 35px;
+      }
+      @include breakpoint(small only) {
+        padding-right: 0px;
       }
     }
     .ui-datepicker-prev:before {
@@ -57,216 +68,182 @@
     .ui-datepicker-next:before {
       content: "\f054";            
       line-height: 25px;
-      padding-left: 7px;
+      padding-left: 9px;
       height: 25px;
       width: 25px;
       border-radius:50px;
-    }
-    .ui-datepicker-prev-hover,
-    .ui-datepicker-next-hover {
-      //top: 1px;
-    }
+    }  
     .ui-datepicker-prev {
-      left: 0px;
+      position: absolute;
+      right: 40px;
+      @include breakpoint(xs-small only) {
+        float: right;
+        right: 50px;
+        padding-right: 0px;  
+      }
     }
     .ui-datepicker-next {
-      left: 40px;
+      position: absolute;
+      right: 0px;
+      @include breakpoint(xs-small only) {
+        float: right;
+        padding-left: 0px; 
+      }
     }
-    .ui-datepicker-prev-hover {
-      
-    }
-    .ui-datepicker-next-hover {
-      
-    }
-    .ui-datepicker-prev span,
-    .ui-datepicker-next span {
-      display: none;
+    .ui-datepicker-prev span, .ui-datepicker-next span {
+      display: none;       
     }
     .ui-datepicker-title {
+      font-size: 15px;
+      font-family: $font-family;
+      font-family: 500;
+      line-height: 1.8em;
       position: absolute;
-      text-align: right; 
-      line-height: 35px;
-      text-align: right;
-      color: #6b7897;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    .ui-datepicker-title select {
-      font-size: 1em;
-      margin: 1px 0;
-      color: $white;
-    }
-    select.ui-datepicker-month,
-    select.ui-datepicker-year {
-      width: 100%;
-    }
+      top: -35px;
+      left: 13px;
+      @include breakpoint(xs-small only) {
+        left: 5px;
+        width: 100%;
+      }
+      @include breakpoint(small only) {
+        left: 0px;
+        width: 100%;
+      }
+      @include breakpoint(desktop only) {
+        left: 19px;
+      }
+      select {
+        font-size: 1em;
+        margin: 1px 0;
+      }
+    }     
     table {
-      background:#23213e;      
-      
+      padding: 0px;
+     
       font-size: .9em;
-      border:none;
-      margin:0;
-    }
-    th {
-      background:#23213e;
-
-      text-align: left;
-      font-weight: normal;
+      border-collapse: separate;
+      @include breakpoint(xs-small only) {
+        border:transparent;
+      }
+    }      
+    th {   
+      font-weight: bold;      
+      text-align: center;   
       border: 0;
       color: #7f98f6;
-      
-
-    }
-    thead tr {
-       background:#23213e;
-       border:none;
-    }
-    td {
-      border-radius:0px;
+      font-size: 15px;
       background:#23213e;
-      border: 0;
-      padding: 1px;
-
+      @include breakpoint(xs-small only) {
+        text-align: left;
+        padding-left: 5px;
+      }
+      @include breakpoint(small only) {
+        text-align: left;
+        padding-left:5px;
+      }
+      @include breakpoint(medium only) {
+        text-align: left;
+        padding-left:15px;
+      }
+      @include breakpoint(macbook only) {
+        text-align: left;
+        padding-left: 15px;
+      }   
+      @include breakpoint(Imac only) {
+        text-align: left;
+        padding-left: 15px;
+      }
+    }
+    td {    
+      background:#23213e;                   
       span, a {
         background:$primary;
         display: block;
         text-align: center;
         text-decoration: none;
-        height: 30px;
-        width: 30px;
         color: #7c86a2;
         line-height: 30px;
+        border-radius:50px;
         background: transparent;
-        font-size: 12px;
+        width:30px;
+        font-size: 13.5px;
+       @include breakpoint(desktop only) {
+        text-align: center;
+        padding-left: 0px;         
       }
-      a:hover {
-        border:none;
-        background:$primary;
-        border-radius:50px;
-        color: $white;  
-      }
-      &.ui-datepicker-other-month a {
-        color: $white !important;
-      }
-      &.ui-datepicker-current-day a {
-        background: $primary;
-        color: $white;
-        border-radius:50px;
-      }
-      &.ui-datepicker-unselectable span {
-        
+      @include breakpoint(medium only) {
+        text-align: center;
       }
     }
-
-    .ui-datepicker-buttonpane {
-      background-image: none;
-      margin: .7em 0 0 0;
-      padding: 0 .2em;
-      border-left: 0;
-      border-right: 0;
-      border-bottom: 0;
-      button {
-        float: right;
-        margin: .5em .2em .4em;
-        cursor: pointer;
-        padding: .2em .6em .3em .6em;
-        width: auto;
-        overflow: visible;
-        &.ui-datepicker-current {
-          float: left;
-        }
-      }
+    a:hover {
+      border:none;
+      background:$primary;
+      border-radius:50px;
+      color: $white;  
     }
-    /* with multiple calendars */
-
-    .ui-datepicker-row-break {
-      clear: both;
-      width: 100%;
-      font-size: 0;
+    &.ui-datepicker-other-month a {
+      color: $white !important;
     }
-  }
-
-  /* RTL support */
-  /* RTL support */
-  .ui-datepicker-rtl {
-    direction: rtl;
-
-    .ui-datepicker-prev {
-      right: 2px;
-      left: auto;
-       &:hover {
-        right: 1px;
-      }
+    &.ui-datepicker-current-day a {
+      background: $primary;
+      color: $white;
+      border-radius:50px;
     }
-     .ui-datepicker-next {
-      left: 2px;
-      right: auto;
-       :hover {
-          left: 1px;
-       }
+    &.ui-datepicker-unselectable span {
+      
     }
-     .ui-datepicker-buttonpane {
-      clear: right;
-       button {
-          float: left;
-        }
-        button.ui-datepicker-current,
-        .ui-datepicker-group {
-          float: right;
-        }
-     }
-     .ui-datepicker-group-last .ui-datepicker-header,
-     .ui-datepicker-group-middle .ui-datepicker-header {
-      border-right-width: 0;
-      border-left-width: 0px;
-      background:#23213e;
-    }
-  }
-  table {
-        border-collapse: separate;
-       
-  }
-  label {
-    color: $primary;
-    position: absolute;
-    top: 720px;
-    padding-left: 50px;
     @include breakpoint(xs-small only) {
-     position: absolute;
-     top: 870px;
+      padding: 0px;
+      text-align: center;
+    } 
+    @include breakpoint(small only) {
+      padding: 0px;
+      text-align: left;
+    } 
+    @include breakpoint(desktop only) {        
+      padding-left: 15px;
+    }
+  }      
+}
+label {
+    color: $primary !important;    
+    padding-left: 15px;
+    @include breakpoint(xs-small only) {
+      padding-left: 5px;
+      padding-bottom: 10px;
+    }
+    @include breakpoint(small only) {
+      padding-left: 5px;
+      padding-bottom: 5px;
     }
   }
   input {
-    padding-left:50px;
-    color: $white;
-    position: absolute;
-    top:750px;
+    padding-left:15px;
+    color: $white;     
     background:transparent;
-    border:none;
+    border:none; 
     @include breakpoint(xs-small only) {
-     position: absolute;
-     top: 900px;
+      padding-left: 5px;
+      padding-bottom: 20px;
     }
     @include breakpoint(small only) {
-     position: absolute;
-     top: 950px;
-    }
-  }
+      padding-left: 5px;
+      padding-bottom: 10px;
+    }  
+  }  
   @include breakpoint(xs-small only) {
-			width: 100%;
-      margin:0;
-      border:none;
-	}	
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px; 
+  }
   @include breakpoint(small only) {
-			width: 100%;
-      margin:0;
-      border:none;
-	}
+    width: 100%;
+  }
   @include breakpoint(medium only) {
-			width: 100%;
-      margin:0;
-      border:none;
-	}						
+    width: 100%;
+  }
+  @include breakpoint(large only) {
+    width: 40%;
+  }
 }
-
 

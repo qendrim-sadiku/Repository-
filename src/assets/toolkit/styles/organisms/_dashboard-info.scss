@@ -62,6 +62,7 @@
 			width: 100%;
 		}
 		label {
+			display: block;
 			font-size: 13px;
 			color: #8c8c8c;
 			font-weight: 500;
@@ -84,12 +85,13 @@
 			font-weight: 300;
 		}
 		.diferent-input {
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: ms-flex;
-   			display: flex;
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+			display: -ms-flexbox;      /* TWEENER - IE 10 */
+			display: -webkit-flex;     /* NEW - Chrome */
+			display: flex;    
 			width: 100%;
-			justify-content: space-between;
+			
 			.night {
 				width: 50%;
 				display: flex;
@@ -119,15 +121,12 @@
 					padding-right: 10px;
 				}
 				@include breakpoint(medium only) {
-					width:50%;
-					margin-left: 50px;
-					
+					width:50%;										
 				}
 				@include breakpoint(large only) {
 					width:50%;
 					margin:0px;
-					padding-left: 20px;
-					padding-right: 20px;
+					margin-right: 10px;
 				}
 			}
 			.day {
@@ -161,7 +160,7 @@
 					width: 50%;					
 				}	
 				@include breakpoint(large only) {
-					width:40%;
+					width:50%;
 				
 				}		
 			}
@@ -180,12 +179,15 @@
 			margin:0;
 			.radio-buttons {									
 				div.options > label {					
-					font-family: $alt-font-family;
+					font-family: $font-family;
 					font-weight: regular;
 					font-size: 14px !important;
 					color: #626262;
+					line-height: 0px;
+					margin-top:0px;
 					margin-left: 20px;
-					margin-bottom:20px;
+					margin-bottom: 20px;
+					line-height:30px;
 					height: 20px;
 					width: 150px;
 					background: transparent;
@@ -215,6 +217,9 @@
 							border:none;
 						}
 					}				
+				}
+				label {
+
 				}					
 			}	
 			@include breakpoint(xs-small only) {
@@ -222,17 +227,28 @@
 				flex-direction: column;
 			}
 		}
-		input[type='submit'] {			
-			margin-top: 40px;
-			text-transform: none;
-			font-size: 16px;
-			font-family: $alt-font-family;	
-			font-weight: normal;							
-			margin-left: 90px;
-			@include breakpoint(xs-small only) {
-				margin-left: 0px;					
+		.info-select-idv {
+			label {
 			}
 		}
+		.submit-res {
+			text-align: center;
+			margin-top: 50px;
+			input[type='submit'] {			
+				background-color:#7f98f6;
+			    border:none;
+			    color:$white; 
+			    font-weight: bold;
+			    text-transform: uppercase;
+			    font-size: 15px;
+			    letter-spacing: normal; 
+			    float: none;     
+			    padding:15px 38px;
+				@include breakpoint(xs-small only) {
+					margin-left: 0px;					
+				}
+			}		
+		}		
 		@include breakpoint(xs-small only) {
 			width: 100%;
 			padding-left: 10px;
@@ -271,6 +287,7 @@
 	}
 	@include breakpoint(large only ) {
 		display: flex;
-		
+		padding-left: 20px;
+		padding-right:20px;
 	}
 }

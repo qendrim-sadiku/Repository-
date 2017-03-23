@@ -126,5 +126,8 @@ a {
 		display: flex;
 		-webkit-flex-direction: column;
 		flex-direction: column; 
-	}			
+	}	
+	@include breakpoint(Imac only) {
+		height: 100%;
+	}		
 }

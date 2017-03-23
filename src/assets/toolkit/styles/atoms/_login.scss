@@ -13,12 +13,12 @@ $form-padding: $global-padding;
 $form-radius: $global-radius;
 
 .log-in-form {
-  margin: auto;
+  
   background-color: #fff;
   border: none;
   padding: $form-padding;
   border-radius: $form-radius;
-  
+  margin:auto;
   h4 {
     color:#0a184a;
     text-align:center;
@@ -35,12 +35,29 @@ $form-radius: $global-radius;
     color: #0a184a;
     opacity: 0.5;    
   }  
+  @include breakpoint(xs-small only) {
+    width: 100%;
+    vertical-align: center;
+    justify-content: center;
+    text-align: center;
+  }
+  @include breakpoint(small only) {
+    width: 100%;
+    
+    margin:auto;
+  }
+  @include breakpoint(medium only) {
+    width: 100%;
+    vertical-align: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 input[type='text'] {
   font-family: $font-family;  
 	padding-left:40px;
-  margin: auto;
+  
   margin-bottom: 30px;
   position: relative;
 	background-image: url('../images/user.png');
@@ -115,6 +132,7 @@ input[type="password"]:-moz-placeholder { /* Firefox 18- */
 } 
 input[type="checkbox"] {
   margin: 0;
+
   padding: 0;
   &:not(:checked), &:checked {
     position: absolute;
@@ -133,8 +151,7 @@ input[type="checkbox"] {
     opacity: 0.5;
     float: right;     
      @include breakpoint(medium only) {
-     margin-right: 100px;
-      margin-bottom: 10px;
+    float: right;
     }   
   }
   &:not(:checked) + label:before, &:checked + label:before {
@@ -184,34 +201,24 @@ input[type="checkbox"] {
       }
     }  
   }
-}
-
-input[type='submit'] {		
-	background-color:#7f98f6;
-	border:none;
-	color:$white;	
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 15px;
-  letter-spacing: normal;
-	width:230px;
-	height: 48px;
-	align-items: center;
-  justify-content: center;
-  margin-top: 63px;	
-  margin-left: 60px;
-  margin-bottom: 62px;
-  @include breakpoint(xs-small only) {
-    margin-left: 30px;
-  }
-  @include breakpoint(small only) {
-    margin:auto;
-    margin-left: 60px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
   @include breakpoint(medium only) {
-    margin-left: 170px;
+    display: none;
+  }
+}
+.sing-in-btn {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  text-align: center;
+  input[type='submit'] {    
+    background-color:#7f98f6;
+    border:none;
+    color:$white; 
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: normal; 
+    float: none;     
+    padding:15px 80px;
   }
 }
 
