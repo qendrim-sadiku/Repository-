@@ -37,27 +37,27 @@
     color: $white;                           
     width: 1.8em;
     height: 1.8em;      
-      &:before{
-        background:$primary;
-        display: inline-block;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        cursor: pointer;
-      }
-      &.ui-state-disabled {
-        cursor: default;          
-      }
-      @include breakpoint(xs-small only) {
-        padding-right: 35px;
-      }
-      @include breakpoint(small only) {
-        padding-right: 0px;
-      }
+    &:before{
+      background:$primary;
+      display: inline-block;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      cursor: pointer;
     }
-    .ui-datepicker-prev:before {
+    &.ui-state-disabled {
+      cursor: default;          
+    }
+    @include breakpoint(xs-small only) {
+      padding-right: 35px;
+    }
+    @include breakpoint(small only) {
+      padding-right: 0px;
+    }
+  }
+  .ui-datepicker-prev:before {
       content: "\f053";
       line-height: 25px;
       padding-left: 7px;

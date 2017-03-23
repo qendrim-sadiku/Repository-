@@ -12,8 +12,7 @@
 				margin-bottom: 20px;
 				font-size: 30px;
 			}
-			.user-info {
-																
+			.user-info {																
 				.admin-info {
 					margin-left:10px;
 					line-height: 20px;
@@ -32,8 +31,7 @@
 				}
 				.user-info {
 					margin-left: 20px;
-				}
-			
+				}			
 			}	
 			@include breakpoint(small only) {
 				float: none;
@@ -47,8 +45,7 @@
 			}
 			@include breakpoint(medium only) {
 				h3 {
-					margin-left: 10px;
-					
+					margin-left: 10px;					
 				}
 				.user-info {
 					margin-left: 10px;
@@ -82,8 +79,7 @@
 						flex-direction: column;
 						margin-right: 0px;
 						margin-left: -80px;
-						margin-right: 40px;
-					
+						margin-right: 40px;					
 						span {
 							line-height: 14px;
 							margin-top: 0px;
@@ -94,7 +90,6 @@
 							margin-bottom: 10px;
 						}
 					}
-
 					@include breakpoint(small only) {
 						display: flex;
 						flex-direction: column;
@@ -194,21 +189,21 @@
 					}
 				}
 				@include breakpoint(medium only) {
-						display: flex;
-						flex-direction: column;
-						margin-right: 0px;
+					display: flex;
+					flex-direction: column;
+					margin-right: 0px;
+				
 					
-						
-						span {
-							line-height: 14px;
-							margin-top: 0px;
-							padding: 0;
-						}
-						img {
-							float: left;
-							margin-bottom: 10px;
-						}
-					}				
+					span {
+						line-height: 14px;
+						margin-top: 0px;
+						padding: 0;
+					}
+					img {
+						float: left;
+						margin-bottom: 10px;
+					}
+				}				
 			}
 			.gloves-icon {
 				img {
@@ -254,20 +249,20 @@
 					}
 				}
 				@include breakpoint(medium only) {
-						display: flex;
-						flex-direction: column;
-						margin-right: 0px;					
-						margin-left: 0px;						
-						span {
-							line-height: 14px;
-							margin-top: 0px;
-							padding: 0;
-						}
-						img {
-							float: left;
-							margin-bottom: 10px;
-						}
+					display: flex;
+					flex-direction: column;
+					margin-right: 0px;					
+					margin-left: 0px;						
+					span {
+						line-height: 14px;
+						margin-top: 0px;
+						padding: 0;
 					}
+					img {
+						float: left;
+						margin-bottom: 10px;
+					}
+				}
 			}
 			@include breakpoint(xs-small only) {
 				display: flex;

@@ -13,8 +13,7 @@
       padding-bottom: 0px;
       overflow: hidden;
       margin-bottom: 50px;
-    }   
-    
+    }       
   }
   @include breakpoint(xs-small only) {
     width: 100%;
@@ -37,7 +36,6 @@
     padding-right: 20px;
   }
 }
-
 .expand {
   display: block;
   text-decoration: none;
@@ -46,7 +44,7 @@
   border-bottom: 1px solid #eaeaea;
   padding-bottom: 21px;
   .place-img {
-     img {
+    img {
       float: left;
       margin-right: 37px;
     }
@@ -57,8 +55,8 @@
       -webkit-flex-direction: column;
       flex-direction: column; 
       img {
-       width: 100%;
-       margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 20px;
       }
     }
     @include breakpoint(small only) {
@@ -68,8 +66,8 @@
       -webkit-flex-direction: column;
       flex-direction: column; 
       img {
-       width: 100%;
-       margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 20px;
       }
     }
     @include breakpoint(medium only) {
@@ -143,7 +141,6 @@
           color: #0a184a;
           opacity: 0.5;
           font-weight: 300;
-
         }
         span:before {
           position: absolute;
@@ -165,7 +162,6 @@
         }
         @include breakpoint(medium only) {
           float: left;
-
         }
       }            
     }
@@ -208,12 +204,12 @@
         font-size: 14px;
         font-weight: 300;
         i {
-            font-size: 20px;
-            margin-right: 12px;
-            @include breakpoint(medium only) {
-              text-align: center;
-              margin-right: 0px;
-            }
+          font-size: 20px;
+          margin-right: 12px;
+          @include breakpoint(medium only) {
+            text-align: center;
+            margin-right: 0px;
+          }
         }
       }      
     }
@@ -230,9 +226,6 @@
     }      
   }
 }
-
-
-
 .detail {  
   display: none;
   .collapse-txt {
@@ -300,7 +293,7 @@
         margin-top: 10px;
       }
       @include breakpoint(medium only) {
-         @include grid-column(6);
+        @include grid-column(6);
       }
     }
     .free-res {
@@ -365,10 +358,8 @@
       display: flex;
       -webkit-flex-direction: column;
       flex-direction: column; 
-    }
-   
+    }  
   }
-
 }
 
 

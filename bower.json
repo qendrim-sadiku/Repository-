@@ -39,8 +39,6 @@
     "animate.css": "^3.5.2",
     "jquery-nice-select": "^1.1.0",
     "flexslider": "^2.6.3",
-    "remodal": "^1.1.1",
-    "jquery": "^3.2.0",
-    "semantic": "semantic-ui#^2.2.9"
+    "jquery": "^3.2.0"
   }
 }
