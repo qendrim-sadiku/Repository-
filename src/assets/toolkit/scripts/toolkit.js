@@ -41,6 +41,7 @@ var flexslider = require('../../vendor/flexslider/jquery.flexslider-min.js');
 // $('h1').fadeOut(2000);
 var jqueryui = require('../../vendor/jquery-ui/jquery-ui.min.js'); 
 var calendar = require('../../vendor/jquery-ui/ui/widgets/datepicker.js');
+var calendar = require('../../vendor/jquery-ui/ui/i18n/datepicker-sq.js');
 
 
 

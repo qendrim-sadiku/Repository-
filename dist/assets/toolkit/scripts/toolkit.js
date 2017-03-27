@@ -87,23 +87,24 @@
 	// $('h1').fadeOut(2000);
 	var jqueryui = __webpack_require__(318);
 	var calendar = __webpack_require__(320);
+	var calendar = __webpack_require__(323);
 
 	// Use for custom Pattern Libary Modules
 	// var fooModule = require('./foo-module');
 	// var bar = fooModule.foo();
 
-	__webpack_require__(323);
 	__webpack_require__(324);
 	__webpack_require__(325);
 	__webpack_require__(326);
-	// require('./modules/remodal');
 	__webpack_require__(327);
+	// require('./modules/remodal');
 	__webpack_require__(328);
 	__webpack_require__(329);
 	__webpack_require__(330);
 	__webpack_require__(331);
-	__webpack_require__(326);
 	__webpack_require__(332);
+	__webpack_require__(327);
+	__webpack_require__(333);
 
 	// Finally, you can drop test JavaScript here...
 	$(document).ready(function () {
@@ -19387,6 +19388,47 @@
 /* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;"use strict";
+
+	/* Albanian initialisation for the jQuery UI date picker plugin. */
+	/* Written by Flakron Bytyqi (flakron@gmail.com). */
+	(function (factory) {
+		if (true) {
+
+			// AMD. Register as an anonymous module.
+			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(320)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		} else {
+
+			// Browser globals
+			factory(jQuery.datepicker);
+		}
+	})(function (datepicker) {
+
+		datepicker.regional.sq = {
+			closeText: "mbylle",
+			prevText: "&#x3C;mbrapa",
+			nextText: "Përpara&#x3E;",
+			currentText: "sot",
+			monthNames: ["Janar", "Shkurt", "Mars", "Prill", "Maj", "Qershor", "Korrik", "Gusht", "Shtator", "Tetor", "Nëntor", "Dhjetor"],
+			monthNamesShort: ["Jan", "Shk", "Mar", "Pri", "Maj", "Qer", "Kor", "Gus", "Sht", "Tet", "Nën", "Dhj"],
+			dayNames: ["E Diel", "E Hënë", "E Martë", "E Mërkurë", "E Enjte", "E Premte", "E Shtune"],
+			dayNamesShort: ["Di", "Hë", "Ma", "Më", "En", "Pr", "Sh"],
+			dayNamesMin: ["Di", "Hë", "Ma", "Më", "En", "Pr", "Sh"],
+			weekHeader: "Ja",
+			dateFormat: "dd.mm.yy",
+			firstDay: 1,
+			isRTL: false,
+			showMonthAfterYear: false,
+			yearSuffix: "" };
+		datepicker.setDefaults(datepicker.regional.sq);
+
+		return datepicker.regional.sq;
+	});
+
+/***/ },
+/* 324 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	var $ = __webpack_require__(319);
@@ -19414,7 +19456,7 @@
 	$(init);
 
 /***/ },
-/* 324 */
+/* 325 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -19427,7 +19469,7 @@
 	});
 
 /***/ },
-/* 325 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19466,7 +19508,7 @@
 	$(init);
 
 /***/ },
-/* 326 */
+/* 327 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -19512,7 +19554,7 @@
 	});
 
 /***/ },
-/* 327 */
+/* 328 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -19544,7 +19586,7 @@
 	$(init);
 
 /***/ },
-/* 328 */
+/* 329 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -19593,7 +19635,7 @@
 	}(jQuery);
 
 /***/ },
-/* 329 */
+/* 330 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -19603,7 +19645,7 @@
 	});
 
 /***/ },
-/* 330 */
+/* 331 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -19619,7 +19661,7 @@
 	});
 
 /***/ },
-/* 331 */
+/* 332 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -19631,7 +19673,7 @@
 	});
 
 /***/ },
-/* 332 */
+/* 333 */
 /***/ function(module, exports) {
 
 	"use strict";
