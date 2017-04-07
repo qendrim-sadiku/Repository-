@@ -1,5 +1,6 @@
 .header-with-result {
-	background:#7f98f6;	
+	background-color: rgb(127, 152, 246);
+	box-shadow: 0 2px 4px 0 rgb(186, 186, 211);	
 	margin-bottom: 40px;
 	.header-result {
 		@include grid-row();
@@ -33,6 +34,9 @@
 					justify-content: center;
 					margin-bottom: 50px;
 				}
+				@include breakpoint (small only) {
+					display: flex;
+				}
 			}
 			@include breakpoint (xs-small only) {
 					display: flex;
@@ -54,10 +58,19 @@
 			background:#5b74d6;
 			background-image: url('../images/search.svg');
 			background-repeat: no-repeat;
-			background-position: 70px;
+			background-position: center;
+			@include breakpoint(xs-small only) {
+				width: 100%;		
+			}
+			@include breakpoint(small only) {
+				width: 100%;		
+			}
+			@include breakpoint(medium only) {
+				width: 100%;		
+			}
 
 		}
-			@include breakpoint(xs-small only) {
+		@include breakpoint(xs-small only) {
 			padding-left: 10px;
 			padding-right: 10px;
 			display: flex;

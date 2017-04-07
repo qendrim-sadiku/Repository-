@@ -176,6 +176,7 @@ $arrow_color: $gray !default;
     }
     @include breakpoint(small only) {
      margin-bottom: 20px;
+     float: none;
      width: 200px;
     }
     @include breakpoint(medium only) {

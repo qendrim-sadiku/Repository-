@@ -16,12 +16,14 @@
 					a {
 						color: $white;
 						display: flex;			
+
 						h2 {
 							margin-top: 10px;
 							margin-left: 10px;
 							font-size: 22px;
 							font-weight: 500;
 							font-family: $font-family;
+
 						}
 					}
 					@include breakpoint (xs-small only) {
@@ -42,8 +44,11 @@
 					font-size: 16px;	
 					@include breakpoint (xs-small only) {
 						float: none;						
-						font-size: 20px;
+						font-size: 20px;						
 					}				
+					@include breakpoint(small only) {
+						margin-top: 12px;
+					}
 				}	
 				@include breakpoint (xs-small only) {
 					text-align: center;

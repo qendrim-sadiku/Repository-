@@ -39,10 +39,10 @@ var flexslider = require('../../vendor/flexslider/jquery.flexslider-min.js');
 
 // console.log($);
 // $('h1').fadeOut(2000);
-var jqueryui = require('../../vendor/jquery-ui/jquery-ui.min.js'); 
+
+
 var calendar = require('../../vendor/jquery-ui/ui/widgets/datepicker.js');
 var calendar = require('../../vendor/jquery-ui/ui/i18n/datepicker-sq.js');
-
 
 
 
@@ -54,7 +54,7 @@ require('./modules/map');
 require('./modules/acordion');
 require('./modules/dropdown');
 require('./modules/tabs');
-// require('./modules/remodal');
+require('./modules/add-button');
 require('./modules/file-input');
 require('./modules/jquery.nice-select.min');
 require('./modules/select');

@@ -3,17 +3,18 @@
   background:#23213e;
   padding-left: 20px;
   padding-right: 37px;
-  padding-top: 72px;
+  padding-top: 92px;
   .ui-datepicker {     
   .ui-datepicker-header {
-    position: relative;   
+    position: relative; 
+
     color: #6b7897;     
     width: 96%;   
     @include breakpoint(xs-small only) {
       width: 97%;
     }   
     @include breakpoint(small only) {
-      width: 90%;
+      width: 92%;
     }
     @include breakpoint(medium only) {
       width: 90%;
@@ -30,7 +31,7 @@
   }
   .ui-datepicker-prev, .ui-datepicker-next {
     position: absolute;
-    top: -40px;
+    bottom: 20px;
     float: right;      
     width: 1.8em;
     height: 1.8em;
@@ -93,16 +94,21 @@
     .ui-datepicker-prev span, .ui-datepicker-next span {
       display: none;       
     }
-    .ui-datepicker-title {
+    .ui-datepicker-title {   
+      position: absolute;
+      left: 14px;       
+      margin-top: -35px;
       font-size: 15px;
       font-family: $font-family;
       font-family: 500;
       line-height: 1.8em;
-      position: absolute;
-      top: -35px;
-      left: 13px;
+      span {
+        margin-top: 0px;
+
+        
+      }
       @include breakpoint(xs-small only) {
-        left: 5px;
+        left: 0px;
         width: 100%;
       }
       @include breakpoint(small only) {

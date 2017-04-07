@@ -48,6 +48,16 @@
 						margin-bottom: 15px;
 						margin-top: 15px;
 					}	
+					@include breakpoint(small only) {
+						padding-left: 37px;
+						padding-right: 37px;
+						padding-top: 10px;
+						padding-bottom: 10px;
+						width: 100%;
+						text-align: center;
+						margin-bottom: 15px;
+						margin-top: 15px;	
+					}	
 				}
 				a:active {						
 		  			color:#7f98f6;
@@ -57,8 +67,14 @@
 				}
 				a:target {
 				   color:#7f98f6;
-				}					
-			}		
+				}		
+				.active {
+					color: $primary;
+					background-color: #474c54;
+  					
+				}				
+			}
+
 			@include breakpoint(xs-small only) {
 				padding-left: 10px;
 				padding-right:10px;
@@ -72,6 +88,7 @@
 		@include breakpoint(xs-small only) {
 			max-width: 100%;
 			padding-left: 0px;
+			padding-right: 0px;
 		}
 		@include breakpoint(small only) {
 			max-width: 100%;

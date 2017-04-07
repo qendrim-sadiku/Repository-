@@ -110,6 +110,7 @@ a {
 		display: flex;
 		-webkit-flex-direction: column;
 		flex-direction: column; 
+		
 	}
 	@include breakpoint(small only) {
 		display: -webkit-flex;

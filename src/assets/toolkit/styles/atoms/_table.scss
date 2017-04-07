@@ -28,20 +28,53 @@
 				color: #7f98f6;
 				opacity: 1;
 				font-weight: bold;
+			}	
+			.table-div {
+				opacity: 0;
+				background-color: rgba(128, 152, 243,0.2);
+				border-radius:50px;
+				text-align: center;
+				padding: 5px 5px;
+				span {
+					opacity: 1 !important;
+					color: $black;
+					text-align: center;
+					font-size: 17px;
+					vertical-align: center;
+					justify-content: center;
+				}	
+
 			}			
+			.table-div2 {
+				opacity: 0;
+				background-color: rgba(128, 152, 243,0.2);
+				border-radius:50px;
+				text-align: center;
+				padding: 5px 5px;
+				span {
+					opacity: 1 !important;
+					color: $black;
+					text-align: center;
+					font-size: 17px;
+					vertical-align: center;
+					justify-content: center;
+				}	
+
+			}		
 		}
 		tr td:first-child {
 			width: 181px;
 	    	padding-left: 10px;
 	    	padding-right: 10px;
-	    	cursor: default;
+	    	cursor: default ;
 		}
 		 @include breakpoint(xs-small only) {
-		  width: 100%;			      
+		  width: 100% !important;			      
+		  margin: 0px;
+		  padding: 0px;
 		}
 		@include breakpoint(small only) {
-		  max-width: 100%;
-	      margin:0;
+		  width: 100%;	     
 	      border:none;
 		}
 		@include breakpoint(medium only) {
@@ -51,3 +84,4 @@
 		}			
 	}
 }
+
