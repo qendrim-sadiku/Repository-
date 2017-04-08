@@ -16042,22 +16042,35 @@
 /* 327 */
 /***/ function(module, exports) {
 
-	"use strict";
+	'use strict';
 
-	$(".add-button").click(function () {
-	  $(".table-div").css("opacity", "1");
-	});
+	$('.table td.open-modal').on('click', function () {
 
-	$(".add-button2").click(function () {
-	  $(".table-div2").css("opacity", "1");
-	});
+		$(this).addClass('active');
 
-	$(".cancel-button").click(function () {
-	  $(".table-div").css("opacity", "0");
-	});
+		$('button.add-button').on('click', function () {
+			//var ThisParent = $(this).closest('div.other-modal').attr('qendrim');
+			var createDiv = "<div class='app-div'>E Zene<div>";
 
-	$(".cancel-button2").click(function () {
-	  $(".table-div2").css("opacity", "0");
+			if (!$('.table td.active').hasClass('hasElement')) {
+				$(createDiv).appendTo('.table td.active');
+				$('.table td.active').addClass('hasElement');
+			}
+
+			$('.table td.open-modal').removeClass('active');
+		});
+
+		$('button.cancel-button').on('click', function () {
+
+			$('.table td.active').find('div.app-div').remove();
+			$('.table td.active').removeClass('hasElement');
+			$('.table td.open-modal').removeClass('active');
+		});
+
+		$('#exampleModal2 .close-button').on('click', function () {
+
+			$('.table td.open-modal').removeClass('active');
+		});
 	});
 
 /***/ },
