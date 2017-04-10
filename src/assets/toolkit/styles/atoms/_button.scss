@@ -12,9 +12,9 @@
 	transition:0.5s;
 	position: relative;
 	&:hover {
-		background:$primary-color;
-		border:1px solid $primary-color;
-		color: $white;
+		background:$white;
+		border:1px solid $white;
+		color: $black;
 	}
 	@include breakpoint(xs-small only) {		
 		float: none !important;

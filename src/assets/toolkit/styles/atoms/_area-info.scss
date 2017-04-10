@@ -90,13 +90,14 @@
         }
       }
       h4 {
+
         font-family: $alt-font-family;
         color: #0b184a;
         margin-top: 10px;
         margin-bottom: 86px;
-        font-size: 20px;
+        font-size: 24px;
         color: #0b184a;
-        font-weight:300;       
+        font-weight:500;       
         @include breakpoint(xs-small only)  {
          margin-bottom: 40px;
         }
@@ -117,7 +118,7 @@
           float: left;
           margin-right: 44px;
           font-family: $alt-font-family;
-          font-weight: regular;
+          font-weight: 500;
          
           @include breakpoint(xs-small only)  {
            float: none;
@@ -203,10 +204,10 @@
         }
       }
       .phone-number {
-        font-family: $alt-font-family;
+        font-family: $font-family;
         color: #0a184a;
-        font-size: 14px;
-        font-weight: 300;
+        font-size: 16px;
+        font-weight: 500;
         i {
           font-size: 20px;
           margin-right: 12px;
@@ -240,15 +241,18 @@
     .about-stat {
       width: 40%;
       h5 {
+        font-family: $font-family;
         color: #0a184a;
         font-size: 16px;
-        font-weight: 300;
+        font-weight: 500;
         margin-bottom: 30px;
       }
       p {
+        font-family: $alt-font-family;
         color: #9b9b9b;
-        font-size: 14px;
-        font-weight:300;
+        font-size: 16px;
+        font-weight:500;
+        line-height: 1.63;  
       }
       @include breakpoint(xs-small only) {
         @include grid-column(12);
@@ -263,112 +267,94 @@
     .collapse-info-stuf {                       
       width: 25%;
       margin-left: 89px;
+      margin-top:30px;
       .each-stuf {
-        display: block;
-        margin-bottom: 30px;
-        span {
-          margin-left: 34px;
-          line-height: 25px;
-          color: #0a184a;
-          font-size: 15px;
-          font-weight: 300;
-          @include breakpoint(small only) {
-            margin-left: 0px;
-            text-align: center;
-
+          margin-bottom:30px;
+        .const {
+          img {
+            width: 28px;
+            height: 28px;
+          }         
+        }
+         span {
+            margin-left:   20px;
+            color: #0a184a;
+            font-family: $font-family;
+            font-weight: 500;
           }
-          @include breakpoint(medium only) {
-            margin-left: 0px;
-            text-align: center;
-
+        .gloves {
+          img {
+            width: 30px;
+            height: 30px;
           }
         }
-        .dorzat {
-          line-height: 40px;
-
+        .bus {
+          img {
+            width: 30px;
+            height: 30px;
+          }        
         }
-        img {
-          float: left; 
-          @include breakpoint(small only) {
-            float: none;
-            display: block;
-            margin-bottom: 20px;
-          }
-           @include breakpoint(medium only) {
-            float: none;
-            display: block;
-            margin-bottom: 20px;
-          }
-        }
-        .buss-img {
-          margin-top: 10px;
-         
-          @include breakpoint(small only) {
-            margin-left: 0px;
-            text-align: center;
-            justify-content: center;
-          }
-        }
-        .trans {
-          line-height: 40px;
+        @include breakpoint(xs-small only) {
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px;
+          margin-right: 10px;
         }
         @include breakpoint(small only) {
-         margin-left: 10px;
-         margin-right: 20px;
-         margin-bottom: 0px; 
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+        @include breakpoint(medium only) {
+          margin-right: 10px;
+          margin-left: 10px;
         }
       }
-      @include breakpoint(xs-small only) {
-        @include grid-column(12);
-        margin-left: 0;
-        margin-top: 10px;
-      }
-      @include breakpoint(small only) {
-        width: 100%;
-        display: flex;
-        margin-left: 0px;
-
-
-      }
-      @include breakpoint(medium only) {
-        width: 50%;
-        float: left;
-      }
+     @include breakpoint(xs-small only) {
+      width: 100%;
+      margin-left: 0px;
+      display: flex;
+      flex-wrap: wrap;
+     }
+     @include breakpoint(small only) {
+      width: 100%;
+      margin-left: 0px;
+      display: flex;
+      flex-wrap: wrap;
+     }
+     @include breakpoint(medium only) {
+      width: 60%;
+      margin-left: 0px;
+      display: flex;
+      flex-wrap: wrap;
+     }
     }
     .free-res {
       width: 25%;
       display: flex;
 
       .res-txt {
-        margin-top: 50px;
-        margin-left: 20px;
-        display: block;
-        @include breakpoint(small only) {
-          margin-left: 0px;
-        }
-        @include breakpoint(medium only) {
-          margin-left: 0px;
-          margin-top: 0px;
-          width: 100%;
-        }
-        img {
-          margin-right: 10px;          
-          display: block;
-        }
-        span {
-          display: block;
-          line-height: 80px;
-          font-weight: 300;
-          color: #0a184a;
-          margin-right: 20px;
-        }
+        margin-top:80px;
+          img {
+            margin-right:20px;
+          }
+          span {
+            font-family: $font-family;
+            color: #0a184a;
+            font-weight: 500;
+            margin-right:20px;
+
+          }
+          @include breakpoint(small only) {
+            margin-top: 20px;
+          }
       }  
       .free-res-button {
         display: block;
         height: auto;
         a {
+          font-family: $font-family;
           color: #0a184a;
-          font-weight: 300;
+          font-weight: 500;
           border: solid 1px #7f98f6;
           padding-left: 13px;
           padding-right: 13px;
@@ -376,21 +362,18 @@
           padding-bottom: 12px;
           display: block;
           margin-bottom: 25px;
+          font-size: 14px;
           @include breakpoint(small only) {
-            padding:0px;
-            height: 40px;
-            width: 70px;
-            text-align: center;
-            line-height: 40px;
-            margin-left: 10px;
+            margin-top: 0px;           
           }
+
           @include breakpoint(medium only) {
             padding:0px;
             height: 40px;
             width: 100%;
             text-align: center;
             line-height: 40px;
-            
+            margin-top: 10px;  
           }
         }
         @include breakpoint(small only) {
@@ -405,11 +388,15 @@
       }
       @include breakpoint(small only) {
         width: 100%;
-
+        display: flex;
+        flex-direction: column;        
       }
       @include breakpoint(medium only) {
-  display: block;
-
+          display: flex;
+          flex-wrap: wrap;
+          width: 40%;
+          flex-direction: column;
+          margin-top: -50px;
       }
     }
     @include breakpoint(xs-small only) {      
@@ -427,7 +414,7 @@
     @include breakpoint(medium only) {      
       display: -webkit-flex;
       display: flex;
-      
+      flex-wrap: wrap;
     }  
   }
 }

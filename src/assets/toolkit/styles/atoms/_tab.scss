@@ -1,12 +1,12 @@
 .tab {
 	h2 {
-	font-family:$alt-font-family;
-	font-size: 24px;
-	color: #0a184a;
-	font-weight: regular;
-	margin-bottom: 30px;
-	margin-top: 68px;
-	text-align: center;
+		font-family:$alt-font-family;
+		font-size: 24px;
+		color: #0a184a;
+		font-weight: regular;
+		margin-bottom: 30px;
+		margin-top: 68px;
+		text-align: center;
 	}
 	padding-top: 20px;
 	margin-bottom: 20px;
@@ -91,9 +91,10 @@
 			margin-bottom: 222px;					
 			h4 {
 				text-align: left;
-				font-weight: bold;
-				color: #4a4a4a;
-		    	font-size: 20px;
+				font-family: $alt-font-family;
+				font-weight: 500;
+				font-size: 24px;
+  				color: #4a4a4a;
 		    	margin-bottom: 30px;
 			}
 			a {
@@ -142,10 +143,10 @@
 		}
 		.busy {
 			h4 {
-				text-align: left;
-				font-weight: bold;
-				color: #4a4a4a;
-		    	font-size: 20px;
+				font-family: $alt-font-family;
+				font-weight: 500;
+				font-size: 24px;
+  				color: #4a4a4a;		    	
 		    	margin-bottom: 30px;
 			}
 			a {

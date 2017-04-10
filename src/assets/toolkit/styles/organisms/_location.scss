@@ -8,7 +8,8 @@
 		.location-info {
 			@include grid-column(5);
 			h4 {
-				font-family: $alt-font-family;
+				font-family: $font-family;
+				font-weight: 500;
 				font-size: 16px;
 				color: #0a184a;
 				margin-bottom: 37px;
@@ -51,7 +52,9 @@
 			margin-right: 9px;
 		}
 		h4 {
-			font-family: $alt-font-family;
+			font-family: $font-family;
+			font-weight: 500;
+			font-size: 16px;
 			float: right;
 			color: #0a184a;
 			font-size: 15px;

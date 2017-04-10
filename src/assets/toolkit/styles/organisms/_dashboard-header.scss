@@ -7,7 +7,7 @@
 		.header {			
 			padding-bottom: 70px;
 			z-index: 1;
-			border-bottom: 1px solid #f2f8fa;						
+			 border-bottom: solid 1px rgba(255, 255, 255,0.18);						
 			.header-padding {				
 				padding-top:0px;					
 				.logo-section {
@@ -93,7 +93,8 @@
 					content: '';
 					height: 48px;
 					width: 2px;
-					background:$white;	
+					background:rgba(255, 255, 255,0.52);	
+					
 					@include breakpoint(xs-small only) {
 						display: none;
 					}
