@@ -104,13 +104,18 @@
 	__webpack_require__(330);
 	__webpack_require__(331);
 	__webpack_require__(332);
-	__webpack_require__(326);
 	__webpack_require__(333);
+	__webpack_require__(327);
+	__webpack_require__(334);
 
 	// Finally, you can drop test JavaScript here...
 	$(document).ready(function () {
 	  //console.log('Script kiddies of the world unite.')
 	  $(document).foundation();
+	});
+
+	$(document).ready(function () {
+	  $(".numberinput").forceNumeric();
 	});
 
 /***/ },
@@ -15946,6 +15951,40 @@
 
 	"use strict";
 
+	// forceNumeric() plug-in implementation
+	jQuery.fn.forceNumeric = function () {
+
+	    return this.each(function () {
+	        $(this).keydown(function (e) {
+	            var key = e.which || e.keyCode;
+
+	            if (!e.shiftKey && !e.altKey && !e.ctrlKey &&
+	            // numbers   
+	            key >= 48 && key <= 57 ||
+	            // Numeric keypad
+	            key >= 96 && key <= 105 ||
+	            // comma, period and minus, . on keypad
+	            key == 190 || key == 188 || key == 109 || key == 110 ||
+	            // Backspace and Tab and Enter
+	            key == 8 || key == 9 || key == 13 ||
+	            // Home and End
+	            key == 35 || key == 36 ||
+	            // left and right arrows
+	            key == 37 || key == 39 ||
+	            // Del and Ins
+	            key == 46 || key == 45) return true;
+
+	            return false;
+	        });
+	    });
+	};
+
+/***/ },
+/* 325 */
+/***/ function(module, exports) {
+
+	"use strict";
+
 	$(function () {
 	  $(".expand").on("click", function () {
 	    $(this).next().slideToggle(200);
@@ -15954,7 +15993,7 @@
 	});
 
 /***/ },
-/* 325 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15993,7 +16032,7 @@
 	$(init);
 
 /***/ },
-/* 326 */
+/* 327 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16039,7 +16078,7 @@
 	});
 
 /***/ },
-/* 327 */
+/* 328 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16074,7 +16113,7 @@
 	});
 
 /***/ },
-/* 328 */
+/* 329 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16106,7 +16145,7 @@
 	$(init);
 
 /***/ },
-/* 329 */
+/* 330 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -16155,7 +16194,7 @@
 	}(jQuery);
 
 /***/ },
-/* 330 */
+/* 331 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16165,7 +16204,7 @@
 	});
 
 /***/ },
-/* 331 */
+/* 332 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -16181,7 +16220,7 @@
 	});
 
 /***/ },
-/* 332 */
+/* 333 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16193,7 +16232,7 @@
 	});
 
 /***/ },
-/* 333 */
+/* 334 */
 /***/ function(module, exports) {
 
 	"use strict";

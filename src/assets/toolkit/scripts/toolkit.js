@@ -51,6 +51,7 @@ var calendar = require('../../vendor/jquery-ui/ui/i18n/datepicker-sq.js');
 // var bar = fooModule.foo();
 
 require('./modules/map');
+require('./modules/add-numbers-for-input');
 require('./modules/acordion');
 require('./modules/dropdown');
 require('./modules/tabs');
@@ -69,3 +70,7 @@ $(document).ready(function () {
   $(document).foundation();
 
 });
+
+  $(document).ready(function () {
+     $(".numberinput").forceNumeric();
+ });

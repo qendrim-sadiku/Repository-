@@ -19,11 +19,14 @@
 					font-family: $alt-font-family;
 					font-weight:500;
 					margin-left:10px;
-					line-height: 20px;
+					
+					line-height: 0px;
 					color: #4a4a4a;
 					font-size: 14px;	
+					vertical-align: none;
 					img {
 						display: flex;
+						vertical-align: none !important;
 					}
 				}
 			}
