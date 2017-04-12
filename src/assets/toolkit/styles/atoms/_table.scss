@@ -19,6 +19,7 @@
 			width: 300px;
 			cursor: pointer;
 			outline: none;
+			padding:15px 5px 15px 5px; 	
 			a {			
 				display: block;
 				width: 100%;
@@ -32,20 +33,23 @@
 				
 			
 			.app-div {
-					
-					border-radius: 50px;
-					background: rgba(128, 152, 243,0.2);
-					height: 40px;
-					line-height: 40px;
-					font-size: 17px;
-					font-family:$font-family;
+
+				border-radius: 50px;
+				background: rgba(128, 152, 243,0.2);
+				height: 40px;
+				line-height: 40px;
+				font-size: 17px;
+				
+				font-family:$alt-font-family;
+				font-weight: 500;
+				text-align: center;
+				color: #7b86a2;
+				span {
 					text-align: center;
-					color: $black;
-					span {
-						text-align: center;
-						 color: rgb(123, 134, 162) !important;
-						 opacity: 1!important;
-					}
+					 color: rgb(123, 134, 162) !important;
+					 opacity: 1!important;
+					 font-size: 17px;
+				}
 			}	
 		}
 		tr td:first-child {
@@ -54,7 +58,7 @@
 	    	padding-right: 10px;
 	    	cursor: default ;
 		}
-		 @include breakpoint(xs-small only) {
+		@include breakpoint(xs-small only) {
 		  width: 100% !important;			      
 		  margin: 0px;
 		  padding: 0px;

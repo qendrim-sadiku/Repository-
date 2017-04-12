@@ -9,7 +9,7 @@
     position: relative; 
 
     color: #6b7897;     
-    width: 96%;   
+    width: 95%;   
     @include breakpoint(xs-small only) {
       width: 97%;
     }   
@@ -31,9 +31,10 @@
   }
   .ui-datepicker-prev, .ui-datepicker-next {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     float: right;      
     width: 1.8em;
+    clear: both;
     height: 1.8em;
     color: $white;                           
     width: 1.8em;
@@ -53,9 +54,13 @@
     }
     @include breakpoint(xs-small only) {
       padding-right: 35px;
+      width: 2.8em;
+      height: 2.8em; 
     }
     @include breakpoint(small only) {
       padding-right: 0px;
+      
+      height: 2.8em;
     }
   }
   .ui-datepicker-prev:before {

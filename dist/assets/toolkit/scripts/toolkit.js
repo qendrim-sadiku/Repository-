@@ -16089,7 +16089,7 @@
 
 		$('button.add-button').on('click', function () {
 			//var ThisParent = $(this).closest('div.other-modal').attr('qendrim');
-			var createDiv = "<div class='app-div'>E Zene<div>";
+			var createDiv = "<div class='app-div'>E zënë<div>";
 
 			if (!$('.table td.active').hasClass('hasElement')) {
 				$(createDiv).appendTo('.table td.active');

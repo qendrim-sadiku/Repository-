@@ -17,7 +17,7 @@ a {
 	position: relative;	
 	background-image:url('../images/bitmap.jpg');		
 	background-size: cover;
-	height: 100%;
+	
 	padding-bottom: 300px;
 	max-width: 100%;		
 	
@@ -84,10 +84,16 @@ a {
 		}
 	}
 	@include breakpoint(xs-small only) {
-		padding-bottom: 450px;
+		padding-bottom: 62px;
+		height: auto;
 	}
 	@include breakpoint(small only) {
-		padding-bottom: 450px;
+		padding-bottom: 70px;
+		height: auto;
+	}
+	@include breakpoint(medium only) {
+		padding-bottom: 70px;
+		height: auto;
 	}
 	&:after {
 		position: absolute;

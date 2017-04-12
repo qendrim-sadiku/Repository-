@@ -13,6 +13,13 @@
 				font-weight: 500;
 				margin-bottom: 20px;
 				font-size: 30px;
+				
+				@include breakpoint(small only) {
+					width: 100%;
+				}
+				@include breakpoint(medium only) {
+					
+				}
 			}
 			.user-info {																
 				.admin-info {
@@ -65,14 +72,24 @@
 		}
 		.info-stuf {
 			display: flex;
-			justify-content: flex-end;
-			padding-left: 94px;
+			margin-left: auto;
+			text-align: left;
 			margin-top: 12px;
 			.each-stuf {
-				padding-left: 90px;							
+				padding-left: 80px;
 				.const-icon {
 					img {
 						float: left;											
+						@include breakpoint(small only) {
+							float: none;
+							display: flex;
+							flex-direction: column;
+						}
+						@include breakpoint(medium only) {
+							float: none;
+							display: flex;
+							flex-direction: column;
+						}
 					}
 					span {
 						font-family: $font-family;
@@ -82,80 +99,53 @@
 						padding-left: 19px;
 						margin-top: 100px;
 						line-height: 25px;
-
-					}
-					@include breakpoint(xs-small only) {
-						display: flex;
-						flex-direction: column;
-						flex:wrap;
-						span {
-							line-height: 14px;
-							margin-top: 0px;
-							padding: 0;
+						@include breakpoint(small only) {
+							padding-left: 0px;
+							font-size: 12px;
 						}
-						img {
-							float: left;
-							margin-bottom: 10px;
+						@include breakpoint(medium only) {
+							padding-left: 0px;
+							font-size: 12px;
 						}
 					}
 					@include breakpoint(small only) {
-						display: flex;
-						flex-direction: column;
-						flex:wrap;
-						span {
-							line-height: 14px;
-							margin-top: 0px;
-							padding: 0;
-						}
-						img {
-							float: left;
-							margin-bottom: 10px;
-						}
-					}
+						padding-right: 20px;
+					}	
 					@include breakpoint(medium only) {
-						display: flex;
-						flex-direction: column;
-						justify-content: flex-end;									
-						span {
-							line-height: 14px;
-							margin-top: 0px;
-							padding: 0;
-						}
-						img {
-							float: left;
-							margin-bottom: 10px;
-						}
+						padding-right:30px;
 					}
 				}
 				@include breakpoint(xs-small only) {
-					margin-left: 0px;
-					margin-right: 0px;
-					padding-left:0px;
-
-				}
-				@include breakpoint(xs-small only) {
-					display: flex;
-					justify-content: flex-end;
+					padding-left: 20px;
+					margin-bottom: 40px;
 				}
 				@include breakpoint(small only) {
-					margin-left: 0px;
-					margin-right: 0px;
-					padding-left:0px;
-
-				}
-				@include breakpoint(small only) {
-					display: flex;
-					justify-content: flex-end;
+					padding-left: 0px;					
+					flex:3 0 auto;
+					margin-bottom: 40px;
 				}
 				@include breakpoint(medium only) {
-					padding-left:	50px;
+					padding-left: 0px;
+					display: flex;
+					flex-direction: column;
+
 				}
 			}
 			.transport-icon {
 						
 				img {
 					float: left;
-					margin-top: 	10px;
+					margin-top:10px;
+					@include breakpoint(small only) {
+						float: none;
+						display: flex;
+						flex-direction: column;
+					}
+					@include breakpoint(medium only) {
+						float: none;
+						display: flex;
+						flex-direction: column;
+					}
 				}
 				span {
 					font-family: $font-family;
@@ -165,61 +155,38 @@
 					padding-left: 19px;
 					margin-top: 90px;
 					line-height: 50px;
-				}
-				@include breakpoint(xs-small only) {
-					display: flex;
-					flex-direction: column;
-					flex:1 0 auto;
-					margin-left: 40px;
-					margin-right: 40px;
-					span {
-						line-height: 14px;
-						margin-top: 0px;
-						padding: 0;
+					@include breakpoint(small only) {
+						padding-left: 0px;
+						text-align: center;
+						font-size: 12px;
 					}
-					img {
-						margin-top: 10px;
-						float: left;
-						margin-bottom: 10px;
+					@include breakpoint(medium only) {
+						padding-left: 0px;
+						font-size: 12px;
 					}
 				}
 				@include breakpoint(small only) {
-					display: flex;
-					flex-direction: column;
-					margin-right: 0px;
-					margin-left: 60px;
-					margin-right: 60px;
-					span {
-						line-height: 14px;
-						margin-top: 0px;
-						padding: 0;
-					}
-					img {
-						float: left;
-						margin-top: 10px;
-						margin-bottom: 10px;
-					}
-				}
+					padding-left: 30px;
+					padding-right: 30px;
+				}			
 				@include breakpoint(medium only) {
-					display: flex;
-					flex-direction: column;
-					margin-right: 0px;
-				
-					
-					span {
-						line-height: 14px;
-						margin-top: 0px;
-						padding: 0;
-					}
-					img {
-						float: left;
-						margin-bottom: 10px;
-					}
-				}				
+					padding-left: 20px;
+					padding-right: 40px;
+				}
 			}
 			.gloves-icon {
 				img {
 					float: left;
+					@include breakpoint(small only) {
+						float: none;
+						display: flex;
+						flex-direction: column;
+					}
+					@include breakpoint(medium only) {
+						float: none;
+						display: flex;
+						flex-direction: column;
+					}
 				}
 				span {
 					font-family: $font-family;
@@ -229,98 +196,55 @@
 					padding-left: 19px;
 					margin-top: 100px;
 					line-height: 50px;
-				}
-				@include breakpoint(xs-small only) {
-					display: flex;
-					flex-direction: column;
-					margin-right: 0px;
-					flex:wrap;
-					span {
-						line-height: 14px;
-						margin-top: 0px;
-						padding: 0;
+					@include breakpoint(small only) {
+						padding-left: 0px;
+						text-align: center;
+						font-size: 12px;
 					}
-					img {
-						float: left;
-						margin-bottom: 10px;
+					@include breakpoint(medium only) {
+						padding-left: 0px;
+						font-size: 13px;
 					}
 				}
 				@include breakpoint(small only) {
-					display: flex;
-					flex-direction: column;
-					flex:1 0 auto;
-					span {
-						line-height: 14px;
-						margin-top: 0px;
-						padding: 0;
-					}
-					img {
-						float: left;
-						margin-bottom: 10px;
-					}
-				}
-				@include breakpoint(medium only) {
-					display: flex;
-					flex-direction: column;
-					margin-right: 0px;					
-					margin-left: 0px;						
-					span {
-						line-height: 14px;
-						margin-top: 0px;
-						padding: 0;
-					}
-					img {
-						float: left;
-						margin-bottom: 10px;
-					}
-				}
+					padding-left: 30px;
+				}	
 			}
 			@include breakpoint(xs-small only) {
 				display: flex;
-				justify-content: flex-start;
-				margin-left: -70px;
+				flex-direction: column;
+				padding-left: 0px;
+				margin: 0px;
 			}
 			@include breakpoint(small only) {
 				display: flex;
-				justify-content: flex-start;
-				margin-left: -70px;
+				flex-direction: flex;
+				margin: 0px;
+				align-items: flex-start;
+				padding-left: 20px;
+
 			}
 			@include breakpoint(medium only) {
 				display: flex;
-				margin-left: auto;
-				margin-right: 30px;
-				padding-left: 0px;;
-			}
-			@include breakpoint(large only) {
-				display: flex;
-				margin-left: auto;
-				margin-right: 30px;
-				padding-left: 0px;;
+				flex-direction: flex;
+				ms-grid-column: 0px;
+				padding-right: 30px;
+				float: right;
 			}
 		}
-		@include breakpoint(xs-small only) {
+		@include breakpoint(xs-small only ) {
 			display: flex;
+			flex-wrap: wrap;
 			flex-direction: column;
-			justify-content: flex-start;
-			margin-left: 0px;
-		}
+		}	
 		@include breakpoint(small only) {
 			display: flex;
-			justify-content: flex-start;
 			flex-direction: column;
-			margin-left: 0px;
+			align-items:flex-start;
 		}
 		@include breakpoint(medium only) {
 			display: flex;
-			
-			margin-left: 0px;
-			margin-right: 0px;
+			flex-direction: flex;
 		}
-		@include breakpoint(large only) {
-			display: flex;
-			padding-left: 10px;
-			margin-left: 0px;
-			margin-right: 0px;
-		}				
 	}	  
 }

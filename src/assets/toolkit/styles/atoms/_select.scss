@@ -230,22 +230,25 @@ $arrow_color: $gray !default;
     transform: scale(.75) translateY(- $input_height / 2);
     transition: all .2s cubic-bezier(0.5, 0, 0, 1.25), opacity .15s ease-out;
     z-index: 0;
-    overflow-y: scroll;
+      
+    overflow: auto;
     &:hover .option:not(:hover) {
       color: black;
     }
     &:after {
       position: absolute;      
-
+      
       content: '';
       top: -30px;      
-      height: 0px;
       
-      left: 3%;
-      font-family: FontAwesome;
-      content: "\f0d8";
-      font-size: 40px;
+      
+      // left: 3%;
+      // font-family: FontAwesome;
+      // content: "\f0d8";
+      // font-size: 40px;
       color: $black; 
+      width: 50px;
+      height: 50px;
     }
     @include breakpoint(xs-small only) {
       top: 55px;
@@ -256,8 +259,14 @@ $arrow_color: $gray !default;
     @include breakpoint(medium only) {
       top: 55px;
     }
+    &::-webkit-scrollbar{ display: none;}
+    &::-webkit-moz-scrollbar{ display: none;}
+    &::-o-scrollbar{ display: none;}
+    &::-google-ms-scrollbar{ display: none;}
+    &::-khtml-scrollbar{ display: none;}
   }
   .option {    
+    overflow: hidden;
     font-family: $alt-font-family;
     position: relative;
     cursor: pointer;
