@@ -41,7 +41,7 @@ $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-h
 $table-striped-background: smart-scale($table-background, $table-color-scale) !default;
 
 /// Default value for showing the stripe on rows of the tables, excluding the header and footer. If even, the even rows will have a background color. If odd, the odd rows will have a background color. If empty, or any other value, the table rows will have no striping.
-/// @type Keyword
+/// @type Keywordy
 $table-stripe: even !default;
 
 /// Default color for header background.

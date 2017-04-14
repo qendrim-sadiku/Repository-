@@ -21,7 +21,7 @@ form {
 
 .field {
 	position: relative;
-	border-right: 2px solid $border-color;
+	border-right:transparent;
 
 	&:last-child {
 		border-right: none;

@@ -37,6 +37,8 @@ var foundationTabs = require('../../vendor/foundation-sites/js/foundation.tabs.j
 // var smoothState = require('./jquery.smoothState.min.js');
 var flexslider = require('../../vendor/flexslider/jquery.flexslider-min.js');
 
+var flexibility = require('../../vendor/flexibility/flexibility.js');
+
 // console.log($);
 // $('h1').fadeOut(2000);
 
@@ -44,20 +46,23 @@ var flexslider = require('../../vendor/flexslider/jquery.flexslider-min.js');
 var calendar = require('../../vendor/jquery-ui/ui/widgets/datepicker.js');
 var calendar = require('../../vendor/jquery-ui/ui/i18n/datepicker-sq.js');
 
-
+var upload = require('../../vendor/ssi-uploader/dist/ssi-uploader/js/ssi-uploader.min.js');
 
 // Use for custom Pattern Libary Modules
 // var fooModule = require('./foo-module');
 // var bar = fooModule.foo();
 
 require('./modules/map');
+require('./modules/upload');
 require('./modules/add-numbers-for-input');
 require('./modules/acordion');
 require('./modules/dropdown');
 require('./modules/tabs');
+require('./modules/gallery');
 require('./modules/add-button');
 require('./modules/file-input');
 require('./modules/jquery.nice-select.min');
+require('./modules/flex');
 require('./modules/select');
 require('./modules/slider');
 require('./modules/add-class');
@@ -71,6 +76,8 @@ $(document).ready(function () {
 
 });
 
-  $(document).ready(function () {
+// Script for removing text in the text inputs
+$(document).ready(function () {
      $(".numberinput").forceNumeric();
  });
+

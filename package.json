@@ -57,6 +57,7 @@
   },
   "dependencies": {
     "bootstrap4": "0.0.1-security",
+    "dropzone": "^4.3.0",
     "flexslider": "^2.6.3",
     "jquery-ui": "^1.12.1"
   }
