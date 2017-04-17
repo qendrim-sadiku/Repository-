@@ -13691,7 +13691,7 @@
 /* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var require;var require;"use strict";
+	var require;var require;var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;"use strict";
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -16459,13 +16459,6 @@
 	          $(".remove").click(function () {
 	            $(this).parent(".pip").remove();
 	          });
-
-	          // Old code here
-	          /*$("<img></img>", {
-	            class: "imageThumb",
-	            src: e.target.result,
-	            title: file.name + " | Click to remove"
-	          }).insertAfter("#files").click(function(){$(this).remove();});*/
 	        };
 	        fileReader.readAsDataURL(f);
 	      }
@@ -16611,10 +16604,14 @@
 /* 332 */
 /***/ (function(module, exports) {
 
-	"use strict";
+	'use strict';
 
-	$("imageThumb").click(function () {
-	  $(this).display.none;
+	$('.imageThumb').on('click', function () {
+	  $('#main-product-image').attr('src', $(this).attr('src'));
+	});
+
+	$(".remove").click(function () {
+	  $(this).parent(".pip").remove();
 	});
 
 /***/ }),

@@ -17,8 +17,15 @@
 		color: $black;
 	}
 	@include breakpoint(xs-small only) {		
-		float: none !important;
-		align-items: center;
-		justify-content: center;
+		width: 128px;
+   		height: 43px;
+   		font-size: 15px;
+   		line-height: 15px;
    	}		
+   	@include breakpoint(small only) {
+   		width: 128px;
+   		height: 43px;
+   		font-size: 15px;
+   		line-height: 15px;
+   	}
 }

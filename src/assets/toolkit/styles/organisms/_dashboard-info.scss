@@ -35,8 +35,8 @@
   				text-align: left;
   				color: #626262;
 			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-				font-family: $font-family;
-				font-weight: 500;				
+				font-family: $alt-font-family;
+				font-weight: 300;				
  				font-size: 14px;
   				line-height: 1.71;
   				text-align: left;
@@ -121,9 +121,8 @@
 			opacity: 1;
 			font-weight: 300;
 		}
-		.diferent-input {
-		-js-display: flex;
-		display: flex;
+		.diferent-input {			
+			display: flex;
 			width: 100%;
 			
 			.night {
@@ -162,6 +161,10 @@
 					margin:0px;
 					margin-right: 10px;
 				}
+				@-moz-document url-prefix()  {
+					padding-right: 50px;
+					width: 50%;
+				}
 			}
 			.day {
 				width: 50%;
@@ -196,7 +199,12 @@
 				@include breakpoint(large only) {
 					width:50%;
 				
-				}		
+				}	
+				@-moz-document url-prefix()  {
+					padding-left: 0px;
+					width: 50%;
+					float: right;
+				}	
 			}
 			@include breakpoint(xs-small only) {
 				display: flex;
@@ -205,6 +213,9 @@
 			@include breakpoint(small only) {
 				display: flex;
 				flex-direction: column;
+			}
+			@-moz-document url-prefix() {
+			   width: 85%;
 			}				
 		}
 		.radio-button-with-select {

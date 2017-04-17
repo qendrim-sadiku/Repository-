@@ -44,8 +44,10 @@
   border-bottom: 1px solid #eaeaea;
   padding-bottom: 21px;
   .place-img {
+
     img {
       float: left;
+      margin-top: 10px;
       margin-right: 37px;
     }
     @include breakpoint(xs-small only) {
@@ -90,7 +92,6 @@
         }
       }
       h4 {
-
         font-family: $alt-font-family;
         color: #0b184a;
         margin-top: 10px;
