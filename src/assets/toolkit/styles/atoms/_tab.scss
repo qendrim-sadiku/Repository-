@@ -7,6 +7,16 @@
 		margin-bottom: 30px;
 		margin-top: 68px;
 		text-align: center;
+		@include breakpoint(xs-small only) {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			font-size: 16px;
+		}
+		@include breakpoint(small only) {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			font-size: 16px;
+		}		
 	}
 	padding-top: 20px;
 	margin-bottom: 20px;
@@ -22,6 +32,7 @@
 	color: #888;
 	-webkit-font-smoothing: antialiased;
 	.tabs {		
+		
 		position: relative;
 		padding-left: 60px;
 		padding-right:60px;	
@@ -50,18 +61,13 @@
 			}		
 		}
 		@include breakpoint(xs-small only) {
-			a {
-				width: 100%;
-				text-align: center;
-				margin-bottom: 20px;
-			}
+			display: none;
 		}
-		@include breakpoint(small only) {
-			a {
-				width: 100%;
-				text-align: center;
-				margin-bottom: 20px;
-			}
+		@include breakpoint(small only) {			
+			display: none;							
+		}
+		@include breakpoint(medium only) {			
+			display: none;							
 		}
 		@include breakpoint(medium only) {
 			a {
@@ -83,120 +89,284 @@
 	.tabs_item {
 		display: none;
 		padding: 30px 0;
-
-		.item-div {
-			margin-bottom: 30px;
-		}
 		.free {
-			margin-bottom: 222px;					
+			padding-left: 20px;
+			padding-right: 0px;
 			h4 {
-				text-align: left;
 				font-family: $alt-font-family;
-				font-weight: 500;
+				font-weight: 400;
+				color: #4a4a4a;
 				font-size: 24px;
-  				color: #4a4a4a;
-		    	margin-bottom: 30px;
+				margin-bottom: 30px;
+				margin-top: 30px;
+				padding-left: 35px;
+				@include breakpoint(xs-small only) {
+					padding-left: 0px;
+				}
+				@include breakpoint(small only) {
+					padding-left: 5px;
+				}
 			}
 			a {
-				font-family: $alt-font-family;
-				font-size: 16px;
-				float: left;
-				padding-left: 55px;
-				padding-right:55px;
-				padding-top: 17px;
-				padding-bottom: 17px;
+				width: 180px;
+				height: 50px;
 				background-color: #7f98f6;
 				box-shadow: 0 0 4px 0 rgba(128, 128, 128, 0.5);
-		  		margin-right: 40px;
-			}
-			@include breakpoint(xs-small only) {
-				margin-bottom: 100px;
-				width: 100%;
-				padding-right: 10px;
-				padding-left: 10px;
-				a {
-					width: 100%;
-				}
-			}
-			@include breakpoint(small only) {
-				margin-bottom: 100px;
-				width: 100%;
-				padding-right: 10px;
-				padding-left: 10px;
-				a {
-					width: 100%;
-				}
-			}
-			@include breakpoint(medium only) {
-				width: 100%;
-				margin:auto;
-				@include grid-column(12);
-				a {
+				color: $white;
+				margin-left: 40px;
+				line-height: 25px;
+				font-size: 16px;
+				font-family: $alt-font-family;
+				font-weight: 400;
+				@include breakpoint(xs-small only) {
 					width: 40%;
+					margin-left: 10px;
+					
+				}
+				@include breakpoint(small only) {
+					width: 40%;
+					margin-left: 10px;
+					
+				}
+				@include breakpoint(medium only) {
+					width: 25%;
+				}
+				@include breakpoint(large only) {
+					width: 20%;
 				}
 			}
-			@include breakpoint(large only) {
-				width: 100%;
-				margin:auto;
-				@include grid-column(12);
+			.item-div {
+				margin-bottom: 30px;
 			}
+			
 		}
 		.busy {
+			padding-left: 30px;
+			padding-right: 0px;
 			h4 {
 				font-family: $alt-font-family;
-				font-weight: 500;
+				font-weight: 400;
+				color: #4a4a4a;
 				font-size: 24px;
-  				color: #4a4a4a;		    	
-		    	margin-bottom: 30px;
+				margin-bottom: 30px;
+				margin-top: 30px;
+				padding-left: 35px;
+				@include breakpoint(xs-small only) {
+					padding-left: 0px;
+				}
+				@include breakpoint(small only) {
+					padding-left: 5px;
+				}
 			}
 			a {
-				font-family: $alt-font-family;
-				font-size: 16px;
-				color: #4a4a4a;
-				float: left;
-				padding-left: 55px;
-				padding-right:55px;
-				padding-top: 17px;
-				color: #4a4a4a;
-				font-weight: 400;
-				padding-bottom: 17px;
+				width: 180px;
+				height: 50px;
 				background-color: #f2f4fa;
-	  			box-shadow: 0 0 4px 0 rgba(128, 128, 128, 0.5);
-		  		margin-right: 40px;
+  				box-shadow: 0 0 4px 0 rgba(128, 128, 128, 0.5);
+				color: #4a4a4a;
+				margin-left: 40px;
+				line-height: 25px;
+				font-size: 16px;
+				font-family: $alt-font-family;
+				font-weight: 400;
+				@include breakpoint(xs-small only) {
+					width: 40%;
+					margin-left: 10px;
+					
+				}
+				@include breakpoint(small only) {
+					width: 40%;
+					margin-left: 10px;
+					
+				}
+				@include breakpoint(medium only) {
+					width: 25%;
+				}
+				@include breakpoint(large only) {
+					width: 20%;
+				}
+			}
+			.item-div {
+				margin-bottom: 30px;
 			}
 			@include breakpoint(xs-small only) {
-				margin-bottom: 100px;
-				width: 100%;
-				padding-right: 10px;
-				padding-left: 10px;
-				a {
-					width: 100%;
-				}
+				padding-left: 20px;
 			}
 			@include breakpoint(small only) {
-				margin-bottom: 100px;
-				width: 100%;
-				padding-right: 10px;
-				padding-left: 10px;
-				a {
-					width: 100%;
-				}
-			}
-			@include breakpoint(medium only) {
-				width: 100%;
-				margin:auto;
-				@include grid-column(12);
-				a {
-					width: 40%;
-				}
-			}
-			@include breakpoint(large only) {
-				width: 100%;
-				margin:auto;
-				@include grid-column(12);				
+				padding-left: 20px;
 			}
 		}
+
 		&:first-child {display: block;}
 	}
+}
+
+
+.input {
+	font-family:$alt-font-family;
+	font-weight:500;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 13px 20px;
+	color: #4a4a4a;	
+	font-size: 18px;
+	position: relative;
+	box-shadow: 0 0 3px 0 rgba(128, 128, 128, 0.5);
+	background:transparent;
+}
+.select {
+  cursor: pointer;
+  position: relative;
+  margin: 30px auto;
+  width: 220px;
+  height: 50px;
+  text-align: center;
+  display: none;
+  @include breakpoint(xs-small only) {
+  	margin-bottom: 0px
+  }
+  @include breakpoint(small only) {
+  	margin-bottom: 0px
+  }
+  .input {
+ 	border-radius:50px;
+    &:after {
+      content: '';
+      position: absolute;
+      left: calc(100% - 20px);
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: calc(100% - 20px);
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-top: 5px solid #999;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      top: 50%;
+    }
+    &:after {
+      border-top: 5px solid #fff;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      top: calc(50% - 1px);
+    }
+  }
+  @include breakpoint(xs-small only) {
+  	display: block;
+  }
+  @include breakpoint(small only) {
+  	display: block;
+  }
+  @include breakpoint(medium only) {
+  	display: block;
+  }	
+}
+
+.select-options {
+	overflow-y: scroll;
+	height:0px;
+	position: absolute;
+ 	width: 100%;
+  	border-radius: 3px;
+  	z-index: 100;
+  	top: 0;
+  	left: 0;
+  	padding-top:60px;
+  	padding-bottom: 120px;
+  	display: none;
+  	 &::-webkit-scrollbar{ display: none;}
+    &::-webkit-moz-scrollbar{ display: none;}
+    &::-o-scrollbar{ display: none;}
+    &::-google-ms-scrollbar{ display: none;}
+    &::-khtml-scrollbar{ display: none;}
+	.tabs {		
+		display: block;
+		position: relative;
+		padding-left: 0px;
+		padding-right:0px;	
+		margin: 0;
+		width: 100%;
+		border:transparent;
+		margin-left: 0px;
+		li {
+			margin:auto;
+			a {
+				width: 100%;
+				height: 50px;
+				
+				margin-top: 5px;
+				margin-bottom:5px;
+				font-family: $alt-font-family;
+				color: #4a4a4a;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 30px;
+					
+				box-shadow: 0 0 3px 0 rgba(128, 128, 128, 0.5);
+				border-radius:50px;
+				margin-left: 0px;
+
+			}			
+			.active {
+				color: $white;
+				background-color: #474c54;
+					box-shadow: 0 0 3px 0 rgba(128, 128, 128, 0.5);
+			}		
+		}
+		@include breakpoint(xs-small only) {
+			a {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+		}
+		@include breakpoint(small only) {
+			a {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			margin-bottom: 50px;
+		}
+		@include breakpoint(medium only) {
+			a {
+				width: 30%;
+				float: left;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+		}
+		@include breakpoint(large only) {
+			a {
+				width: 19%;
+				float: left;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+		}
+	} 
+  &.visible {
+    display: block;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {          
+    font-family: $alt-font-family;
+	color: #4a4a4a;
+	font-weight: normal;
+	font-size: 15px;
+    position: relative;
+    overflow: hidden;
+     
+    }
+  }
 }
 

@@ -1,10 +1,11 @@
 .base-button {
+	font-family:$alt-font-family;	
+	font-weight:bold;
 	z-index:100 !important;
 	background:transparent;
 	border:1px solid $white;
 	border-radius:100px;	
-	color:$white;
-	font-weight:500;
+	color:$white;	
 	font-size:18px;
 	text-align:center;
 	@include scut-padding(12px 33px);	

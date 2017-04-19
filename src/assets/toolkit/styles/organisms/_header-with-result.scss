@@ -15,15 +15,38 @@
 			.logo-section {
 				display: flex;
 				float: left;
+				img {
+					z-index: 1;
+					@include breakpoint(xs-small only) {
+						width: 32px;
+						height: 30px;
+						margin-top: 0px;
+					}
+					@include breakpoint(small only) {
+						width: 32px;
+						height: 30px;
+					}
+				}
 				a {
+					z-index: 1;
 					display: flex;	
+					color: $white !important;		
 					h2 {
-						color: $white;
 						margin-top: 0px;
 						margin-left: 10px;
 						font-size: 29px;
-						font-weight: 400;
+						font-weight: 500;
 						font-family: $font-family;
+						@include breakpoint(xs-small only) {
+							font-size: 20px;
+							margin-left: 5px;
+							margin-top: 5px;
+						}
+						@include breakpoint(small only) {
+							font-size: 20px;
+							margin-left: 5px;
+							margin-top: 5px;
+						}
 					}
 				}
 				@include breakpoint (xs-small only) {

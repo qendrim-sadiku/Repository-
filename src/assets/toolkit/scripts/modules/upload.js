@@ -9,7 +9,7 @@ $(document).ready(function() {
         fileReader.onload = (function(e) {
           var file = e.target;
           $("<span class=\"pip\">" +
-            "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+            "<img class=\"imageThumb\" id=\"img\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
             "<br/><span class=\"remove\"></span>" +
             "</span>").insertAfter("#files");
           $(".remove").click(function(){

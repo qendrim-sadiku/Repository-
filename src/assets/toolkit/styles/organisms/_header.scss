@@ -8,35 +8,54 @@
 		.header-padding {
 			padding-top:30px;		
 			.logo-section {
+				z-index: 1;
 				display: flex;
 				float: left;
+				img {
+					z-index: 1;
+					@include breakpoint(xs-small only) {
+						width: 32px;
+						height: 30px;
+						margin-top: 0px;
+					}
+					@include breakpoint(small only) {
+						width: 32px;
+						height: 30px;
+					}
+				}
 				a {
-					color: $white;
-					display: flex;			
+					z-index: 1;
+					display: flex;	
+					color: $white !important;		
 					h2 {
 						margin-top: 0px;
 						margin-left: 10px;
 						font-size: 29px;
-						font-weight: 400;
+						font-weight: 500;
 						font-family: $font-family;
+						@include breakpoint(xs-small only) {
+							font-size: 20px;
+							margin-left: 5px;
+							margin-top: 5px;
+						}
+						@include breakpoint(small only) {
+							font-size: 20px;
+							margin-left: 5px;
+							margin-top: 5px;
+						}
 					}
 				}
 				@include breakpoint (xs-small only) {
-					display: flex;
-					flex-direction: column;
-					float: none;
+					display: flex;										
 					align-items: center;
 					justify-content: center;
 					margin-bottom: 50px;
 				}
 			}
 			@include breakpoint(xs-small only) {
-				display: flex;
-				flex-direction: column;
-				float: none;
-				align-items: center;
-				justify-content: center;
-				margin-bottom: 20px;
+				padding-bottom: 0px;
+				padding-left: 10px;
+				padding-right: 10px;
 			}	
 			@include breakpoint(small only) {
 				padding-left: 10px;
@@ -48,7 +67,7 @@
 			}					
 		}	
 		@include breakpoint(xs-small only) {
-			margin-bottom: -1px;
+			padding-bottom: 0px !important;
 		}		
 		@include breakpoint(small only) {
 			margin-bottom: -3px;

@@ -61,6 +61,7 @@ require('./modules/tabs');
 require('./modules/gallery');
 require('./modules/add-button');
 require('./modules/file-input');
+require('./modules/select-tab');
 require('./modules/jquery.nice-select.min');
 require('./modules/flex');
 require('./modules/select');

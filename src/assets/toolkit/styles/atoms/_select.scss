@@ -223,7 +223,7 @@ $arrow_color: $gray !default;
     margin-top: 4px;
     opacity: 0;
     width: auto;
-    padding-top: 10px;
+    padding-top: 0px;
     pointer-events: none;
     position: absolute;
     top: 70px; left: 0;
@@ -236,21 +236,18 @@ $arrow_color: $gray !default;
     &:hover .option:not(:hover) {
       color: black;
     }
-    &:after {
-      position: absolute;      
-      
-      content: '';
-      top: -30px;      
-      
-      
-      // left: 3%;
-      // font-family: FontAwesome;
-      // content: "\f0d8";
-      // font-size: 40px;
-      color: $black; 
-      width: 50px;
-      height: 50px;
-    }
+    // &:after {
+    //   position: absolute;            
+    //   content: '';
+    //   top: -30px;                  
+    //   left: 3%;
+    //   font-family: FontAwesome;
+    //   content: "\f0d8";
+    //   font-size: 40px;
+    //   color: $black; 
+    //   width: 50px;
+    //   height: 50px;       
+    // }
     @include breakpoint(xs-small only) {
       top: 55px;
     }
@@ -308,6 +305,9 @@ $arrow_color: $gray !default;
       background-color: transparent;
       color: $gray;
       cursor: default;
+    }
+    &:first-child {
+      display: none;
     }   
   }
 }
