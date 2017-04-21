@@ -3,6 +3,7 @@ body {
 	font-size: rem-calc($base-font-size);
 	line-height: rem-calc($base-line-height);
 	color: $blue-gray;
+	overflow-x: hidden;
 }
 
 a {
@@ -74,8 +75,7 @@ a {
 		@include breakpoint(medium only) {
 			padding-left: 10px;
 			padding-right: 10px;
-			display: flex;
-			
+			display: flex;			
 			max-width: 100%; 
 			margin-bottom: 20px;
 		}
@@ -129,7 +129,7 @@ a {
 //
 .calendar-and-managment-section {
 	display:flex;
-	height: auto;
+	// height: auto;
 	@include breakpoint(xs-small only) {
 		display: -webkit-flex;
 		display: flex;
@@ -149,6 +149,9 @@ a {
 		-webkit-flex-direction: column;
 		flex-direction: column; 
 	}	
+	@include breakpoint(macbook only) {
+		
+  	}
 	@include breakpoint(Imac only) {
 		height: 100%;
 	}		

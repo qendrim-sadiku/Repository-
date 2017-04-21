@@ -7,4 +7,3 @@
   minDate: 0, 
   maxDate: "+1Y +1D"
 });
-

@@ -98,6 +98,7 @@
 	// var fooModule = require('./foo-module');
 	// var bar = fooModule.foo();
 
+	// require('./modules/map');
 	__webpack_require__(326);
 	__webpack_require__(327);
 	__webpack_require__(328);
@@ -113,7 +114,7 @@
 	__webpack_require__(338);
 	__webpack_require__(339);
 	__webpack_require__(340);
-	__webpack_require__(331);
+	__webpack_require__(330);
 	__webpack_require__(341);
 
 	// Finally, you can drop test JavaScript here...
@@ -13692,7 +13693,7 @@
 /* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var require;var require;var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;"use strict";
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var require;var require;"use strict";
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -16412,36 +16413,6 @@
 
 /***/ }),
 /* 326 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var $ = __webpack_require__(320);
-
-	function init() {
-
-		var map;
-		function initialize() {
-			if (!$('.google-map').size()) return;
-
-			var mapOptions = {
-				zoomControl: false,
-				scaleControl: false,
-				scrollwheel: false,
-				disableDoubleClickZoom: true,
-				zoom: 5,
-				center: new google.maps.LatLng(37, 38)
-			};
-			map = new google.maps.Map($('.google-map').get(0), mapOptions);
-		}
-
-		google.maps.event.addDomListener(window, 'load', initialize);
-	}
-
-	$(init);
-
-/***/ }),
-/* 327 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16460,6 +16431,9 @@
 	          $(".remove").click(function () {
 	            $(this).parent(".pip").remove();
 	          });
+	          $('.imageThumb ').on('click', function () {
+	            $('#main-product-image').attr('src', $(this).attr('src'));
+	          });
 	        };
 	        fileReader.readAsDataURL(f);
 	      }
@@ -16470,7 +16444,7 @@
 	});
 
 /***/ }),
-/* 328 */
+/* 327 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16504,7 +16478,7 @@
 	};
 
 /***/ }),
-/* 329 */
+/* 328 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16517,7 +16491,7 @@
 	});
 
 /***/ }),
-/* 330 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16556,7 +16530,7 @@
 	$(init);
 
 /***/ }),
-/* 331 */
+/* 330 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16602,15 +16576,27 @@
 	});
 
 /***/ }),
+/* 331 */
+/***/ (function(module, exports) {
+
+	"use strict";
+
+	$(document).ready(function () {
+	    $(".calendar-slider").click(function () {
+	        $(".calendar-bg").slideToggle();
+	        $(".calendar-bg").css("display", "block");
+	    });
+	});
+
+/***/ }),
 /* 332 */
 /***/ (function(module, exports) {
 
 	'use strict';
 
 	$('.imageThumb ').on('click', function () {
-		var self = this;
 
-		$('#main-product-image').attr('src', $(self).attr('src'));
+		$('#main-product-image').attr('src', $(this).attr('src'));
 	});
 
 	$(".remove").click(function () {
@@ -16705,6 +16691,22 @@
 	    $('.select .input').text($(this).find('span:first-child').text());
 	  });
 	});
+
+	// $(function() {
+	//   if ($('.select-options-tabs ul li').hasClass('selected')) {
+	//     $('.select-tab .input-tab').text($('.select-options-tabs li.selected > span:first-child').text());
+	//   } else {
+	//     $('.select-tab .input-tab').text($('.select-options-tabs li:first-child > span:first-child').text());
+	//   }
+	//   $('.select-tab').click(function() {
+	//     $('.select-options-tabs').toggleClass('visible');
+	//   });
+	//   $('.select-options-tabs li').click(function() {
+	//     $('.selected').removeClass('selected');
+	//     $(this).addClass('selected');
+	//     $('.select-tab .input-tab').text($(this).find('span:first-child').text());
+	//   });
+	// })
 
 /***/ }),
 /* 336 */

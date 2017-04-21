@@ -4,12 +4,13 @@
   padding-left: 20px;
   padding-right: 37px;
   padding-top: 92px;
-  .ui-datepicker {     
+  .ui-datepicker { 
+  
   .ui-datepicker-header {
     position: relative; 
 
     color: #6b7897;     
-    width: 95%;   
+    width: 96%;   
     @include breakpoint(xs-small only) {
       width: 97%;
     }   
@@ -20,10 +21,13 @@
       width: 90%;
     }
     @include breakpoint(desktop only) {
-      width: 94.5%;
+      width: 94%;
+    }
+    @include breakpoint(xxlarge only) {
+      width: 94%;
     }
     @include breakpoint(macbook only) {
-      width: 94%;
+      width: 91%;
     }
     @include breakpoint(Imac only) {
       width: 91%;
@@ -246,15 +250,21 @@ label {
     width: 100%;
     padding-left: 5px;
     padding-right: 5px; 
+    display: none;
   }
   @include breakpoint(small only) {
     width: 100%;
+    display: none;
   }
   @include breakpoint(medium only) {
     width: 100%;
+    display: none;
   }
   @include breakpoint(large only) {
     width: 40%;
+  }
+  @include breakpoint(macbook only) {
+    padding-bottom: 26.5%;
   }
 }
 

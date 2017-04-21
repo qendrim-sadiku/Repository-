@@ -39,25 +39,14 @@
 					margin-left: 0px;
 					color: #6b7897;
 					@include breakpoint(xs-small only) {
-						padding-left: 37px;
-						padding-right: 37px;
-						padding-top: 10px;
-						padding-bottom: 10px;
-						width: 100%;
-						text-align: center;
-						margin-bottom: 15px;
-						margin-top: 15px;
+						display: none;
 					}	
-					@include breakpoint(small only) {
-						padding-left: 37px;
-						padding-right: 37px;
-						padding-top: 10px;
-						padding-bottom: 10px;
-						width: 100%;
-						text-align: center;
-						margin-bottom: 15px;
-						margin-top: 15px;	
+					@include breakpoint(small only) {						
+						display: none;
 					}	
+					@include breakpoint(medium only) {
+						display: none;
+					}
 				}
 				a:active {						
 		  			color:#7f98f6;
@@ -79,6 +68,38 @@
 				padding-right:10px;
 			}	
 		}
+		.show-button {
+			text-align: center;
+			width: 100%;
+			
+			display: none;
+			.calendar-slider {
+				background:$white;
+				width: 100%;								
+				border: solid 1px #e0e0e0;
+				font-family: $font-family;
+				font-weight: 400 !important;
+				color: $primary;
+				font-size: 16px;
+				height: 48px;
+				outline: none;
+			}
+			@include breakpoint(xs-small only) {
+				display: block;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			@include breakpoint(small only) {
+				display: block;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			@include breakpoint(medium only) {
+				display: block;
+				padding-left: 90px;
+				padding-right: 90px;
+			}
+		}
 		.tabs_item {
 			display: none;
 			padding: 30px 0;						
@@ -96,7 +117,201 @@
 		@include breakpoint(medium only) {
 			max-width: 100%;
 			padding-left: 0px;
-		}		
+		}	
+	.input {
+		font-family:$font-family;
+		font-weight:500;
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		padding: 10px 20px;
+		color: $primary;	
+		font-size: 18px;
+		position: relative;
+		box-shadow: none;
+		background:transparent;
+	}
+	.select {
+	  cursor: pointer;
+	  position: relative;
+	  margin: 30px auto;
+	  
+	  height: 40px;
+	  text-align: center;
+	  display: none;
+	  z-index: 99;
+	  @include breakpoint(xs-small only) {
+	  	margin-bottom: 0px;
+	  }
+	  @include breakpoint(small only) {
+	  	margin-bottom: 0px;
+	  	z-index: 99 !important;
+	  }
+	  @include breakpoint(medium only) {
+	  	margin-bottom: 0px;
+	  	z-index: 99 !important;
+	  }
+	  .input {
+	 	border-radius:0px;
+	 	background:$white;
+	 	box-shadow: 0px;
+	    &:after {
+	      content: '';
+	      position: absolute;
+	      left: calc(100% - 20px);
+	      transform: translateY(-50%);
+	      width: 0;
+	      height: 0;
+	    }
+	    &:before {
+	      content: '';
+	      position: absolute;
+	      left: calc(100% - 20px);
+	      transform: translateY(-50%);
+	      width: 0;
+	      height: 0;
+	      border-top: 5px solid #999;
+	      border-left: 5px solid transparent;
+	      border-right: 5px solid transparent;
+	      top: 50%;
+	    }
+	    &:after {
+	      border-top: 5px solid #fff;
+	      border-left: 5px solid transparent;
+	      border-right: 5px solid transparent;
+	      top: calc(50% - 1px);
+	    }
+	  }
+	  @include breakpoint(xs-small only) {
+	  	display: block;
+	  	padding-left: 10px;
+	  	padding-right: 10px;
+	  }
+	  @include breakpoint(small only) {
+	  	display: block;
+	  	padding-left: 20px;
+	  	padding-right: 20px;
+	  }
+	  @include breakpoint(medium only) {
+	  	display: block !important;
+	  	padding-left: 90px;
+	  	padding-right: 90px;
+	  }	
+	}
+
+	.select-options {
+		overflow-y: scroll;
+		height:0px;
+		position: relative;
+	 	width: 100%;
+	  	border-radius: 3px;
+	  	z-index: 100;
+	  	top: 0;
+	  	left: 0;
+	  	padding-top:10px;
+	  	padding-bottom: 140px;
+	  	display: none;
+	  	background:transparent;
+	  	box-shadow: 0px;
+	  	 &::-webkit-scrollbar{ display: none;}
+	    &::-webkit-moz-scrollbar{ display: none;}
+	    &::-o-scrollbar{ display: none;}
+	    &::-google-ms-scrollbar{ display: none;}
+	    &::-khtml-scrollbar{ display: none;}
+		.tabs {		
+			display: block;
+			position: relative;
+			padding-left: 0px;
+			padding-right:0px;	
+			margin: 0;
+			width: 100%;
+			border:transparent;
+			margin-left: 0px;
+			li {
+				margin:auto;
+				background:transparent;
+				a {
+					width: 100%;
+					height: 40px;
+					
+					margin-top: 0px;
+					margin-bottom:5px;
+					font-family: $font-family;
+					color: $primary;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 20px;					
+					box-shadow: 0px;
+					background:white;
+					border-radius:0px;
+					margin-left: 0px;
+					@include breakpoint(xs-small only) {
+						display: block !important;
+					}
+					@include breakpoint(medium only) {
+						display: block !important;
+					}
+				}			
+				.active {
+					color: $primary;
+					background-color: #474c54;
+					box-shadow: npne !important;
+				}		
+			}
+			@include breakpoint(xs-small only) {
+				a {
+					width: 100%;
+					text-align: center;
+					margin-bottom: 20px;
+				}
+				margin-bottom: 50px;
+				background:transparent;
+				box-shadow: 0px !important;
+			}
+			@include breakpoint(small only) {
+				a {
+					width: 100%;
+					text-align: center;
+					margin-bottom: 20px;
+					background:transparent;
+					display: block !important;
+					box-shadow: 0px;
+				}
+				margin-bottom: 50px;
+				background:transparent;
+				box-shadow: 0px !important;
+			}
+			@include breakpoint(medium only) {
+				margin-bottom: 50px;
+				background:transparent;
+				box-shadow: 0px !important;
+			}
+			@include breakpoint(large only) {
+				a {
+					width: 19%;
+					float: left;
+					text-align: center;
+					margin-bottom: 20px;
+				}
+			}
+		} 
+		&.visible {
+		  display: block;
+		}
+		ul {
+			list-style: none;
+		  	padding: 0;
+		    margin: 0;
+		    li {          
+			    font-family: $alt-font-family;
+				color: #4a4a4a;
+				font-weight: normal;
+				font-size: 15px;
+			    position: relative;
+			    overflow: hidden;
+			    background:transparent;		     
+		    }
+		}
+	}	
 	}
 	@include breakpoint(xs-small only) {
 	  width: 100%;

@@ -1,7 +1,7 @@
 $('.imageThumb ').on('click', function() {
-	var self = this;
+	
 
-  $('#main-product-image').attr('src',$(self).attr('src'));
+  $('#main-product-image').attr('src',$(this).attr('src'));
 });
 		
  $(".remove").click(function(){

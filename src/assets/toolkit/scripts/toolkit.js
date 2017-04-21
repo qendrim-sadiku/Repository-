@@ -43,6 +43,9 @@ var flexibility = require('../../vendor/flexibility/flexibility.js');
 // $('h1').fadeOut(2000);
 
 
+
+
+
 var calendar = require('../../vendor/jquery-ui/ui/widgets/datepicker.js');
 var calendar = require('../../vendor/jquery-ui/ui/i18n/datepicker-sq.js');
 
@@ -52,12 +55,13 @@ var upload = require('../../vendor/ssi-uploader/dist/ssi-uploader/js/ssi-uploade
 // var fooModule = require('./foo-module');
 // var bar = fooModule.foo();
 
-require('./modules/map');
+// require('./modules/map');
 require('./modules/upload');
 require('./modules/add-numbers-for-input');
 require('./modules/acordion');
 require('./modules/dropdown');
 require('./modules/tabs');
+require('./modules/tab-button');
 require('./modules/gallery');
 require('./modules/add-button');
 require('./modules/file-input');

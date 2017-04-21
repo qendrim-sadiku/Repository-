@@ -92,10 +92,11 @@
 							float: none;
 							display: flex;
 							flex-direction: column;
-							margin: auto;
-							margin-bottom: 10px;
+							margin-bottom: 7px;
+							vertical-align: middle;
+							margin-left: 20px;
 							width: 34px;
-							height: 34px;
+							height: 34px;						
 						}
 						@include breakpoint(medium only) {
 							float: none;
@@ -128,7 +129,7 @@
 						}
 					}
 					@include breakpoint(small only) {
-						padding-right: 20px;
+						padding-right: 0px;
 					}	
 					@include breakpoint(medium only) {
 						padding-right:30px;
@@ -249,6 +250,7 @@
 						padding-left: 0px;
 						text-align: center;
 						font-size: 12px;
+
 					}
 					@include breakpoint(medium only) {
 						padding-left: 0px;
@@ -257,7 +259,7 @@
 					}
 				}
 				@include breakpoint(small only) {
-					padding-left: 30px;
+					padding-left: 0px;
 				}	
 			}
 			@include breakpoint(xs-small only) {
@@ -290,7 +292,8 @@
 		@include breakpoint(small only) {
 			display: flex;
 			flex-direction: column;
-			align-items:flex-start;
+			width: 88%;
+			margin-left: 0px;
 		}
 		@include breakpoint(medium only) {
 			display: flex;

@@ -7,7 +7,7 @@
 		.header {			
 			padding-bottom: 70px;
 			z-index: 1;
-			 border-bottom: solid 1px rgba(255, 255, 255,0.18);						
+			border-bottom: solid 1px rgba(255, 255, 255,0.18);						
 			.header-padding {				
 				padding-top:0px;					
 				.logo-section {
@@ -49,11 +49,7 @@
 					}
 					@include breakpoint (xs-small only) {
 						display: flex;
-						flex-direction: column;
-						float: none;
-						align-items: center;
-  						justify-content: center;
-						margin-bottom: 50px;
+
 					}
 					
 				}	
@@ -65,28 +61,38 @@
 					font-weight: 500;
 					font-size: 16px;	
 					@include breakpoint (xs-small only) {
-						float: none;						
-						font-size: 20px;						
+						font-size: 16px;
+						margin-top: 9px;					
 					}				
 					@include breakpoint(small only) {
-						margin-top: 12px;
+						font-size: 16px;
+						margin-top: 9px;
 					}
 				}	
 				@include breakpoint (xs-small only) {
 					text-align: center;
 				}
 			}
+			@include breakpoint(xs-small only) {
+				padding-left: 0px;
+				padding-right: 0px;
+				width: 80%;
+				margin: auto;
+			}
 			@include breakpoint(small only) {
-				padding-left: 20px;
-				padding-right: 20px;
+				padding-left: 0px;
+				padding-right: 0px;
+				width: 80%;
+				margin: auto;
 			}
 			@include breakpoint(medium only) {
-				padding-left: 20px;
-				padding-right: 20px;
+				
+				width: 80%;
+				margin: auto;
 			}
 			@include breakpoint(large only) {
-				padding-left: 20px;
-				padding-right: 20px;
+				width: 80%;
+				margin: auto;			
 			}										
 		}
 		.area-and-user {
@@ -164,6 +170,8 @@
 				flex-direction: column; 
 				align-items: center;
   				justify-content: center;
+				 margin-left: 0px;
+				 margin-right: 0px;		
 			}	
 			@include breakpoint(small only) {
 				display: -webkit-flex;
@@ -173,16 +181,21 @@
 				align-items: center;
   				justify-content: center;
 				 margin-left: 0px;
-				 margin-right: 0px;
+				 margin-right: 0px;				 
 			}
 			@include breakpoint(medium only) {
-				padding-left: 20px;
-				padding-right: 20px;
+				margin: auto;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				width: 80%;
 			}	
 			@include breakpoint(large only) {
-				padding-left: 20px;
-				padding-right: 20px;
-			}
+				margin: auto;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				width: 80%;
+
+			}				
 		}		
 	}	
 }

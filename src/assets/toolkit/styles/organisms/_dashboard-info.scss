@@ -166,11 +166,12 @@
 					width: 40%;
 					@include breakpoint(xs-small only) {
 						width: 94%;
-						margin-right: 0px;
+						margin: 0px;
+						padding:0px;
 					}
 					@include breakpoint(small only) {
 						width: 100%;	
-						margin-right: 0px;				
+						margin: 0px;				
 						padding:0px;
 					}
 					@include breakpoint(medium only) {
@@ -207,10 +208,14 @@
 					font-weight: 300;
 				}	
 				@include breakpoint(xs-small only) {
-					width: 100%;					
+					width: 100%;	
+					margin: 0px;	
+					padding:0px;				
 				}
 				@include breakpoint(small only) {
-					width: 100%;					
+					width: 100%;
+					margin: 0px;					
+					padding:0px;
 				}
 				@include breakpoint(medium only) {
 					width: 50%;					
@@ -244,10 +249,12 @@
 			@include breakpoint(xs-small only) {
 				display: flex;
 				flex-direction: column;
+				padding:0px;
 			}
 			@include breakpoint(small only) {
 				display: flex;
 				flex-direction: column;
+				padding:0px;
 			}
 					
 		}

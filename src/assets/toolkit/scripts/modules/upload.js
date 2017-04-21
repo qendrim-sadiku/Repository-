@@ -14,7 +14,10 @@ $(document).ready(function() {
             "</span>").insertAfter("#files");
           $(".remove").click(function(){
             $(this).parent(".pip").remove();
-          });                  
+          });             
+            $('.imageThumb ').on('click', function() {
+            $('#main-product-image').attr('src',$(this).attr('src'));
+          });     
         });
         fileReader.readAsDataURL(f);
       }
@@ -22,4 +25,5 @@ $(document).ready(function() {
   } else {
     alert("Your browser doesn't support to File API")
   }
+
 });

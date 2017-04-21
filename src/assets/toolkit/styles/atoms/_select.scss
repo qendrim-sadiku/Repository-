@@ -93,6 +93,7 @@ $arrow_color: $gray !default;
     .list {
       left: 0 !important;
       right: 0 !important;
+      height: 200px;
     }
     @include breakpoint(xs-small only) {
      margin-bottom: 20px;
@@ -120,6 +121,7 @@ $arrow_color: $gray !default;
     .list {
       left: 0 !important;
       right: 0 !important;
+      height: 200px;
     }
     @include breakpoint(xs-small only) {
       margin-bottom: 20px;
@@ -174,6 +176,7 @@ $arrow_color: $gray !default;
     .list {
       left: 0 !important;
       right: 0 !important;    
+      height: 150px;
     }   
     @include breakpoint(xs-small only) {
       margin-bottom: 20px;
@@ -215,7 +218,7 @@ $arrow_color: $gray !default;
   
   // List and options
   .list {      
-    height: 200px;
+    
     background-color: #fff;
     border-radius: none;
     box-shadow: 0 0 0 1px rgba($gray_dark, .11);

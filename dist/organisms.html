@@ -912,14 +912,22 @@
 	<div id="datepicker"></div>
 	<label for="input">Sot</label>
 	<input id="alternate" />
+
+
 </div>
+
+<!-- <p>Date: <input type="text" id="datepicker"></p> -->
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;calendar-bg&quot;&gt;
 	&lt;div id&#x3D;&quot;datepicker&quot;&gt;&lt;/div&gt;
 	&lt;label for&#x3D;&quot;input&quot;&gt;Sot&lt;/label&gt;
 	&lt;input id&#x3D;&quot;alternate&quot; /&gt;
-&lt;/div&gt;</code></pre>
+
+
+&lt;/div&gt;
+
+&lt;!-- &lt;p&gt;Date: &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;datepicker&quot;&gt;&lt;/p&gt; --&gt;</code></pre>
 </div>
 
 
@@ -1501,6 +1509,31 @@
 
 		</ul>
 		<!-- / tabs -->
+		<div class="show-button">
+			<button class="calendar-slider">Calendari</button>
+		</div>
+		<!-- / This is only for mobile screen -->
+
+
+		<!-- / This is only for mobile screen -->
+		<div class="select">
+			<div class="input">
+			</div>
+			<div class="select-options">
+				<ul class="tabs">
+					<li>
+						<span><a href="#" class="active">PARADITE</a></span>
+					</li>
+					<li>
+						<span><a href="#">Mesdite</a></span>
+					</li>
+					<li>
+						<span><a href="#">Mbremje</a></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- / This is only for mobile screen -->
 
 		<div class="tab_content">
 
@@ -1790,6 +1823,31 @@
 
 		&lt;/ul&gt;
 		&lt;!-- / tabs --&gt;
+		&lt;div class&#x3D;&quot;show-button&quot;&gt;
+			&lt;button class&#x3D;&quot;calendar-slider&quot;&gt;Calendari&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;!-- / This is only for mobile screen --&gt;
+
+
+		&lt;!-- / This is only for mobile screen --&gt;
+		&lt;div class&#x3D;&quot;select&quot;&gt;
+			&lt;div class&#x3D;&quot;input&quot;&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;select-options&quot;&gt;
+				&lt;ul class&#x3D;&quot;tabs&quot;&gt;
+					&lt;li&gt;
+						&lt;span&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;active&quot;&gt;PARADITE&lt;/a&gt;&lt;/span&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;span&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Mesdite&lt;/a&gt;&lt;/span&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;span&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Mbremje&lt;/a&gt;&lt;/span&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;!-- / This is only for mobile screen --&gt;
 
 		&lt;div class&#x3D;&quot;tab_content&quot;&gt;
 
@@ -2600,35 +2658,31 @@
 	</div><div class="f-item-preview">
 	<div class="fields" align="left">
 	<img id="main-product-image" src="undefined/assets/toolkit/images/full-wall.jpg" alt="">
-	<span class="pip">
+	<!-- <span class="pip">
 		<img class="imageThumb" src="undefined/assets/toolkit/images/full-wall.jpg" alt="">		
 		<span class="remove"></span>
-	</span>
-	<span class="pip">
-		<img class="imageThumb" src="undefined/assets/toolkit/images/bitmap.jpg" alt="">		
-		<span class="remove"></span>
-	</span>
-	<label for="files" class="custom-file-upload">
+	</span>	 -->
+	<div class="upload-field">
+		<label for="files" class="custom-file-upload">
         <i class="fa fa-camera"></i> <span> Shto Foto </span>
     </label>
-	<input type="file" id="files" name="files[]" multiple />
+		<input type="file" id="files" name="files[]" multiple />
+	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;fields&quot; align&#x3D;&quot;left&quot;&gt;
 	&lt;img id&#x3D;&quot;main-product-image&quot; src&#x3D;&quot;undefined/assets/toolkit/images/full-wall.jpg&quot; alt&#x3D;&quot;&quot;&gt;
-	&lt;span class&#x3D;&quot;pip&quot;&gt;
+	&lt;!-- &lt;span class&#x3D;&quot;pip&quot;&gt;
 		&lt;img class&#x3D;&quot;imageThumb&quot; src&#x3D;&quot;undefined/assets/toolkit/images/full-wall.jpg&quot; alt&#x3D;&quot;&quot;&gt;		
 		&lt;span class&#x3D;&quot;remove&quot;&gt;&lt;/span&gt;
-	&lt;/span&gt;
-	&lt;span class&#x3D;&quot;pip&quot;&gt;
-		&lt;img class&#x3D;&quot;imageThumb&quot; src&#x3D;&quot;undefined/assets/toolkit/images/bitmap.jpg&quot; alt&#x3D;&quot;&quot;&gt;		
-		&lt;span class&#x3D;&quot;remove&quot;&gt;&lt;/span&gt;
-	&lt;/span&gt;
-	&lt;label for&#x3D;&quot;files&quot; class&#x3D;&quot;custom-file-upload&quot;&gt;
+	&lt;/span&gt;	 --&gt;
+	&lt;div class&#x3D;&quot;upload-field&quot;&gt;
+		&lt;label for&#x3D;&quot;files&quot; class&#x3D;&quot;custom-file-upload&quot;&gt;
         &lt;i class&#x3D;&quot;fa fa-camera&quot;&gt;&lt;/i&gt; &lt;span&gt; Shto Foto &lt;/span&gt;
     &lt;/label&gt;
-	&lt;input type&#x3D;&quot;file&quot; id&#x3D;&quot;files&quot; name&#x3D;&quot;files[]&quot; multiple /&gt;
+		&lt;input type&#x3D;&quot;file&quot; id&#x3D;&quot;files&quot; name&#x3D;&quot;files[]&quot; multiple /&gt;
+	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
