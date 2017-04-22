@@ -1,7 +1,10 @@
 .other-modal {	
 	outline:none;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
 	.head-title {
-		margin:auto;
+		
 		text-align: center;
 		border-bottom: 1px solid #dedede;
 
@@ -21,7 +24,8 @@
 		line-height: 80px;
 	}
 	.about-reservation {
-		
+		width: 95%;
+		margin: auto;
 		margin-bottom: 18px;
 		label {
 			position: absolute;
@@ -85,6 +89,8 @@
 		}
 	}
 	.phone-number-res {
+		margin: auto;
+		width: 95%;
 		label {
 			position: absolute;
 			top:220px;  
@@ -148,7 +154,9 @@
 		}
 	}
 	.res-hour {		
+		margin: auto;
 		margin-top: 44px;
+		width: 95%;
 		h4 {
 			font-size: 14px;
 			font-family: $font-family;
@@ -173,27 +181,31 @@
 	}
 	.res-buttons {
 		margin-top: 54px;
-		margin-bottom:0px;
-		text-align: center;
+		margin-bottom:0px;		
+		text-align: right;
+		background-color: #fafafa;			
+		padding-top: 11px;
+		padding-bottom: 11px;
+		padding-right: 16px;
 		button:nth-child(1) {
-			background:transparent;
+			background:none;
 			font-family: $font-family;
-			font-weight: 300;
-			font-size: 15px;
+			font-weight: 400;
+			font-size: 14px;
 			outline: none;			
 			margin-right: 17px;
 			color: #9b9b9b;
 		}
 		button:nth-child(2) {
 			font-family: $font-family;
-			font-weight: 300;
+			font-weight: 400;
 			outline: none;
 			background: $primary;
 			color: $white;
-			font-size: 15px;
-			width: 90px;
-			height: 42px;
-			border-radius:61px;					
+			font-size: 16x;			
+			width: 120px !important;
+			height: 38px;
+			border-radius:3px;					
 			color: $white;
 		}				 
 	}

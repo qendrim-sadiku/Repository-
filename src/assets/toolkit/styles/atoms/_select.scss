@@ -110,6 +110,14 @@ $arrow_color: $gray !default;
      width: 100%;
      display: flex;
     }
+    span {
+      width: 100px;
+      height: 100px;
+      background:red;
+      position: absolute;
+      color: black;
+      
+    }
   }
   &.day {
     width: 335px;
