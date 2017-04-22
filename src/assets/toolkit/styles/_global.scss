@@ -129,7 +129,7 @@ a {
 //
 .calendar-and-managment-section {
 	display:flex;
-	// height: auto;
+	height: 100%;
 	@include breakpoint(xs-small only) {
 		display: -webkit-flex;
 		display: flex;

@@ -376,10 +376,8 @@
           }          
         }
         @include breakpoint(xs-small only) {
-          display: flex;
-          flex-direction: column;
-          margin-left: 10px;
-          margin-right: 10px;
+         flex:1 0 auto;
+         margin-left: 0px;
         }
         @include breakpoint(small only) {
          flex:1 0 auto;

@@ -53,10 +53,9 @@
 				}
 			}
 			@include breakpoint(xs-small only) {
-				padding-bottom: 0px;
 				padding-left: 10px;
 				padding-right: 10px;
-			}	
+			}			
 			@include breakpoint(small only) {
 				padding-left: 10px;
 				padding-right: 10px;

@@ -87,7 +87,17 @@
 				padding-left: 80px;
 				.const-icon {
 					img {
-						float: left;											
+						float: left;	
+						@include breakpoint(xs-small only) {
+							float: none;
+							display: flex;
+							flex-direction: column;
+							margin-bottom: 7px;
+							vertical-align: middle;
+							margin-left: 20px;
+							width: 34px;
+							height: 34px;						
+						}										
 						@include breakpoint(small only) {
 							float: none;
 							display: flex;
@@ -117,6 +127,11 @@
 						padding-left: 19px;
 						margin-top: 100px;
 						line-height: 25px;
+						@include breakpoint(xs-small only) {
+							padding-left: 0px;
+							font-size: 12px;
+							text-align: center;
+						}
 						@include breakpoint(small only) {
 							padding-left: 0px;
 							font-size: 12px;
@@ -136,8 +151,10 @@
 					}
 				}
 				@include breakpoint(xs-small only) {
-					padding-left: 20px;
+					padding-left: 0px;					
+					flex:3 0 auto;
 					margin-bottom: 40px;
+					align-items:center;
 				}
 				@include breakpoint(small only) {
 					padding-left: 0px;					
@@ -162,6 +179,16 @@
 				img {
 					float: left;
 					margin-top:10px;
+					@include breakpoint(xs-small only) {
+						float: none;
+						display: flex;
+						flex-direction: column;
+						margin-bottom: 3px;
+						vertical-align: middle;
+						margin-top: 0px;
+						width: 42px;
+						height: 24px;						
+					}
 					@include breakpoint(small only) {
 						float: none;
 						display: flex;
@@ -191,6 +218,12 @@
 					padding-left: 19px;
 					margin-top: 90px;
 					line-height: 50px;
+					@include breakpoint(xs-small only) {
+						line-height: 55px;
+						padding-left: 0px;
+						text-align: center;
+						font-size: 12px;
+					}
 					@include breakpoint(small only) {
 						line-height: 55px;
 						padding-left: 0px;
@@ -216,6 +249,16 @@
 			.gloves-icon {
 				img {
 					float: left;
+					@include breakpoint(xs-small only) {
+						float: none;
+						display: flex;
+						flex-direction: column;
+						
+						width: 38px;
+						height: 39px;
+						align-items:center;
+						
+					}
 					@include breakpoint(small only) {
 						float: none;
 						display: flex;
@@ -245,6 +288,13 @@
 					padding-left: 19px;
 					margin-top: 100px;
 					line-height: 30px;
+					@include breakpoint(xs-small only) {
+						
+						padding-left: 0px;
+						text-align: center;
+						font-size: 12px;
+
+					}
 					@include breakpoint(small only) {
 						
 						padding-left: 0px;
@@ -264,9 +314,10 @@
 			}
 			@include breakpoint(xs-small only) {
 				display: flex;
-				flex-direction: column;
-				padding-left: 0px;
+				flex-direction: flex;
 				margin: 0px;
+				align-items: flex-start;
+				padding-left: 20px;
 			}
 			@include breakpoint(small only) {
 				display: flex;

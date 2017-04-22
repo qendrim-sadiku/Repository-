@@ -148,9 +148,9 @@
 					width: 100%;					
 				}
 				@include breakpoint(small only) {
-					width:100%;
+					width:50%;
 					margin:0px;
-					padding-left: 10px;
+					padding-left: 0px;
 					padding-right: 10px;
 				}
 				@include breakpoint(medium only) {
@@ -213,7 +213,7 @@
 					padding:0px;				
 				}
 				@include breakpoint(small only) {
-					width: 100%;
+					width: 50%;
 					margin: 0px;					
 					padding:0px;
 				}
@@ -253,7 +253,7 @@
 			}
 			@include breakpoint(small only) {
 				display: flex;
-				flex-direction: column;
+				flex-direction: flex;
 				padding:0px;
 			}
 					
