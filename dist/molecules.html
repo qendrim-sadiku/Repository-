@@ -186,10 +186,10 @@
 												<a href="molecules.html#components.remodal">Remodal</a>
 											</li>
 											<li>
-												<a href="molecules.html#components.remodal2">Remodal2</a>
+												<a href="molecules.html#components.search-button">Search Button</a>
 											</li>
 											<li>
-												<a href="molecules.html#components.search-button">Search Button</a>
+												<a href="molecules.html#components.search-modal">Search Modal</a>
 											</li>
 											<li>
 												<a href="molecules.html#components.tab">Tab</a>
@@ -227,6 +227,9 @@
 											</li>
 											<li>
 												<a href="molecules.html#forms.radio">Radio</a>
+											</li>
+											<li>
+												<a href="molecules.html#forms.search">Search</a>
 											</li>
 											<li>
 												<a href="molecules.html#forms.select">Select</a>
@@ -1267,7 +1270,6 @@
 	<button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
-
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -1293,67 +1295,6 @@
 	&lt;button class&#x3D;&quot;close-button&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;
     &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
   &lt;/button&gt;
-
-&lt;/div&gt;</code></pre>
-</div>
-
-		</div>
-		<div class="f-item-group" id="components.remodal2">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Remodal2</h3>
-				<div class="f-item-controls">
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
-			</div><div class="f-item-preview">
-	<!-- This is the first modal -->
-<div class="other-modal reveal" id="exampleModal3" data-reveal>
-	<h2 class="head-title">Shto Terminin</h2>
-	<div class="about-reservation">
-		<h4>Pershkrimi</h4>
-		<p>Motivation The Defining Moment Of Self Improvement</p>
-	</div>
-	<div class="phone-number-res">
-		<h4>Numri I telefonit</h4>
-	</div>
-	<div class="res-hour">
-		<h4>Ora e Terminit:</h4>
-		<span>19:00-20:00</span>
-	</div>
-	<div class="res-buttons">
-		<button class="cancel-button2" data-close aria-label="Close reveal" type="button">Anulo</button>
-		<button class="add-button2" data-close aria-label="Close reveal" type="button">Shto</button>
-	</div>
-	<button class="close-button" data-close aria-label="Close reveal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;!-- This is the first modal --&gt;
-&lt;div class&#x3D;&quot;other-modal reveal&quot; id&#x3D;&quot;exampleModal3&quot; data-reveal&gt;
-	&lt;h2 class&#x3D;&quot;head-title&quot;&gt;Shto Terminin&lt;/h2&gt;
-	&lt;div class&#x3D;&quot;about-reservation&quot;&gt;
-		&lt;h4&gt;Pershkrimi&lt;/h4&gt;
-		&lt;p&gt;Motivation The Defining Moment Of Self Improvement&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class&#x3D;&quot;phone-number-res&quot;&gt;
-		&lt;h4&gt;Numri I telefonit&lt;/h4&gt;
-	&lt;/div&gt;
-	&lt;div class&#x3D;&quot;res-hour&quot;&gt;
-		&lt;h4&gt;Ora e Terminit:&lt;/h4&gt;
-		&lt;span&gt;19:00-20:00&lt;/span&gt;
-	&lt;/div&gt;
-	&lt;div class&#x3D;&quot;res-buttons&quot;&gt;
-		&lt;button class&#x3D;&quot;cancel-button2&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;Anulo&lt;/button&gt;
-		&lt;button class&#x3D;&quot;add-button2&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;Shto&lt;/button&gt;
-	&lt;/div&gt;
-	&lt;button class&#x3D;&quot;close-button&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;
-    &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
-  &lt;/button&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -1369,10 +1310,86 @@
 					</span>
 				</div>
 			</div><div class="f-item-preview">
-	<a href="../pages/result.html" class="open-search ">Search</a>
+	<input type="button" class="open-search" onclick="location.href='../pages/result.html';" />
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;a href&#x3D;&quot;../pages/result.html&quot; class&#x3D;&quot;open-search &quot;&gt;Search&lt;/a&gt;</code></pre>
+	<pre><code class="language-markup">&lt;input type&#x3D;&quot;button&quot; class&#x3D;&quot;open-search&quot; onclick&#x3D;&quot;location.href&#x3D;&#x27;../pages/result.html&#x27;;&quot; /&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="components.search-modal">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Search Modal</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<!-- This is the first modal -->
+<div class="search-modal reveal" id="exampleModal3" data-reveal>
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+	<h2>Kerko Termine</h2>
+	<select class="wide" id="test">
+      	<option>Lokacioni?</option>
+      	<option  value="1">Prishtine</option>	
+      	<option  value="2">Mitrovic</option>
+      	<option  value="3" 	>Pej</option>
+      	<option  value="4">Vushtri</option>
+      	<option  value="5">Gjilan</option>
+      </select> <select class="day" id="test">
+      	 <option selected >DIta</option>
+      	<option  value="1">E Hënë</option>
+      	<option  value="2">E Martë</option>
+      	<option  value="3" 	>E Martë</option>
+      	<option  value="4">E Mërkure</option>
+      	<option  value="4">E Enjte</option>
+      	<option  value="4">E Premte</option>
+      	<option  value="4">E Shtun</option>
+      	<option  value="4">E Diel</option>
+      </select> <select class="hours" id="test">
+      	 <option selected >Ora</option>
+      	<option  value="1">19:00</option>
+      	<option  value="2">19:00</option>
+      	<option  value="3">19:00</option>
+      	<option  value="4">19:00</option>
+      </select> <input type="button" class="open-search" onclick="location.href='../pages/result.html';" /></div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- This is the first modal --&gt;
+&lt;div class&#x3D;&quot;search-modal reveal&quot; id&#x3D;&quot;exampleModal3&quot; data-reveal&gt;
+	&lt;button class&#x3D;&quot;close-button&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;
+        &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+      &lt;/button&gt;
+	&lt;h2&gt;Kerko Termine&lt;/h2&gt;
+	&lt;select class&#x3D;&quot;wide&quot; id&#x3D;&quot;test&quot;&gt;
+      	&lt;option&gt;Lokacioni?&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;1&quot;&gt;Prishtine&lt;/option&gt;	
+      	&lt;option  value&#x3D;&quot;2&quot;&gt;Mitrovic&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;3&quot; 	&gt;Pej&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;4&quot;&gt;Vushtri&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;5&quot;&gt;Gjilan&lt;/option&gt;
+      &lt;/select&gt; &lt;select class&#x3D;&quot;day&quot; id&#x3D;&quot;test&quot;&gt;
+      	 &lt;option selected &gt;DIta&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;1&quot;&gt;E Hënë&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;2&quot;&gt;E Martë&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;3&quot; 	&gt;E Martë&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;4&quot;&gt;E Mërkure&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;4&quot;&gt;E Enjte&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;4&quot;&gt;E Premte&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;4&quot;&gt;E Shtun&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;4&quot;&gt;E Diel&lt;/option&gt;
+      &lt;/select&gt; &lt;select class&#x3D;&quot;hours&quot; id&#x3D;&quot;test&quot;&gt;
+      	 &lt;option selected &gt;Ora&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;1&quot;&gt;19:00&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;2&quot;&gt;19:00&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;3&quot;&gt;19:00&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;4&quot;&gt;19:00&lt;/option&gt;
+      &lt;/select&gt; &lt;input type&#x3D;&quot;button&quot; class&#x3D;&quot;open-search&quot; onclick&#x3D;&quot;location.href&#x3D;&#x27;../pages/result.html&#x27;;&quot; /&gt;&lt;/div&gt;</code></pre>
 </div>
 
 		</div>
@@ -1846,6 +1863,96 @@
             &lt;/label&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="forms.search">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Search</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="modal-s" data-open="exampleModal3">
+	<form method="get" action="/search" id="search">
+		<input name="q" type="text" placeholder="Lokacioni" class="first-input-modal" />
+		<input name="q" type="text" placeholder="Dita" class="second-input-modal" />
+		<input name="q" type="text" placeholder="Ora" / class="third-input-modal">
+	</form>
+</div>
+<!-- This is the first modal -->
+<div class="search-modal reveal" id="exampleModal3" data-reveal>
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+	<h2>Kerko Termine</h2>
+	<select class="wide" id="test">
+      	<option>Lokacioni?</option>
+      	<option  value="1">Prishtine</option>	
+      	<option  value="2">Mitrovic</option>
+      	<option  value="3" 	>Pej</option>
+      	<option  value="4">Vushtri</option>
+      	<option  value="5">Gjilan</option>
+      </select> <select class="day" id="test">
+      	 <option selected >DIta</option>
+      	<option  value="1">E Hënë</option>
+      	<option  value="2">E Martë</option>
+      	<option  value="3" 	>E Martë</option>
+      	<option  value="4">E Mërkure</option>
+      	<option  value="4">E Enjte</option>
+      	<option  value="4">E Premte</option>
+      	<option  value="4">E Shtun</option>
+      	<option  value="4">E Diel</option>
+      </select> <select class="hours" id="test">
+      	 <option selected >Ora</option>
+      	<option  value="1">19:00</option>
+      	<option  value="2">19:00</option>
+      	<option  value="3">19:00</option>
+      	<option  value="4">19:00</option>
+      </select> <input type="button" class="open-search" onclick="location.href='../pages/result.html';" /></div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;modal-s&quot; data-open&#x3D;&quot;exampleModal3&quot;&gt;
+	&lt;form method&#x3D;&quot;get&quot; action&#x3D;&quot;/search&quot; id&#x3D;&quot;search&quot;&gt;
+		&lt;input name&#x3D;&quot;q&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Lokacioni&quot; class&#x3D;&quot;first-input-modal&quot; /&gt;
+		&lt;input name&#x3D;&quot;q&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Dita&quot; class&#x3D;&quot;second-input-modal&quot; /&gt;
+		&lt;input name&#x3D;&quot;q&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Ora&quot; / class&#x3D;&quot;third-input-modal&quot;&gt;
+	&lt;/form&gt;
+&lt;/div&gt;
+&lt;!-- This is the first modal --&gt;
+&lt;div class&#x3D;&quot;search-modal reveal&quot; id&#x3D;&quot;exampleModal3&quot; data-reveal&gt;
+	&lt;button class&#x3D;&quot;close-button&quot; data-close aria-label&#x3D;&quot;Close reveal&quot; type&#x3D;&quot;button&quot;&gt;
+        &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+      &lt;/button&gt;
+	&lt;h2&gt;Kerko Termine&lt;/h2&gt;
+	&lt;select class&#x3D;&quot;wide&quot; id&#x3D;&quot;test&quot;&gt;
+      	&lt;option&gt;Lokacioni?&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;1&quot;&gt;Prishtine&lt;/option&gt;	
+      	&lt;option  value&#x3D;&quot;2&quot;&gt;Mitrovic&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;3&quot; 	&gt;Pej&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;4&quot;&gt;Vushtri&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;5&quot;&gt;Gjilan&lt;/option&gt;
+      &lt;/select&gt; &lt;select class&#x3D;&quot;day&quot; id&#x3D;&quot;test&quot;&gt;
+      	 &lt;option selected &gt;DIta&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;1&quot;&gt;E Hënë&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;2&quot;&gt;E Martë&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;3&quot; 	&gt;E Martë&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;4&quot;&gt;E Mërkure&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;4&quot;&gt;E Enjte&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;4&quot;&gt;E Premte&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;4&quot;&gt;E Shtun&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;4&quot;&gt;E Diel&lt;/option&gt;
+      &lt;/select&gt; &lt;select class&#x3D;&quot;hours&quot; id&#x3D;&quot;test&quot;&gt;
+      	 &lt;option selected &gt;Ora&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;1&quot;&gt;19:00&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;2&quot;&gt;19:00&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;3&quot;&gt;19:00&lt;/option&gt;
+      	&lt;option  value&#x3D;&quot;4&quot;&gt;19:00&lt;/option&gt;
+      &lt;/select&gt; &lt;input type&#x3D;&quot;button&quot; class&#x3D;&quot;open-search&quot; onclick&#x3D;&quot;location.href&#x3D;&#x27;../pages/result.html&#x27;;&quot; /&gt;&lt;/div&gt;</code></pre>
 </div>
 
 		</div>

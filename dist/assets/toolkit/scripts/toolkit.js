@@ -98,6 +98,7 @@
 	// var fooModule = require('./foo-module');
 	// var bar = fooModule.foo();
 
+	// require('./modules/map');
 	__webpack_require__(326);
 	__webpack_require__(327);
 	__webpack_require__(328);
@@ -113,9 +114,8 @@
 	__webpack_require__(338);
 	__webpack_require__(339);
 	__webpack_require__(340);
+	__webpack_require__(330);
 	__webpack_require__(341);
-	__webpack_require__(331);
-	__webpack_require__(342);
 
 	// Finally, you can drop test JavaScript here...
 	$(document).ready(function () {
@@ -13693,7 +13693,7 @@
 /* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var require;var require;"use strict";
+	var require;var require;var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;"use strict";
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -16413,36 +16413,6 @@
 
 /***/ }),
 /* 326 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var $ = __webpack_require__(320);
-
-	function init() {
-
-		var map;
-		function initialize() {
-			if (!$('.google-map').size()) return;
-
-			var mapOptions = {
-				zoomControl: false,
-				scaleControl: false,
-				scrollwheel: false,
-				disableDoubleClickZoom: true,
-				zoom: 5,
-				center: new google.maps.LatLng(37, 38)
-			};
-			map = new google.maps.Map($('.google-map').get(0), mapOptions);
-		}
-
-		google.maps.event.addDomListener(window, 'load', initialize);
-	}
-
-	$(init);
-
-/***/ }),
-/* 327 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16474,7 +16444,7 @@
 	});
 
 /***/ }),
-/* 328 */
+/* 327 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16508,7 +16478,7 @@
 	};
 
 /***/ }),
-/* 329 */
+/* 328 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16521,7 +16491,7 @@
 	});
 
 /***/ }),
-/* 330 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16560,7 +16530,7 @@
 	$(init);
 
 /***/ }),
-/* 331 */
+/* 330 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16606,7 +16576,7 @@
 	});
 
 /***/ }),
-/* 332 */
+/* 331 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16619,7 +16589,7 @@
 	});
 
 /***/ }),
-/* 333 */
+/* 332 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16634,7 +16604,7 @@
 	});
 
 /***/ }),
-/* 334 */
+/* 333 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16669,7 +16639,7 @@
 	});
 
 /***/ }),
-/* 335 */
+/* 334 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16701,7 +16671,7 @@
 	$(init);
 
 /***/ }),
-/* 336 */
+/* 335 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16739,7 +16709,7 @@
 	// })
 
 /***/ }),
-/* 337 */
+/* 336 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16788,7 +16758,7 @@
 	}(jQuery);
 
 /***/ }),
-/* 338 */
+/* 337 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16931,7 +16901,7 @@
 	}
 
 /***/ }),
-/* 339 */
+/* 338 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16941,7 +16911,7 @@
 	});
 
 /***/ }),
-/* 340 */
+/* 339 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16957,7 +16927,7 @@
 	});
 
 /***/ }),
-/* 341 */
+/* 340 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16969,7 +16939,7 @@
 	});
 
 /***/ }),
-/* 342 */
+/* 341 */
 /***/ (function(module, exports) {
 
 	"use strict";

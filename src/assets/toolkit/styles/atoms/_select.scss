@@ -100,24 +100,19 @@ $arrow_color: $gray !default;
      width: 100%;
      z-index: 100;
      z-index: 10;
+    display: none;
     }
     @include breakpoint(small only) {
      margin-bottom: 20px;
      width: 100%;
+     display: none;
     }
     @include breakpoint(medium only) {
      margin-bottom: 20px;
      width: 100%;
      display: flex;
-    }
-    span {
-      width: 100px;
-      height: 100px;
-      background:red;
-      position: absolute;
-      color: black;
-      
-    }
+    display: none;
+    }   
   }
   &.day {
     width: 335px;
@@ -132,17 +127,20 @@ $arrow_color: $gray !default;
       height: 200px;
     }
     @include breakpoint(xs-small only) {
-      margin-bottom: 20px;
-       width: 100%;
+       margin-bottom: 20px;
+       width: 100%;      
+       display: none;
     }
     @include breakpoint(small only) {
-     margin-bottom: 20px;
-     width: 100%;
+      margin-bottom: 20px;
+      width: 100%;      
+      display: none;
     }
     @include breakpoint(medium only) {
      margin-bottom: 20px;
      display: flex;
-     width: 100%;
+     opacity:0;
+     display: none;
     }
   }
   &.hours {
@@ -158,15 +156,18 @@ $arrow_color: $gray !default;
     }
     @include breakpoint(xs-small only) {
       margin-bottom: 20px;
-       width: 100%;
+      width: 100%;
+      display: none;
     }
     @include breakpoint(small only) {
-     margin-bottom: 20px;
-     width: 100%;
+      margin-bottom: 20px;
+      width: 100%;
+      display: none;
     }
     @include breakpoint(medium only) {
      margin-bottom: 20px;
      display: flex;
+     display: none;
      width: 100%;
     }
   }
