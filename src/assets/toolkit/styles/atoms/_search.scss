@@ -41,7 +41,11 @@
       position: relative;
       width: 33.333333%;
       float: left; 
-      background:transparent;
+      background-color:transparent;
+      color: black;
+      background-image: url('../images/dot.svg')repeat;   
+      background-position:250px;    
+       background-size: 80px 60px !important;
       margin: 0px;      
       padding-left: 0px;
       // border:1px solid #fefefe !important;
@@ -96,16 +100,31 @@
   .first-input-modal {
     width: 40%;
     position: relative;
-    &::after {
-    
-    } 
+    background-image: none;  
+      
   }
   .second-input-modal {
     width: 20% !important;
-
+    position: relative;
+    background-image: url('../images/dot.svg') no-repeat !important;   
+    background-position:0px;
+    z-index: 100;
+    &::after {
+      position: absolute;
+      content: "2";
+      z-index: 99;
+      top: 0px;
+      left: 0px;
+      width: 10px;
+      height: 10px;
+      background:red;
+      
+    } 
   }
   .third-input-modal {
     width: 20% !important;
+    //  background-image: url('../images/dot.svg') no-repeat;  
+    // background-position:0px;
   }
   @include breakpoint(small only) {
     border:none !important;
