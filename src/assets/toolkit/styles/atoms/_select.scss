@@ -110,8 +110,7 @@ $arrow_color: $gray !default;
     @include breakpoint(medium only) {
      margin-bottom: 20px;
      width: 100%;
-     display: flex;
-    display: none;
+    
     }   
   }
   &.day {
@@ -138,9 +137,9 @@ $arrow_color: $gray !default;
     }
     @include breakpoint(medium only) {
      margin-bottom: 20px;
-     display: flex;
-     opacity:0;
-     display: none;
+     display: flex !important;
+     width: 100%;
+    
     }
   }
   &.hours {
@@ -167,7 +166,7 @@ $arrow_color: $gray !default;
     @include breakpoint(medium only) {
      margin-bottom: 20px;
      display: flex;
-     display: none;
+     
      width: 100%;
     }
   }

@@ -114,8 +114,9 @@
 	__webpack_require__(338);
 	__webpack_require__(339);
 	__webpack_require__(340);
-	__webpack_require__(330);
 	__webpack_require__(341);
+	__webpack_require__(330);
+	__webpack_require__(342);
 
 	// Finally, you can drop test JavaScript here...
 	$(document).ready(function () {
@@ -16581,6 +16582,26 @@
 
 	"use strict";
 
+	// function displayVals() {
+	//   var singleValues = $( "#test" ).val();
+	//   var multipleValues = $( "#multiple" ).val() || [];
+	//   // When using jQuery 3:
+	//   // var multipleValues = $( "#multiple" ).val();
+	//   $( ".first-input-modal" ).html( "<b>Single:</b> " + singleValues +
+	//     " <b>Multiple:</b> " + multipleValues.join( ", " ) );
+	// }
+
+	// $( "select" ).change( displayVals );
+	// displayVals();
+
+	$("#test option:selected").text();
+
+/***/ }),
+/* 332 */
+/***/ (function(module, exports) {
+
+	"use strict";
+
 	$(document).ready(function () {
 	    $(".calendar-slider").click(function () {
 	        $(".calendar-bg").slideToggle();
@@ -16589,7 +16610,7 @@
 	});
 
 /***/ }),
-/* 332 */
+/* 333 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16604,7 +16625,7 @@
 	});
 
 /***/ }),
-/* 333 */
+/* 334 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16639,7 +16660,7 @@
 	});
 
 /***/ }),
-/* 334 */
+/* 335 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16671,7 +16692,7 @@
 	$(init);
 
 /***/ }),
-/* 335 */
+/* 336 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16709,7 +16730,7 @@
 	// })
 
 /***/ }),
-/* 336 */
+/* 337 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16758,7 +16779,7 @@
 	}(jQuery);
 
 /***/ }),
-/* 337 */
+/* 338 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16901,7 +16922,7 @@
 	}
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16911,7 +16932,7 @@
 	});
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16927,7 +16948,7 @@
 	});
 
 /***/ }),
-/* 340 */
+/* 341 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16939,7 +16960,7 @@
 	});
 
 /***/ }),
-/* 341 */
+/* 342 */
 /***/ (function(module, exports) {
 
 	"use strict";

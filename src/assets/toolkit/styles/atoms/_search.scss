@@ -15,37 +15,30 @@
     width: 100%;
     @include breakpoint(xs-small only) {
       position: relative;
-      top: -100px;
+      top: -50px;
       width: 100%;
       z-index: 99 !important;
       display: block;
     }
     @include breakpoint(small only) {
       position: relative;
-      top: -100px;
+      top: -50px;
       width: 100%;
       z-index: 99 !important;
       display: block;
       padding-left: 20px;
       padding-right: 20px;
       border:none !important;
-    }
-    @include breakpoint(medium only) {
-      position: relative;
-      top: 0px;
-      width: 95%;
-      z-index: 99 !important;
-      display: block;
-    }
+    }  
     #search input[type="text"] {
       position: relative;
       width: 33.333333%;
       float: left; 
       background-color:transparent;
       color: black;
-      background-image: url('../images/dot.svg')repeat;   
-      background-position:250px;    
-       background-size: 80px 60px !important;
+      // background-image: url('../images/dot.svg');   
+      // background-position:50px;    
+      // background-size: 5px 5px !important;
       margin: 0px;      
       padding-left: 0px;
       // border:1px solid #fefefe !important;
@@ -57,7 +50,15 @@
       padding-left: 20px;
       padding-right: 0px;
     }
-    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    @include  breakpoint(xs-small) {
+      border:none !important;
+      box-shadow:none !important; 
+      color: #4a4a4a !important;
+      width: 33.33333333%;
+      padding-left: 40px;
+      padding-right: 0px;
+    }  
+     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       font-family: $alt-font-family;
       font-size: 16px;
       font-weight: 400; 
@@ -101,32 +102,37 @@
     width: 40%;
     position: relative;
     background-image: none;  
-      
+    @include breakpoint(xs-small only) {
+      width: 40% !important;
+    }
   }
   .second-input-modal {
     width: 20% !important;
     position: relative;
-    background-image: url('../images/dot.svg') no-repeat !important;   
-    background-position:0px;
+      background-image: url('../images/dot.svg');   
+      background-position:5px;    
+      background-size: 5px 5px !important;
     z-index: 100;
-    &::after {
-      position: absolute;
-      content: "2";
-      z-index: 99;
-      top: 0px;
-      left: 0px;
-      width: 10px;
-      height: 10px;
-      background:red;
-      
-    } 
+    @include breakpoint(xs-small only) {
+      background-position:20px;
+      width: 25% !important;
+    }
+
   }
   .third-input-modal {
     width: 20% !important;
-    //  background-image: url('../images/dot.svg') no-repeat;  
-    // background-position:0px;
+    background-image: url('../images/dot.svg');   
+      background-position:5px;    
+      background-size: 5px 5px !important;
+      @include breakpoint(xs-small only) {
+        width: 25% !important;
+      }
   }
   @include breakpoint(small only) {
+    border:none !important;
+    width: 95% !important;
+  }
+  @include breakpoint(xs-small only) {
     border:none !important;
     width: 95% !important;
   }

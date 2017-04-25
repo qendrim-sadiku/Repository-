@@ -22,8 +22,8 @@
 	}	
 	@include breakpoint(medium only) {
 		width: 100%;
-		padding: 0px;
-		opacity:0;
+		padding: 5px 5px;		
+		height: 48px;
 	}
 	input {
 		z-index: 1;

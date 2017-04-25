@@ -61,6 +61,7 @@ require('./modules/add-numbers-for-input');
 require('./modules/acordion');
 require('./modules/dropdown');
 require('./modules/tabs');
+require('./modules/read-input');
 require('./modules/tab-button');
 require('./modules/gallery');
 require('./modules/add-button');
