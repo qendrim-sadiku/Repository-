@@ -1,13 +1,15 @@
-// function displayVals() {
-//   var singleValues = $( "#test" ).val();
-//   var multipleValues = $( "#multiple" ).val() || [];
-//   // When using jQuery 3:
-//   // var multipleValues = $( "#multiple" ).val();
-//   $( ".first-input-modal" ).html( "<b>Single:</b> " + singleValues +
-//     " <b>Multiple:</b> " + multipleValues.join( ", " ) );
-// }
- 
-// $( "select" ).change( displayVals );
-// displayVals();
+function displayVals() {
+  var singleValues = $( ".search-modal #test" ).val(); 
+  var multiValues = $( ".search-modal #second-test" ).val();
+  var othermultiValues = $( ".search-modal #third-test" ).val();
 
-$( "#test option:selected" ).text();
+  // When using jQuery 3:
+  // var multipleValues = $( "#multiple" ).val();
+  $( ".lokacioni" ).html( singleValues );
+  $( ".dita" ).html( multiValues);
+  $( ".hour" ).html( othermultiValues);
+}
+ 
+$( "select" ).change( displayVals );
+displayVals();
+

@@ -39,23 +39,38 @@
             line-height:0px;
 			width: 26px;
             height: 26px;
+            @include breakpoint(xs-small only) {
+                width: 15px;
+                height: 15px;
+            }
+              @include breakpoint(small only) {
+                width: 15px;
+                height: 15px;
+            }
 		}
 		@include breakpoint(xs-small only) {
 			padding: 10px;
             bottom:-7px;
             line-height: 35px;
-            left: 60px;
-            right: 60px;                
+            left: 65px;
+            right: 65px;                
             text-align: center;
-				    		    	
+	        width: 180px;    
+            height: 40px;   			    		    	 
+            font-size: 15px;
+            line-height:25px;
 		}
         @include breakpoint(small only) {
 			padding: 10px;
             bottom:-7px;
             line-height: 35px;
-            left: 60px;
-            right: 60px;   		    	
+            left: 85px;
+            right: 85px;                
             text-align: center;
+            width: 180px;    
+            height: 40px;                                    
+            font-size: 15px;
+            line-height:25px;
 		}
           	    	
 	}

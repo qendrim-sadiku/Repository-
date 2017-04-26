@@ -93,17 +93,18 @@
       }
       @include breakpoint(medium only) {    
         margin: auto;
-        max-width: 48.4%;
+        margin-top: 10px;
+        max-width: 23%;
         float: left !important;
         margin-right: 0px;
         padding-left: 0px;
-        margin-bottom: 20px;  
+        margin-bottom: 10px;  
         &:nth-of-type(even) {
-          margin-left: 0px;
+          margin-right:20px;
           
         } 
         &:nth-of-type(odd) {
-          margin-right: 10px;
+          margin-right:20px;
         } 
         
       }

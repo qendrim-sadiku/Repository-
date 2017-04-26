@@ -268,7 +268,7 @@
 	}
 
 	.select-options {
-		overflow-y: scroll;
+		// overflow-y: scroll;
 		height:0px;
 		position: relative;
 	 	width: 100%;
@@ -277,9 +277,11 @@
 	  	top: 0;
 	  	left: 0;
 	  	padding-top:10px;
-	  	padding-bottom: 140px;
+	  	padding-bottom: 190px;
 	  	display: none;
-	  	background:transparent;
+	  	background:$white;
+	  	padding-left: 10px;
+	  	padding-right: 10px;
 	  	 &::-webkit-scrollbar{ display: none;}
 	    &::-webkit-moz-scrollbar{ display: none;}
 	    &::-o-scrollbar{ display: none;}

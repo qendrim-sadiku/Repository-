@@ -126,7 +126,7 @@
 		border-radius: 3px;
 		padding: 10px 20px;
 		color: $primary;	
-		font-size: 18px;
+		font-size: 16px;
 		position: relative;
 		box-shadow: none;
 		background:transparent;
@@ -200,7 +200,7 @@
 	}
 
 	.select-options {
-		overflow-y: scroll;
+		// overflow-y: scroll;
 		height:0px;
 		position: relative;
 	 	width: 100%;
@@ -211,7 +211,7 @@
 	  	padding-top:10px;
 	  	padding-bottom: 140px;
 	  	display: none;
-	  	background:transparent;
+	  	background:$white;
 	  	box-shadow: 0px;
 	  	 &::-webkit-scrollbar{ display: none;}
 	    &::-webkit-moz-scrollbar{ display: none;}

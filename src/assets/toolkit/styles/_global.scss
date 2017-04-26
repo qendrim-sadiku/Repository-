@@ -22,6 +22,7 @@ a {
   	-o-background-size: cover;
   	background-size: cover;			
 	height: 100%;	
+	overflow:hidden;
 	.container {
 		@include grid-row();		
 		h2 {					
@@ -29,7 +30,7 @@ a {
 			font-weight: regular;
 			line-height: 1.35;
 			font-size: 40px;
-			margin:auto;
+			// margin:auto;
 			text-align: center;
 			color:$white !important;
 			opacity: 1;
@@ -37,16 +38,16 @@ a {
 			position: relative;
 			@include  breakpoint(xs-small only) {
 				font-size: 24px;
-				padding-left: 10px;
-				padding-right: 10px;
+				padding-left: 0px;
+				padding-right:0px;
 				line-height: 1;	
 				margin-top: 0px;
 				margin-bottom: 10px;
 			}
 			@include  breakpoint(small only) {
 				font-size: 27px;
-				padding-left: 10px;
-				padding-right: 10px;
+				padding-left: 0px;
+				padding-right:0px;
 				line-height: 1;	
 				margin-top: 0px;
 				margin-bottom: 10px;
@@ -61,15 +62,18 @@ a {
     }
 	
 	@include breakpoint(xs-small only) {
-		margin-bottom: 0;
-		padding-bottom: 0px;
+		margin-bottom: 20px;
+		padding-left:10px;
+		padding-right:10px;
 	}
 	@include breakpoint(small only) {
+		padding-left: 20px;
+		padding-right: 20px;
 		margin-bottom: 0;
 		padding-bottom: 0px;
 	}
 	.home-forms {		
-		margin-top: 95px;
+		margin-top: 25px;
 		display: flex;
 		@include grid-row();
 		@include breakpoint(xs-small only) {
@@ -118,23 +122,20 @@ a {
 		padding-bottom: 0px;
 		overflow: hidden;
 	}
-	@include breakpoint(large only) {
-		padding-bottom: 250px;		
-		height: auto;
+	@include breakpoint(large only) {		
 		overflow: hidden;
 	}
 	@include breakpoint(xlarge only) {
-		padding-bottom: 300px;		
-		height: auto;
+		
+		
 	}
 	@include breakpoint(xxlarge only) {
-		padding-bottom: 321px;		
-		height: auto;
+		
 	}
 	@include breakpoint(desktop only) {
-		padding-bottom: 350px;
+		// padding-bottom: 350px;
 
-		height: auto;
+		// height: auto;
 	}
 	&:after {
 		position: absolute;
