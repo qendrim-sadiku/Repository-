@@ -290,20 +290,21 @@
 					margin-top: 100px;
 					line-height: 45px;
 					@include breakpoint(xs-small only) {
-						
+						line-height: 30px;
 						padding-left: 0px;
 						text-align: center;
 						font-size: 12px;
 
 					}
 					@include breakpoint(small only) {
-						
+						line-height: 30px;
 						padding-left: 0px;
 						text-align: center;
 						font-size: 12px;
 
 					}
 					@include breakpoint(medium only) {
+						line-height: 30px;
 						padding-left: 0px;
 						font-size: 13px;
 						text-align: center;

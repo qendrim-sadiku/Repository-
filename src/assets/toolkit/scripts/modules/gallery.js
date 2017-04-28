@@ -1,6 +1,4 @@
-$('.imageThumb ').on('click', function() {
-	
-
+$('.imageThumb ').on('click', function() {	
   $('#main-product-image').attr('src',$(this).attr('src'));
 });
 		

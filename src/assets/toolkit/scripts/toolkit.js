@@ -42,6 +42,7 @@ var flexibility = require('../../vendor/flexibility/flexibility.js');
 // console.log($);
 // $('h1').fadeOut(2000);
 
+var sweetalert = require('../../vendor/sweetalert/dist/sweetalert.min.js');
 
 
 
@@ -60,6 +61,7 @@ require('./modules/upload');
 require('./modules/add-numbers-for-input');
 require('./modules/acordion');
 require('./modules/dropdown');
+require('./modules/alert');
 require('./modules/tabs');
 require('./modules/read-input');
 require('./modules/tab-button');

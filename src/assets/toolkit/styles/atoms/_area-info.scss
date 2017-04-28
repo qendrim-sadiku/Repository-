@@ -172,7 +172,11 @@
         @include breakpoint(medium only) {
           float: left;
         }
-      }            
+      }    
+      @include breakpoint(medium only) {
+
+        padding-bottom: 20px;
+      }        
     }
     .call-info-txt {     
       .info-p {

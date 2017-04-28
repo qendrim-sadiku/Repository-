@@ -39,6 +39,12 @@
 			font-weight: 600;
 			color: #7f98f6;
 			text-transform: uppercase;
+			@include breakpoint(xs-small only) {
+				left: 22px;
+			}
+			@include breakpoint(small only) {
+				left: 23px;
+			}
 		}
 		textarea {
 			resize: none;
@@ -46,8 +52,8 @@
 			padding-top: 30px;
 			padding-left: 13px;
 			height: 92px;
-			font-family: $font-family;
-			font-weight: 500;				
+			font-family: $alt-font-family;
+			font-weight: 300;				
  			font-size: 14px;
   			line-height: 1.71;
   			text-align: left;
@@ -103,6 +109,12 @@
 			font-weight: 600;
 			color: #7f98f6;
 			text-transform: uppercase;
+			@include breakpoint(xs-small only) {
+				left: 22px;
+			}
+			@include breakpoint(small only) {
+				left: 23px;
+			}
 		}
 		textarea {
 			resize: none;
@@ -110,8 +122,8 @@
 			padding-top: 25px;
 			padding-left: 13px;
 			height: 58px;
-			font-family: $font-family;
-			font-weight: 500;				
+			font-family: $alt-font-family;
+			font-weight: 300;				
 			font-size: 14px;
 			line-height: 1.71;
 			text-align: left;

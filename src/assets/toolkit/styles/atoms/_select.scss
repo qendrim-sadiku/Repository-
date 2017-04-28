@@ -159,6 +159,7 @@ $arrow_color: $gray !default;
     .list {
       left: 0 !important;
       right: 0 !important;
+      height: 200px;
     }
     @include breakpoint(xs-small only) {
       margin-bottom: 20px;
@@ -293,7 +294,7 @@ $arrow_color: $gray !default;
     font-family: $alt-font-family;
     position: relative;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
     padding-bottom: 15px;
     padding-top: 15px;    
     list-style: none;
@@ -307,7 +308,7 @@ $arrow_color: $gray !default;
     }
     &.selected { 
       font-family:$alt-font-family;
-      font-weight: bold;
+      font-weight: 500;
       color: $white;
       background-color:$primary-color;  
     }

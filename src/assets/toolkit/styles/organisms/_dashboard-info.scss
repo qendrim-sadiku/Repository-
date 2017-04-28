@@ -16,13 +16,14 @@
 			font-size: 13px;
 			font-weight: bold;
 			text-transform: uppercase;
+			margin-top: 130px;
 		}
 		
 		.about-stat-input {
 			margin: 0 !important;
 			padding:0 !important;
 			textarea {
-			font-family: $alt-font-family;
+				font-family: $alt-font-family;
 				font-weight: 300;				
  				font-size: 14px;
   				line-height: 1.71;
@@ -142,8 +143,8 @@
 					background: #e0e0e0;
 					color: #626262;
 					height: 44px;
-					padding-left: 15px;
-					padding-right: 15px;
+					padding-left: 30px;
+					padding-right: 30px;
 					text-align: center;
 					line-height: 44px;
 					font-weight: 300;
@@ -205,8 +206,8 @@
 					background: #e0e0e0;
 					color: #626262;
 					height: 44px;
-					padding-left: 15px;
-					padding-right: 15px;
+					padding-left: 30px;
+					padding-right: 30px;
 					text-align: center;
 					line-height: 44px;
 					font-weight: 300;
@@ -298,7 +299,8 @@
 					}							
 				}
 				label {
-					
+					font-family: $alt-font-family;
+					font-weight: 400;	
 				}					
 			}	
 			@include breakpoint(xs-small only) {

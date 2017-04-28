@@ -30,7 +30,7 @@ a {
 			font-weight: regular;
 			line-height: 1.35;
 			font-size: 40px;
-			// margin:auto;
+			margin:auto;
 			text-align: center;
 			color:$white !important;
 			opacity: 1;
@@ -73,7 +73,7 @@ a {
 		padding-bottom: 0px;
 	}
 	.home-forms {		
-		margin-top: 25px;
+		margin-top: 95px;
 		display: flex;
 		@include grid-row();
 		@include breakpoint(xs-small only) {
@@ -104,6 +104,9 @@ a {
 		@include breakpoint(large only) {
 			padding-right:10px;
 			padding-left:10px;
+		}
+		@include breakpoint(laptop only) {
+			margin-top: 45px;
 		}
 	}
 	@include breakpoint(xs-small only) {
