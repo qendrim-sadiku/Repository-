@@ -52,6 +52,15 @@ a {
 				margin-top: 0px;
 				margin-bottom: 10px;
 			}
+			@include  breakpoint(medium only) {
+				margin-top: -20px;
+			}
+			@include  breakpoint(large only) {
+				margin-top: -50px;
+			}
+			@include  breakpoint(xlarge only) {
+				margin-top: -50px;
+			}
 		}
 		
 	}
@@ -73,6 +82,7 @@ a {
 		padding-bottom: 0px;
 	}
 	.home-forms {		
+
 		margin-top: 95px;
 		display: flex;
 		@include grid-row();
@@ -100,13 +110,20 @@ a {
 			display: flex;			
 			width: 100%; 
 			margin-bottom: 20px;
+			margin-top: 20px;
 		}
 		@include breakpoint(large only) {
 			padding-right:10px;
 			padding-left:10px;
+			margin-top: 0px;
+		}
+		@include breakpoint(xlarge only) {
+			padding-right:10px;
+			padding-left:10px;
+			margin-top: 25px;
 		}
 		@include breakpoint(laptop only) {
-			margin-top: 45px;
+			margin-top: 35px;
 		}
 	}
 	@include breakpoint(xs-small only) {
