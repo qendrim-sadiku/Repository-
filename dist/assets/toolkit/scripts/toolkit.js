@@ -16814,6 +16814,7 @@
 	          });
 	          $(function () {
 	            $(".remove").click(function () {
+	              var pipParent = $(this).parent(".pip");
 	              swal({
 	                title: "Fshijë foton?",
 	                text: "  A jeni i sigurt qe deshironi te fshini kete foto?  Kujdes! Ky veprim nuk mund te kthehet mrapa.   ",
@@ -16825,9 +16826,9 @@
 	                closeOnConfirm: true
 	              }, function (isConfirmed) {
 	                if (isConfirmed) {
-	                  var rev = $(".remove");
+	                  //let rev = $(".remove");
 
-	                  $(rev).parent(".pip").remove();
+	                  pipParent.remove();
 	                  swal("Deleted!", "Your imaginary file has been deleted.", "success");
 	                }
 	              });

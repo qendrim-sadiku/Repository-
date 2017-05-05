@@ -52,6 +52,7 @@
     padding-left: 0px;
     padding-right: 0px;
     margin-top: 15px;
+    padding-right: 10px;
     img {
       height: 100%;
       width: 100%;
@@ -61,13 +62,21 @@
       border:transparent;   
       cursor: pointer;        
       padding-left: 10px;
-      &::first-child {
-
-      }
     }
-     
-    
-    
+    .imageThumb:first-child {
+      padding-left: 0;
+    }
+    @include  breakpoint(xs-small only) {
+      width: 50%;
+
+    }
+    @include  breakpoint(xs-small only) {
+      width: 50%;
+
+    }
+  }
+  .pip:last-child {
+    padding-right: 0;
   }
   .remove {    
     border-radius:50px;
