@@ -56,7 +56,7 @@ var upload = require('../../vendor/ssi-uploader/dist/ssi-uploader/js/ssi-uploade
 // var fooModule = require('./foo-module');
 // var bar = fooModule.foo();
 
-require('./modules/map');
+// require('./modules/map');
 require('./modules/upload');
 require('./modules/add-numbers-for-input');
 require('./modules/acordion');

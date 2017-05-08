@@ -8,10 +8,10 @@ $(document).ready(function() {
         var fileReader = new FileReader();
         fileReader.onload = (function(e) {
           var file = e.target;
-          $("<span class=\"pip\">" +
+          $("<span class=\"m-pip\">" +  "<span class=\"pip\">" +
             "<img class=\"imageThumb\" id=\"img\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
             "<br/><span class=\"remove\"></span>" +
-            "</span>").insertAfter("#files");
+            "</span>" + "</div>" ).insertAfter("#files");
             // $(".remove").click(function(){
             //   $(this).parent(".pip").remove();
             // });             
