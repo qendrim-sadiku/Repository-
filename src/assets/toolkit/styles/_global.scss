@@ -4,6 +4,7 @@ body {
 	line-height: rem-calc($base-line-height);
 	color: $blue-gray;
 	overflow-x: hidden;
+	outline: none !important;
 }
 
 a {

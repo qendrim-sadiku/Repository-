@@ -99,7 +99,6 @@
 	// var fooModule = require('./foo-module');
 	// var bar = fooModule.foo();
 
-	// require('./modules/map');
 	__webpack_require__(327);
 	__webpack_require__(328);
 	__webpack_require__(329);
@@ -117,8 +116,9 @@
 	__webpack_require__(341);
 	__webpack_require__(342);
 	__webpack_require__(343);
-	__webpack_require__(332);
 	__webpack_require__(344);
+	__webpack_require__(333);
+	__webpack_require__(345);
 
 	// Finally, you can drop test JavaScript here...
 	$(document).ready(function () {
@@ -16761,6 +16761,36 @@
 
 /***/ }),
 /* 327 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var $ = __webpack_require__(321);
+
+	function init() {
+
+		var map;
+		function initialize() {
+			if (!$('.google-map').size()) return;
+
+			var mapOptions = {
+				zoomControl: false,
+				scaleControl: false,
+				scrollwheel: false,
+				disableDoubleClickZoom: true,
+				zoom: 5,
+				center: new google.maps.LatLng(37, 38)
+			};
+			map = new google.maps.Map($('.google-map').get(0), mapOptions);
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+	}
+
+	$(init);
+
+/***/ }),
+/* 328 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16775,7 +16805,7 @@
 	        var fileReader = new FileReader();
 	        fileReader.onload = function (e) {
 	          var file = e.target;
-	          $("<span class=\"m-pip\">" + "<span class=\"pip\">" + "<img class=\"imageThumb\" id=\"img\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" + "<br/><span class=\"remove\"></span>" + "</span>" + "</div>").insertAfter("#files");
+	          $("<span class=\"pip\">" + "<img class=\"imageThumb\" id=\"img\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" + "<br/><span class=\"remove\"></span>" + "</div>").insertAfter("#files");
 	          // $(".remove").click(function(){
 	          //   $(this).parent(".pip").remove();
 	          // });             
@@ -16814,7 +16844,7 @@
 	});
 
 /***/ }),
-/* 328 */
+/* 329 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16848,7 +16878,7 @@
 	};
 
 /***/ }),
-/* 329 */
+/* 330 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16861,7 +16891,7 @@
 	});
 
 /***/ }),
-/* 330 */
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16900,13 +16930,13 @@
 	$(init);
 
 /***/ }),
-/* 331 */
+/* 332 */
 /***/ (function(module, exports) {
 
 	"use strict";
 
 /***/ }),
-/* 332 */
+/* 333 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16952,7 +16982,7 @@
 	});
 
 /***/ }),
-/* 333 */
+/* 334 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16973,7 +17003,7 @@
 	displayVals();
 
 /***/ }),
-/* 334 */
+/* 335 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16986,7 +17016,7 @@
 	});
 
 /***/ }),
-/* 335 */
+/* 336 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -17000,7 +17030,7 @@
 	});
 
 /***/ }),
-/* 336 */
+/* 337 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -17035,7 +17065,7 @@
 	});
 
 /***/ }),
-/* 337 */
+/* 338 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -17067,7 +17097,7 @@
 	$(init);
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -17105,7 +17135,7 @@
 	// })
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -17154,7 +17184,7 @@
 	}(jQuery);
 
 /***/ }),
-/* 340 */
+/* 341 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -17297,7 +17327,7 @@
 	}
 
 /***/ }),
-/* 341 */
+/* 342 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -17307,7 +17337,7 @@
 	});
 
 /***/ }),
-/* 342 */
+/* 343 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -17323,7 +17353,7 @@
 	});
 
 /***/ }),
-/* 343 */
+/* 344 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -17335,7 +17365,7 @@
 	});
 
 /***/ }),
-/* 344 */
+/* 345 */
 /***/ (function(module, exports) {
 
 	"use strict";
