@@ -11,7 +11,7 @@ $(document).ready(function() {
           $("<span class=\"pip\">" +
             "<img class=\"imageThumb\" id=\"img\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
             "<br/><span class=\"remove\"></span>" +
-            "</div>" ).insertAfter("#files");
+            "</div>" ).insertBefore("#files");
             // $(".remove").click(function(){
             //   $(this).parent(".pip").remove();
             // });             
