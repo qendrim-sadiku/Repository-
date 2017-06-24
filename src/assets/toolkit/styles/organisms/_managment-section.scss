@@ -7,16 +7,16 @@
 		padding-bottom: 20px;
 		position: relative;
 		overflow: hidden;
-		background: #f2f8fa;						
+		background: #f2f8fa;
 		line-height: 1.5;
 		font-weight: 300;
 		height: 100%;
 		color: #888;
 		-webkit-font-smoothing: antialiased;
-		.tabs {			
+		.tabs {
 			position: relative;
 			padding-left: 0px;
-			padding-right:0px;	
+			padding-right:0px;
 			padding-bottom: 0px;
 			margin: 0;
 			width: 100%;
@@ -26,7 +26,7 @@
 			li {
 				a {
 					text-transform: uppercase;
-					background:#fefefe;					
+					background:#fefefe;
 					font-weight: normal;
 					font-size: 12px;
 					float: left;
@@ -41,15 +41,15 @@
 					color: #6b7897;
 					@include breakpoint(xs-small only) {
 						display: none;
-					}	
-					@include breakpoint(small only) {						
+					}
+					@include breakpoint(small only) {
 						display: none;
-					}	
+					}
 					@include breakpoint(medium only) {
 						display: none;
 					}
 				}
-				a:active {						
+				a:active {
 		  			color:#7f98f6;
 				}
 				a:focus {
@@ -57,26 +57,26 @@
 				}
 				a:target {
 				   color:#7f98f6;
-				}		
+				}
 				.active {
 					color: $primary;
-					background-color: #474c54;  					
-				}				
+					background-color: #474c54;
+				}
 			}
 
 			@include breakpoint(xs-small only) {
 				padding-left: 10px;
 				padding-right:10px;
-			}	
+			}
 		}
 		.show-button {
 			text-align: center;
 			width: 100%;
-			
+
 			display: none;
 			.calendar-slider {
 				background:$white;
-				width: 100%;								
+				width: 100%;
 				border: solid 1px #e0e0e0;
 				font-family: $font-family;
 				font-weight: 400 !important;
@@ -97,13 +97,13 @@
 			}
 			@include breakpoint(medium only) {
 				display: block;
-				padding-left: 90px;
-				padding-right: 90px;
+				padding-left: 20px;
+				padding-right: 20px;
 			}
 		}
 		.tabs_item {
 			display: none;
-			padding: 30px 0;						
+			padding: 30px 0;
 			&:first-child {display: block;}
 		}
 		@include breakpoint(xs-small only) {
@@ -118,7 +118,7 @@
 		@include breakpoint(medium only) {
 			max-width: 100%;
 			padding-left: 0px;
-		}		
+		}
 		.input {
 		  border: 1px solid #ddd;
 		  border-radius: 0px;
@@ -130,7 +130,7 @@
 		  background:$white;
 		  color: $primary !important;
 		  font-family: $font-family;
-		  font-size: 16px;	
+		  font-size: 16px;
 		  position: relative;
 		  font-weight: 500;
 		  display: none;
@@ -143,13 +143,13 @@
 		   @include breakpoint(medium only) {
 		  	display: block !important;
 		  }
-		}		
+		}
 		.select {
 		  cursor: pointer;
 		  position: relative;
 		  margin-top: 15px;
 		  padding-left: 20px;
-		  padding-right: 20px;		
+		  padding-right: 20px;
 		  width: 100%;
 		  text-align: center;
 		  font-family: $font-family;
@@ -188,7 +188,7 @@
 		    }
 		  }
 		}
-		.select-options {		 
+		.select-options {
 		  position: absolute;
 		  width: 100%;
 		  border-radius: 3px;
@@ -209,13 +209,13 @@
 		    margin: 0;
 		    display: block !important;
 		    li {
-		    	
+
 		      a {
 		      	width: 100%;
 		      	margin: 0px;
 		      	display: block !important;
 		      	color: $primary !important;
-		      }	
+		      }
 		      width: 100%;
 		      border-bottom: none !important;
 		      font-size: 13px;
@@ -227,7 +227,7 @@
 		        background-color: #f2f2f2;
 		      }
 		      &:last-child {
-		        border-bottom: 0px solid #ddd !important; 
+		        border-bottom: 0px solid #ddd !important;
 		      }
 		      &.selected {
 		        > span:first-child {
@@ -267,7 +267,7 @@
       margin:0;
       border:none;
 	  float: none;
-	}		
+	}
 	@include breakpoint(Imac only) {
 		height: 100%;
 	}

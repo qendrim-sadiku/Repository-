@@ -16,17 +16,17 @@ a {
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 //
 .main {
-	position: relative;		
-	background: url('../images/bitmap.jpg') no-repeat center center fixed; 
+	position: relative;
+	background: url('../images/bitmap.jpg') no-repeat center center fixed;
  	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
-  	background-size: cover;			
-	height: 100%;	
+  	background-size: cover;
+	height: 100%;
 	overflow:hidden;
 	.container {
-		@include grid-row();		
-		h2 {					
+		@include grid-row();
+		h2 {
 			font-family: $alt-font-family;
 			font-weight: regular;
 			line-height: 1.35;
@@ -35,13 +35,13 @@ a {
 			text-align: center;
 			color:$white !important;
 			opacity: 1;
-			z-index: 1;			
+			z-index: 1;
 			position: relative;
 			@include  breakpoint(xs-small only) {
 				font-size: 24px;
 				padding-left: 0px;
 				padding-right:0px;
-				line-height: 1;	
+				line-height: 1;
 				margin-top: 0px;
 				margin-bottom: 10px;
 			}
@@ -49,7 +49,7 @@ a {
 				font-size: 27px;
 				padding-left: 0px;
 				padding-right:0px;
-				line-height: 1;	
+				line-height: 1;
 				margin-top: 0px;
 				margin-bottom: 10px;
 			}
@@ -63,14 +63,14 @@ a {
 				margin-top: -50px;
 			}
 		}
-		
+
 	}
 	@include breakpoint(small only) {
       width: 100%;
       float: none;
 
     }
-	
+
 	@include breakpoint(xs-small only) {
 		margin-bottom: 20px;
 		padding-left:10px;
@@ -82,7 +82,7 @@ a {
 		margin-bottom: 0;
 		padding-bottom: 0px;
 	}
-	.home-forms {		
+	.home-forms {
 
 		margin-top: 95px;
 		display: flex;
@@ -92,24 +92,24 @@ a {
 			padding-right: 10px;
 			display: flex;
 			flex-direction:column;
-			max-width: 100%; 
+			max-width: 100%;
 			margin-bottom: 20px;
-			
+
 		}
 		@include breakpoint(small only) {
 			padding-left: 10px;
 			padding-right: 10px;
 			display: flex;
 			flex-direction:column;
-			max-width: 100%; 
+			max-width: 100%;
 			margin-bottom: 20px;
 			display: block !important;
 		}
 		@include breakpoint(medium only) {
 			padding-left: 10px;
 			padding-right: 10px;
-			display: flex;			
-			width: 100%; 
+			display: flex;
+			width: 100%;
 			margin-bottom: 20px;
 			margin-top: 20px;
 		}
@@ -132,26 +132,26 @@ a {
 		background-size:cover !important;
 		overflow: hidden;
 		position: fixed;
-		
+
 	}
 	@include breakpoint(small only) {
 		padding-bottom: 0px;
 		overflow: hidden;
-		// position: fixed;		
+		// position: fixed;
 	}
 	@include breakpoint(medium only) {
 		padding-bottom: 0px;
 		overflow: hidden;
 	}
-	@include breakpoint(large only) {		
+	@include breakpoint(large only) {
 		overflow: hidden;
 	}
 	@include breakpoint(xlarge only) {
-		
-		
+
+
 	}
 	@include breakpoint(xxlarge only) {
-		
+
 	}
 	@include breakpoint(desktop only) {
 		// padding-bottom: 350px;
@@ -166,38 +166,38 @@ a {
 		width: 100%;
 		height: 100%;
 		background: #1c2143;
-		opacity: 0.65;		
+		opacity: 0.65;
 	}
-}	
+}
 // Dashboard Resevation
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 //
 .calendar-and-managment-section {
 	display:flex;
-	height: 100%;
+	// height: 100%;
 	@include breakpoint(xs-small only) {
 		display: -webkit-flex;
 		display: flex;
 		-webkit-flex-direction: column;
-		flex-direction: column; 
-		
+		flex-direction: column;
+
 	}
 	@include breakpoint(small only) {
 		display: -webkit-flex;
 		display: flex;
 		-webkit-flex-direction: column;
-		flex-direction: column; 
+		flex-direction: column;
 	}
 	@include breakpoint(medium only) {
 		display: -webkit-flex;
 		display: flex;
 		-webkit-flex-direction: column;
-		flex-direction: column; 
-	}	
+		flex-direction: column;
+	}
 	@include breakpoint(macbook only) {
-		
+
   	}
 	@include breakpoint(Imac only) {
 		height: 100%;
-	}		
+	}
 }

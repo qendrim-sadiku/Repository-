@@ -8,7 +8,7 @@
 	.stadium-photos {
 		width: 65%;
 		margin-right: 84px;
-		
+
 		h5 {
 			clear: both;
 			font-family: $font-family;
@@ -16,40 +16,40 @@
 			font-size: 13px;
 			font-weight: bold;
 			text-transform: uppercase;
-			margin-top: 180px !important; 
+			margin-top: 180px !important;
 		}
-		
+
 		.about-stat-input {
 			margin: 0 !important;
 			padding:0 !important;
 			textarea {
-				font-family: $alt-font-family;
-				font-weight: 300;				
- 				font-size: 14px;
-  				line-height: 1.71;
-  				text-align: left;
-  				color: #626262;
-				padding-top: 10px;
-				padding-left: 18px;
-				padding-right: 21px;
-				outline: none;
-				resize: none;
-				box-shadow:none;
-				font-size: 14px;
+					font-family: $alt-font-family;
+					font-weight: 300;
+	 				font-size: 14px;
+	  			line-height: 1.71;
+	  			text-align: left;
+	  			color: #626262;
+					padding-top: 10px;
+					padding-left: 18px;
+					padding-right: 21px;
+					outline: none;
+					resize: none;
+					box-shadow:none;
+					font-size: 14px;
   				line-height: 1.71;
   				text-align: left;
   				color: #626262;
 			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 				font-family: $alt-font-family;
-				font-weight: 300;				
+				font-weight: 300;
  				font-size: 14px;
   				line-height: 1.71;
   				text-align: left;
   				color: #626262;
-				}		
+				}
 			&::-moz-placeholder { /* Firefox 19+ */
 				font-family: $font-family;
-				font-weight: 500;				
+				font-weight: 500;
  				font-size: 14px;
   				line-height: 1.71;
   				text-align: left;
@@ -57,7 +57,7 @@
 				}
 			&:-ms-input-placeholder { /* IE 10+ */
 				font-family: $font-family;
-				font-weight: 500;				
+				font-weight: 500;
  				font-size: 14px;
   				line-height: 1.71;
   				text-align: left;
@@ -65,7 +65,7 @@
 				}
 			&:-moz-placeholder { /* Firefox 18- */
 				font-family: $font-family;
-				font-weight: 500;				
+				font-weight: 500;
  				font-size: 14px;
   				line-height: 1.71;
   				text-align: left;
@@ -97,9 +97,9 @@
 		}
 	}
 	.reservation-price {
-		margin-top:-5px;		
+		margin-top:-5px;
 		width:40%;
-				
+
 		form {
 			width: 100%;
 		}
@@ -112,12 +112,12 @@
 			text-transform: uppercase;
 		}
 		input[type='text'] {
-			font-family: $alt-font-family;			
+			font-family: $alt-font-family;
 			max-width: 100% !important;
 			background: none;
 			margin-bottom: 20px;
 			border:1px solid #e0e0e0 !important;
-			height: 44px; 
+			height: 44px;
 			font-weight: 300;
 			box-shadow: none;
 			font-size: 14px;
@@ -126,10 +126,10 @@
 			opacity: 1;
 			font-weight: 300;
 		}
-		.diferent-input {			
+		.diferent-input {
 			display: flex;
 			width: 100%;
-			
+
 			.night {
 				width: 50%;
 				display: flex;
@@ -148,9 +148,9 @@
 					text-align: center;
 					line-height: 44px;
 					font-weight: 300;
-				}			
+				}
 				@include breakpoint(xs-small only) {
-					width: 100%;					
+					width: 100%;
 				}
 				@include breakpoint(small only) {
 					width:50%;
@@ -159,7 +159,7 @@
 					padding-right: 10px;
 				}
 				@include breakpoint(medium only) {
-					width:50%;										
+					width:50%;
 				}
 				@include breakpoint(large only) {
 					width:50%;
@@ -167,7 +167,7 @@
 					margin-right: 10px;
 				}
 				@-moz-document url-prefix()  {
-					padding-right: 50px;
+					padding-right: 60px;
 					width: 40%;
 					@include breakpoint(xs-small only) {
 						width: 94%;
@@ -175,8 +175,8 @@
 						padding:0px;
 					}
 					@include breakpoint(small only) {
-						width: 100%;	
-						margin: 0px;				
+						width: 100%;
+						margin: 0px;
 						padding:0px;
 					}
 					@include breakpoint(medium only) {
@@ -187,7 +187,7 @@
 						width: 40%;
 						padding-left: 0px;
 						padding-right: 50px;
-						
+
 					}
 				}
 			}
@@ -211,27 +211,28 @@
 					text-align: center;
 					line-height: 44px;
 					font-weight: 300;
-				}	
+				}
 				@include breakpoint(xs-small only) {
-					width: 100%;	
-					margin: 0px;	
-					padding:0px;				
+					width: 100%;
+					margin: 0px;
+					padding:0px;
 				}
 				@include breakpoint(small only) {
 					width: 50%;
-					margin: 0px;					
+					margin: 0px;
 					padding:0px;
 				}
 				@include breakpoint(medium only) {
-					width: 50%;					
-				}	
+					width: 50%;
+				}
 				@include breakpoint(large only) {
 					width:50%;
-				
-				}	
+
+				}
 				@-moz-document url-prefix()  {
 					padding-left: 0px;
-					width: 35%;
+					width: 30%;
+
 					float: right;
 					@include breakpoint(xs-small only) {
 						width: 77%;
@@ -249,7 +250,7 @@
 						width: 45%;
 						padding-left: 50px;
 					}
-				}	
+				}
 			}
 			@include breakpoint(xs-small only) {
 				display: flex;
@@ -261,23 +262,23 @@
 				flex-direction: flex;
 				padding:0px;
 			}
-					
+
 		}
 		.radio-button-with-select {
 			position: relative;
 			display: flex;
 			justify-content: space-between;
 			margin:0;
-			.checkbox-buttons {									
-				div.options > label {					
+			.checkbox-buttons {
+				div.options > label {
 					margin-left: 5px;
 					margin-bottom: 20px;
 					> {
 						input {
-							visibility: hidden;							
+							visibility: hidden;
 						}
-						img {								
-							
+						img {
+
 							color: #626262;
 							padding: 10px;
 							margin-right: 18px;
@@ -285,7 +286,7 @@
 							height: 20px;
 							width: 20px;
 							border-radius: 50px;
-							float: left; 
+							float: left;
 							border: 1px solid #e0e0e0;
 						}
 						input:checked + img {
@@ -296,13 +297,13 @@
 							background-color:$primary;
 							border:none;
 						}
-					}							
+					}
 				}
 				label {
 					font-family: $alt-font-family;
-					font-weight: 400;	
-				}					
-			}	
+					font-weight: 400;
+				}
+			}
 			@include breakpoint(xs-small only) {
 				display: flex;
 				flex-direction: column !important;
@@ -319,21 +320,21 @@
 		.submit-res {
 			text-align: center;
 			margin-top: 50px;
-			input[type='submit'] {			
+			input[type='submit'] {
 				background-color:#7f98f6;
 			    border:none;
-			    color:$white; 
+			    color:$white;
 			    font-weight: bold;
 			    text-transform: uppercase;
 			    font-size: 15px;
-			    letter-spacing: normal; 
-			    float: none;     
+			    letter-spacing: normal;
+			    float: none;
 			    padding:15px 38px;
 				@include breakpoint(xs-small only) {
-					margin-left: 0px;					
+					margin-left: 0px;
 				}
-			}		
-		}		
+			}
+		}
 		@include breakpoint(xs-small only) {
 			width: 100%;
 			padding-left: 10px;

@@ -99,6 +99,7 @@
 	// var fooModule = require('./foo-module');
 	// var bar = fooModule.foo();
 
+	// require('./modules/map');
 	__webpack_require__(327);
 	__webpack_require__(328);
 	__webpack_require__(329);
@@ -116,9 +117,8 @@
 	__webpack_require__(341);
 	__webpack_require__(342);
 	__webpack_require__(343);
+	__webpack_require__(332);
 	__webpack_require__(344);
-	__webpack_require__(333);
-	__webpack_require__(345);
 
 	// Finally, you can drop test JavaScript here...
 	$(document).ready(function () {
@@ -16761,36 +16761,6 @@
 
 /***/ }),
 /* 327 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var $ = __webpack_require__(321);
-
-	function init() {
-
-		var map;
-		function initialize() {
-			if (!$('.google-map').size()) return;
-
-			var mapOptions = {
-				zoomControl: false,
-				scaleControl: false,
-				scrollwheel: false,
-				disableDoubleClickZoom: true,
-				zoom: 5,
-				center: new google.maps.LatLng(37, 38)
-			};
-			map = new google.maps.Map($('.google-map').get(0), mapOptions);
-		}
-
-		google.maps.event.addDomListener(window, 'load', initialize);
-	}
-
-	$(init);
-
-/***/ }),
-/* 328 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16844,7 +16814,7 @@
 	});
 
 /***/ }),
-/* 329 */
+/* 328 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16878,7 +16848,7 @@
 	};
 
 /***/ }),
-/* 330 */
+/* 329 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16891,7 +16861,7 @@
 	});
 
 /***/ }),
-/* 331 */
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16930,13 +16900,13 @@
 	$(init);
 
 /***/ }),
-/* 332 */
+/* 331 */
 /***/ (function(module, exports) {
 
 	"use strict";
 
 /***/ }),
-/* 333 */
+/* 332 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16982,7 +16952,7 @@
 	});
 
 /***/ }),
-/* 334 */
+/* 333 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -17003,7 +16973,7 @@
 	displayVals();
 
 /***/ }),
-/* 335 */
+/* 334 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -17016,7 +16986,7 @@
 	});
 
 /***/ }),
-/* 336 */
+/* 335 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -17030,7 +17000,7 @@
 	});
 
 /***/ }),
-/* 337 */
+/* 336 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -17065,7 +17035,7 @@
 	});
 
 /***/ }),
-/* 338 */
+/* 337 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -17097,7 +17067,7 @@
 	$(init);
 
 /***/ }),
-/* 339 */
+/* 338 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -17135,7 +17105,7 @@
 	// })
 
 /***/ }),
-/* 340 */
+/* 339 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -17184,7 +17154,7 @@
 	}(jQuery);
 
 /***/ }),
-/* 341 */
+/* 340 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -17327,7 +17297,7 @@
 	}
 
 /***/ }),
-/* 342 */
+/* 341 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -17337,7 +17307,7 @@
 	});
 
 /***/ }),
-/* 343 */
+/* 342 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -17353,7 +17323,7 @@
 	});
 
 /***/ }),
-/* 344 */
+/* 343 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -17365,7 +17335,7 @@
 	});
 
 /***/ }),
-/* 345 */
+/* 344 */
 /***/ (function(module, exports) {
 
 	"use strict";
