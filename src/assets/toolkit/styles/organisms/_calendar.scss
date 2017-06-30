@@ -263,6 +263,9 @@ label {
   @include breakpoint(large only) {
     width: 40%;
   }
+  @include breakpoint(xlarge only) {
+    width: 40%;
+  }
   @include breakpoint(macbook only) {
     padding-bottom: 26.5%;
   }

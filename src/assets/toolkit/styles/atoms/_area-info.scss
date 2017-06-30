@@ -1,4 +1,4 @@
-#integration-list { 
+#integration-list {
   @include grid-row();
   ul {
     padding: 0;
@@ -13,7 +13,7 @@
       padding-bottom: 0px;
       overflow: hidden;
       margin-bottom: 50px;
-    }       
+    }
   }
   @include breakpoint(xs-small only) {
     width: 100%;
@@ -55,7 +55,7 @@
       display: -webkit-flex;
       display: flex;
       -webkit-flex-direction: column;
-      flex-direction: column; 
+      flex-direction: column;
       img {
         width: 100%;
         margin-bottom: 20px;
@@ -66,7 +66,7 @@
       display: -webkit-flex;
       display: flex;
       -webkit-flex-direction: column;
-      flex-direction: column; 
+      flex-direction: column;
       img {
         width: 100%;
         margin-bottom: 20px;
@@ -77,10 +77,10 @@
         margin-right: 10px;
       }
     }
-  } 
+  }
   .location-and-text {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     .location-info-txt {
       img {
         float: left;
@@ -98,17 +98,20 @@
         margin-bottom: 86px;
         font-size: 24px;
         color: #0b184a;
-        font-weight:500;       
+        font-weight:500;
         @include breakpoint(xs-small only)  {
          margin-bottom: 40px;
         }
         @include breakpoint(small only)  {
          margin-bottom: 40px;
         }
-        @include breakpoint(medium only) {
-          margin-top: 0px;
-          margin-bottom: 70px;
-        }
+        // @include breakpoint(medium only) {
+        //   margin-top: 5px;
+        //   margin-bottom: 70px;
+        // }
+        // @include breakpoint(large only) {
+        //   display: none;
+        // }
         a {
          color: #0b184a;
         }
@@ -120,7 +123,7 @@
           margin-right: 44px;
           font-family: $alt-font-family;
           font-weight: 500;
-         
+
           @include breakpoint(xs-small only)  {
            float: none;
            width: 100%;
@@ -137,7 +140,7 @@
             flex-direction: column;
           }
         }
-      }     
+      }
       .user-info-div {
         float: right;
         span {
@@ -172,13 +175,13 @@
         @include breakpoint(medium only) {
           float: left;
         }
-      }    
+      }
       @include breakpoint(medium only) {
 
         padding-bottom: 20px;
-      }        
+      }
     }
-    .call-info-txt {     
+    .call-info-txt {
       .info-p {
         border:1px solid #7f98f6;
         text-align:center;
@@ -190,7 +193,7 @@
         font-size: 16px;
         font-weight: regular;
         margin-bottom: 50px;
-        margin-top: 10px; 
+        margin-top: 10px;
         img {
           margin-right: 14px;
           color: #0a184a;
@@ -224,28 +227,28 @@
             margin-right: 0px;
           }
         }
-      }      
+      }
     }
     @include breakpoint(xs-small only) {
       width: 100%;
       display: -webkit-flex;
       display: flex;
       -webkit-flex-direction: column;
-      flex-direction: column; 
+      flex-direction: column;
     }
     @include breakpoint(small only) {
       display: flex;
       flex-direction: column;
-      width: 100%;     
-    }      
+      width: 100%;
+    }
   }
 }
-.detail {  
+.detail {
   display: none;
   .collapse-txt {
     margin-top: 22px;
     display: flex;
-    justify-content: space-between;     
+    justify-content: space-between;
     .about-stat {
       width: 40%;
       h5 {
@@ -260,19 +263,19 @@
         color: #9b9b9b;
         font-size: 16px;
         font-weight:500;
-        line-height: 1.63;  
+        line-height: 1.63;
       }
       @include breakpoint(xs-small only) {
         @include grid-column(12);
       }
       @include breakpoint(small only) {
-        @include grid-column(12); 
+        @include grid-column(12);
       }
       @include breakpoint(medium only) {
         @include grid-column(12);
       }
     }
-    .collapse-info-stuf {                       
+    .collapse-info-stuf {
       width: 25%;
       margin-left: 89px;
       margin-top:30px;
@@ -296,7 +299,7 @@
               margin:auto;
               margin-bottom: 10px;
             }
-          }         
+          }
           @include breakpoint(small only ) {
             text-align: center;
             margin-left: -20px;
@@ -334,11 +337,11 @@
           @include breakpoint(small only ) {
             text-align: center;
             margin-left: 0px;
-          }          
+          }
           @include breakpoint(medium only ) {
             text-align: center;
-           
-          }  
+
+          }
           span {
             @include breakpoint(small only) {
               margin-left: 0px;
@@ -369,15 +372,15 @@
               margin:auto;
               margin-bottom: 10px;
             }
-          }   
+          }
           @include breakpoint(small only ) {
             text-align: center;
             margin-left: auto !important;
           }
           @include breakpoint(medium only ) {
             text-align: center;
-           
-          }          
+
+          }
         }
         @include breakpoint(xs-small only) {
          flex:1 0 auto;
@@ -432,7 +435,7 @@
             margin-top: 20px;
             margin-bottom: -30px;
           }
-      }  
+      }
       .free-res-button {
         display: block;
         height: auto;
@@ -449,7 +452,7 @@
           margin-bottom: 25px;
           font-size: 14px;
           @include breakpoint(small only) {
-            margin-top: 0px;           
+            margin-top: 0px;
           }
 
           @include breakpoint(medium only) {
@@ -458,18 +461,18 @@
             width: 100%;
             text-align: center;
             line-height: 40px;
-            margin-top: 10px;  
+            margin-top: 10px;
           }
         }
         @include breakpoint(small only) {
           display: flex;
           margin-top: 70px;
-         
+
         }
         @include breakpoint(medium only) {
           display: flex;
           margin-top: 20px;
-         
+
         }
       }
       @include breakpoint(xs-small only) {
@@ -479,7 +482,7 @@
       @include breakpoint(small only) {
         width: 100%;
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
       }
       @include breakpoint(medium only) {
           display: flex;
@@ -489,25 +492,22 @@
           margin-top: -50px;
       }
     }
-    @include breakpoint(xs-small only) {      
+    @include breakpoint(xs-small only) {
       display: -webkit-flex;
       display: flex;
       -webkit-flex-direction: column;
-      flex-direction: column; 
+      flex-direction: column;
     }
-    @include breakpoint(small only) {      
+    @include breakpoint(small only) {
       display: -webkit-flex;
       display: flex;
       -webkit-flex-direction: column;
-      flex-direction: column; 
+      flex-direction: column;
     }
-    @include breakpoint(medium only) {      
+    @include breakpoint(medium only) {
       display: -webkit-flex;
       display: flex;
       flex-wrap: wrap;
-    }  
+    }
   }
 }
-
-
-

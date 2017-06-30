@@ -7,17 +7,17 @@
     color: #4a4a4a !important;
     font-family: $alt-font-family;
     font-size: 16px;
-    font-weight: 400; 
+    font-weight: 400;
     box-shadow:none;
     display: none;
-    position: relative;  
+    position: relative;
     border:none !important;
     width: 100%;
     height: 50px;
-   
+
     span {
       line-height: 50px;
-      padding-right: 25px;
+      padding-right: 20px;
       position: relative;
       &::after {
         position: absolute;
@@ -28,25 +28,25 @@
         height: 2px;
         background: #4a4a4a;
         border-radius:50px;
-        
-      }      
+
+      }
       @include breakpoint(xs-small only) {
         padding-right: 15px;
-      } 
+      }
     }
     span:first-child:after {
       background:transparent;
     }
-    
+
     @include breakpoint(xs-small only) {
       position: relative;
       top: -50px;
       width: 100%;
       z-index: 99 !important;
-      display: block;         
+      display: block;
       padding-left: 40px;
       padding-right:10px;
-      border:none !important;    
+      border:none !important;
     }
     @include breakpoint(small only) {
       position: relative;
@@ -54,14 +54,14 @@
       width: 100%;
       z-index: 99 !important;
       display: block;
-         
+
       padding-left: 40px;
       padding-right:40px;
-      border:none !important;    
-    }    
+      border:none !important;
+    }
   @include breakpoint(small only) {
     border:none !important;
-    
+
   }
   @include breakpoint(xs-small only) {
     border:none !important;
