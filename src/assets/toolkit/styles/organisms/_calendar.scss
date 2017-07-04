@@ -86,17 +86,32 @@
     .ui-datepicker-prev {
       position: absolute;
       right: 40px;
+      z-index: 99;
       @include breakpoint(xs-small only) {
         float: right;
         right: 50px;
+        bottom: 1px !important;
+        padding-right: 0px;  
+      }
+      @include breakpoint(small only) {
+        float: right;
+        right: 40px;
+        bottom:1px !important;
         padding-right: 0px;  
       }
     }
     .ui-datepicker-next {
       position: absolute;
       right: 0px;
+      z-index: 99;
       @include breakpoint(xs-small only) {
         float: right;
+        bottom:1px !important;
+        padding-left: 0px; 
+      }
+      @include breakpoint(small only) {
+        float: right;
+        bottom:1px !important;
         padding-left: 0px; 
       }
     }
